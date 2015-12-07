@@ -62,7 +62,7 @@
     h2 {
         text-align: center;
         color: #000;
-        margin: 20px 0 10px 0;
+        margin: 10px 0 10px 0;
     }
 }
 /* SubHub fixes
@@ -111,11 +111,24 @@
     display: none;
 }
 
-.schedule-page-heading {}
-
 
 /* Typography
 ============================== */
+
+#live-alert {
+    font-size: 20px;
+    text-align: center;
+    button.close {
+        position: static;
+    }
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: #c20000;
+    }
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
 
 h1,
 h2,
