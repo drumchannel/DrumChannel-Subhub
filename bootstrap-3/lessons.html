@@ -16,54 +16,228 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-4 marginless">
-            <h2>Full Lessons</h2>
-        </div>
-        <div class="col-xs-4 marginless">
-            <h2>Secrets From the Pros</h2>
-        </div>
-        <div class="col-xs-4 marginless">
-            <h2>Master Classes</h2>
 
     <div class="container">
-        <div class="row">
-            <div class="col-xs-4 marginless lesson-page-item">
-                <h2>Full Lessons</h2>
-                <!-- Hover effect -->
-                <div class="lesson-type-image" id="lesson">
-                    <img class="img-responsive" src="http://www.drumchannel.com/custom/Adam-16-9.png" />
-                    <div id="overlay">
-                        <a href="http://www.drumchannel.com/articles/full-lessons" id="overlay-text">Longer, more in-depth lessons on a specific topic or idea. Ranging from beginner to expert, full lessons have something for every level of player. (Typically 20-60 mins)</a>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.carousel').carousel({
+                    interval: 5000
+                })
+            });
+        </script>
+
+        <!-- Carousel -->
+
+        <div id="myCarousel" class="carousel slide jumbotron">
+            <div class="container">
+                <div class="carousel-inner">
+
+
+                    <div class="item active">
+                        <div class="countdown-timer jumbotron dc-live-banner">
+                            <h2>Next Live Event</h2>
+                            <div id="clockdiv">
+                                <div>
+                                    <span class="days"></span>
+                                    <div class="smalltext">Days</div>
+                                </div>
+                                <div>
+                                    <span class="hours"></span>
+                                    <div class="smalltext">Hours</div>
+                                </div>
+                                <div>
+                                    <span class="minutes"></span>
+                                    <div class="smalltext">Minutes</div>
+                                </div>
+                                <div>
+                                    <span class="seconds"></span>
+                                    <div class="smalltext">Seconds</div>
+                                </div>
+                            </div>
+                            <h4>
+                            Live Lesson with Adam Kuns
+                        </h4>
+                        </div>
                     </div>
+
+                    <div class="item">
+
+                        <img border="0" src="http://www.drumchannel.com/custom/AdamBanner-Monday.png" class="img-responsive" />
+
+                    </div>
+
+                    <div class="item">
+
+                        <img border="0" src="http://www.drumchannel.com/custom/Wednesday-Guest-Artists.png" class="img-responsive" />
+
+                    </div>
+
+                    <div class="item">
+                        <a href="http://www.drumchannel.com/categories/dc-live" title="Live Lesson">
+                            <img border="0" src="http://www.drumchannel.com/custom/AdamBanner-Monday.png" class="img-responsive" />
+                        </a>
+                    </div>
+
+
                 </div>
-                <!-- End hover effect -->
             </div>
-            <div class="col-xs-4 marginless lesson-page-item">
-                <h2>Secrets From the Pros</h2>
-                <!-- Hover effect -->
-                <div class="lesson-type-image" id="lesson">
-                    <img class="img-responsive" src="http://www.drumchannel.com/custom/paulw-lesson-sm.png" />
-                    <div id="overlay">
-                        <a href="http://www.drumchannel.com/articles/drum-lessons-secrets-from-pros" id="overlay-text">Short on time? Secrets from the pros are short, “micro” lessons designed for maximum impact and information in as little amount of time as possible. (Typically 2-10 minutes) </a>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+        <!-- End carousel -->
+
+
+
+        <div style="width: 960px; margin: 0 10px">
+            <div class="row">
+                <div class="col-xs-4 marginless lesson-page-item">
+                    <h2>Full Lessons</h2>
+                    <!-- Hover effect -->
+                    <div class="lesson-type-image" id="lesson">
+                        <img class="img-responsive" src="http://www.drumchannel.com/custom/Adam-16-9.png" />
+                        <div id="overlay">
+                            <a href="http://www.drumchannel.com/articles/full-lessons" id="overlay-text">Longer, more in-depth lessons on a specific topic or idea. Ranging from beginner to expert, full lessons have something for every level of player. (Typically 20-60 mins)</a>
+                        </div>
                     </div>
+                    <!-- End hover effect -->
                 </div>
-                <!-- End hover effect -->
-            </div>
-            <div class="col-xs-4 marginless lesson-page-item">
-                <h2>Master Classes</h2>
-                <!-- Hover effect -->
-                <div class="lesson-type-image" id="lesson">
-                    <img class="img-responsive" src="http://www.drumchannel.com/custom/patpthumb.png" />
-                    <div id="overlay">
-                        <a href="http://www.drumchannel.com/articles/Online_Drum_Master_Classes" id="overlay-text">Looking to dive deeper? Masterclasses are a series of 5-15 min lessons on one specific topic or concept bundled together for a totally immersive experience. (Released periodically.)</a>
+                <div class="col-xs-4 marginless lesson-page-item">
+                    <h2>Secrets From the Pros</h2>
+                    <!-- Hover effect -->
+                    <div class="lesson-type-image" id="lesson">
+                        <img class="img-responsive" src="http://www.drumchannel.com/custom/paulw-lesson-sm.png" />
+                        <div id="overlay">
+                            <a href="http://www.drumchannel.com/articles/drum-lessons-secrets-from-pros" id="overlay-text">Short on time? Secrets from the pros are short, “micro” lessons designed for maximum impact and information in as little amount of time as possible. (Typically 2-10 minutes) </a>
+                        </div>
                     </div>
+                    <!-- End hover effect -->
                 </div>
-                <!-- End hover effect -->
+                <div class="col-xs-4 marginless lesson-page-item">
+                    <h2>Master Classes</h2>
+                    <!-- Hover effect -->
+                    <div class="lesson-type-image" id="lesson">
+                        <img class="img-responsive" src="http://www.drumchannel.com/custom/patpthumb.png" />
+                        <div id="overlay">
+                            <a href="http://www.drumchannel.com/articles/Online_Drum_Master_Classes" id="overlay-text">Looking to dive deeper? Masterclasses are a series of 5-15 min lessons on one specific topic or concept bundled together for a totally immersive experience. (Released periodically.)</a>
+                        </div>
+                    </div>
+                    <!-- End hover effect -->
+                </div>
             </div>
         </div>
     </div>
+    <!-- Scripts -->
+    <script>
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var daysSpan = clock.querySelector('.days');
+            var hoursSpan = clock.querySelector('.hours');
+            var minutesSpan = clock.querySelector('.minutes');
+            var secondsSpan = clock.querySelector('.seconds');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+
+        var deadline = 'December 7 2015 16:00:00 UTC-0800';
+        initializeClock('clockdiv', deadline);
+    </script>
+
+    <script>
+        function scheduleHighlight() {
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n === 1) {
+                document.getElementById("schedule-this-monday").className = "panel panel-primary";
+            } else if (n === 2) {
+                document.getElementById("schedule-this-tuesday").className = "panel panel-primary";
+            } else if (n === 3) {
+                document.getElementById("schedule-this-wednesday").className = "panel panel-primary";
+            } else if (n === 4) {
+                document.getElementById("schedule-this-thursday").className = "panel panel-primary";
+            } else if (n === 5) {
+                document.getElementById("schedule-this-friday").className = "panel panel-primary";
+            } else {}
+        }
+        window.onload = scheduleHighlight;
+    </script>
+    <script>
+        $(document).ready(function() {
+            function startTime() {
+                var today = new Date();
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var dayOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                var day = today.getDate();
+                var year = today.getFullYear();
+                var h = today.getHours();
+                if (h > 12) {
+                    h -= 12;
+                    var ampm = 'pm';
+                } else {
+                    var ampm = 'am';
+                }
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('dayofweek').innerHTML = dayOfTheWeek[today.getDay()] + " " + h + ":" + m + ampm;
+                document.getElementById('date-today').innerHTML =
+                    months[today.getMonth()] + " " + day + ", " + year + " ";
+                var t = setTimeout(startTime, 500);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                } // add zero in front of numbers < 10
+                return i;
+            }
+            startTime();
+
+            function userName() {
+                var name = document.getElementsByClassName('hello_username')[0];
+                var helloName = document.getElementById('welcome-username');
+                helloName.innerHTML = "Welcome back " + name.innerHTML;
+            }
+            userName();
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
