@@ -58,7 +58,13 @@
     left: 15px;
 }
 
-
+.lesson-page-item {
+    h2 {
+        text-align: center;
+        color: #000;
+        margin: 10px 0;
+    }
+}
 /* SubHub fixes
 ============================== */
 
@@ -248,7 +254,59 @@ h6 {
 
 /* Effects
 ============================== */
-
+#overlay {
+    background: rgba(0, 0, 0, .75);
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    display: table-cell;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
+#overlay-text {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    height: 40%;
+    font-family: Helvetica;
+    color: rgba(255, 255, 255, .85);
+    font-size: 12px;
+    opacity: 0;
+    text-decoration: none;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
+.lesson-type-image {
+    position: relative;
+    width: 100%;
+    height: 183.75px;
+    overflow: hidden;
+    img {
+        transition: all .3s ease-in-out;
+    }
+}
+#lesson {
+    @extend .lesson-type-image;
+    &:hover {
+        img {
+            transform: scale(1.5);
+            filter: blur(3px);
+        }
+        #overlay,
+        #overlay-text {
+            opacity: 1;
+        }
+    }
+}
 .hover-card {
     padding: 0px;
     position: relative;
