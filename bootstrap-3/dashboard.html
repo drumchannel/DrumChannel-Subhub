@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Member Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.carousel').carousel({
+                    interval: 5000
+                })
+            });
+        </script>
+
+        <!-- Carousel -->
+
+        <div id="myCarousel" class="carousel slide jumbotron">
+            <div class="container">
+                <!--
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="jumbotron schedule-page-heading">
+                            <div class="row">
+                                <span class="fa fa-dashboard" id="dashboard-icon"></span>
+                                <p class="lead" id="dashboard-tagline">Member Dashboard</p>
+                                <div class="col-xs-12">
+                                    <h1 id="welcome-username">Welcome back Adam Kuns</h1>
+                                    <h3 id="dayofweek">&nbsp;</h3>
+                                    <p class="lead" id="date-today">&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="countdown-timer jumbotron dc-live-banner">
+                            <h2>Next Live Event</h2>
+                            <div id="clockdiv">
+                                <div>
+                                    <span class="days"></span>
+                                    <div class="smalltext">Days</div>
+                                </div>
+                                <div>
+                                    <span class="hours"></span>
+                                    <div class="smalltext">Hours</div>
+                                </div>
+                                <div>
+                                    <span class="minutes"></span>
+                                    <div class="smalltext">Minutes</div>
+                                </div>
+                                <div>
+                                    <span class="seconds"></span>
+                                    <div class="smalltext">Seconds</div>
+                                </div>
+                            </div>
+                            <h4>
+                                Live Lesson with Adam Kuns
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                            <a href="http://www.drumchannel.com/articles/pat-petrillo-dc-live-1" title="Pat Petrillo Live">
+                            <img border="0" src="http://www.drumchannel.com/custom/PatPetrilloDCLive.png" class="img-responsive" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.drumchannel.com/articles/teachers-students-inspirations-1" title="Roundtable">
+                            <img border="0" src="http://www.drumchannel.com/custom/GreggBissonetteRoundtable.png" class="img-responsive" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.drumchannel.com/articles/jess-bowen-rescue" title="Jess Bowen"> <img border="0" src="http://www.drumchannel.com/custom/csJessBowen.png" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+        <!-- End carousel -->
+        <div style="width: 960px; margin: 0 10px">
+
+            <!-- Newest Videos -->
+            <div class="row" style="border-bottom: 1px solid #ccc; padding-bottom: 20px;">
+                <h1>Newest Videos:</h1>
+
+                <!-- Start new videos -->
+                <div class="col-xs-5ths">
+                    <div class="panel panel-default newest-panel">
+                        <a href="http://www.drumchannel.com/articles/rudiments-on-drum-set" title="Adam Kuns">
+                            <img src="http://www.drumchannel.com/custom/Adam-16-9.png" class="img-responsive" />
+                        </a>
+                        <div class="panel-body" style="height: 150px;">
+                            <h3>Lesson</h3>
+                            <a href="http://www.drumchannel.com/articles/rudiments-on-drum-set" title="Adam Kuns">
+                                <h2>Rudiments on Drum Set</h2>
+                            </a>
+                            <p><strong>Instructor: Adam Kuns</strong></p>
+                            <p>Adam will demonstrate some ways that you can take your rudimental practice to the drums and improve your flow around the kit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-5ths">
+                    <div class="panel panel-default newest-panel">
+                        <a href="http://www.drumchannel.com/articles/paul-wertico-art-of-soloing" title="Paul Wertico">
+                            <img src="http://www.drumchannel.com/custom/paulw-lesson-sm.png" class="img-responsive" />
+                        </a>
+
+                        <div class="panel-body" style="height: 150px;">
+                            <h3>Lesson</h3>
+                            <a href="http://www.drumchannel.com/articles/paul-wertico-art-of-soloing" title="Paul Wertico">
+                                <h2>The Art of Soloing</h2>
+                            </a>
+                            <p><strong>Instructor: Paul Wertico</strong></p>
+                            <p>Paul will give you some insight as to how you can shape your soloing sound and individual voice with some of the choices you make on the drums.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-5ths">
+                    <div class="panel panel-default newest-panel">
+                        <a href="http://www.drumchannel.com/articles/paul-wertico-sftp-using-brushes" title="Paul Wertico">
+                            <img src="http://www.drumchannel.com/custom/paulw-sftp-sm.png" class="img-responsive" />
+                        </a>
+
+                        <div class="panel-body" style="height: 150px;">
+                            <h3>Lesson</h3>
+                            <a href="http://www.drumchannel.com/articles/paul-wertico-sftp-using-brushes" title="Paul Wertico">
+                                <h2>Using Brushes</h2>
+                            </a>
+                            <p><strong>Instructor: Paul Wertico</strong></p>
+                            <p>In this lesson Paul Wertico will display several different brush techniques and applications. Start swishing!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-5ths">
+                    <div class="panel panel-default newest-panel">
+                        <a href="http://www.drumchannel.com/articles/pat-petrillo-sftp-earl-uncle-fungus" title="Pat Petrillo">
+                            <img src="http://www.drumchannel.com/custom/patpthumb.png" class="img-responsive" />
+                        </a>
+
+                        <div class="panel-body" style="height: 150px;">
+                            <h3>Lesson</h3>
+                            <a href="http://www.drumchannel.com/articles/pat-petrillo-sftp-earl-uncle-fungus" title="Pat Petrillo">
+                                <h2>Uncle Fungus Groove</h2>
+                            </a>
+                            <p><strong>Instructor: Pat Petrillo</strong></p>
+                            <p>Pat Petrillo demonstrates this groove which gives the illusion of time slowing down and speeding back up.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-5ths">
+                    <div class="panel panel-default newest-panel">
+                        <a href="http://www.drumchannel.com/articles/jess-bowen-rescue" title="Pat Petrillo">
+                            <img src="http://www.drumchannel.com/custom/jessthumb.png" class="img-responsive" />
+                        </a>
+
+                        <div class="panel-body" style="height: 150px;">
+                            <h3>Lesson</h3>
+                            <a href="http://www.drumchannel.com/articles/jess-bowen-rescue" title="Jess Bowen">
+                                <h2>Breakdown of 'Rescue'</h2>
+                            </a>
+                            <p><strong>Instructor: Jess Bowen</strong></p>
+                            <p>Jess brings you another breakdown from The Summer Set: "Lightning in a Bottle"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End newest items -->
+
+            <!-- Schedule for this week -->
+
+            <div class="row this-week" style="border-bottom: 1px solid #ccc; padding-bottom: 20px;">
+
+                <h1>This Weeks Schedule:</h1>
+
+                <!-- Monday -->
+                <div class="col-xs-3 schedule-day">
+                    <div class="panel panel-default" id="schedule-this-monday">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Monday: 12/07</h1>
+                        </div>
+                        <a href="http://www.drumchannel.com/categories/dc-live" title="Live Lesson">
+                            <img src="http://www.drumchannel.com/custom/Adam-16-9.png" class="img-responsive" />
+                        </a>
+
+                        <div class="panel-body">
+                            <a href="http://www.drumchannel.com/categories/dc-live" title="Live Lesson">
+                                <h2>Using Accents Musically</h2>
+                            </a>
+                            <p><strong>Instructor: Adam Kuns</strong></p>
+                            <p>Sounds simple right?  We will check out ways that accents can increase the depth and maturity level of our playing in every way!</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h2>Live at 4pm PST</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tuesday -->
+                <div class="col-xs-3 schedule-day">
+                    <div class="panel panel-default" id="schedule-this-tuesday">
+
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Tuesday: 12/08</h1>
+                        </div>
+                        <a href="#" title="Nick Ruffini">
+                            <img src="http://www.drumchannel.com/custom/nickruffinisftp.png" class="img-responsive" />
+                        </a>
+
+                        <div class="panel-body">
+                            <a href="#" title="Live Lesson">
+                                <h2>Stick Control Variations</h2>
+                            </a>
+                            <p><strong>Instructor: Nick Ruffini</strong></p>
+                            <p>Nick Ruffini will show you a complete and comprehensive way of applying various combinations of patterns from the classic book "Stick Control" to the drum set.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h2>Secrets From the Pros</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="col-xs-3 schedule-day">
+                    <div class="panel panel-default" id="schedule-this-wednesday">
+
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Wednesday: 12/09</h1>
+                        </div>
+                        <a href="http://www.drumchannel.com/categories/dc-live" title="Live Lesson">
+                            <img src="http://www.drumchannel.com/custom/curtbisqueraqa.png" class="img-responsive" />
+                        </a>
+                        <div class="panel-body">
+                            <a href="http://www.drumchannel.com/categories/dc-live" title="Live Lesson">
+                                <h2>Live Lesson &amp; Q&amp;A</h2>
+                            </a>
+                            <p><strong>Guest Artist: Curt Bisquera</strong></p>
+                            <p>Curt Bisquera is one of the busiest and most in-demand drummers in the industry today. Some of the artists he has played for include Sir Elton John, Mick Jagger, Tom Petty and the Heartbreakers, Adele, and most recently Sarah McLachlan.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h2>Live at 1pm PST</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thursday -->
+                <div class="col-xs-3 schedule-day">
+                    <div class="panel panel-default" id="schedule-this-thursday">
+
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Thursday: 12/10</h1>
+                        </div>
+                        <a href="#" title="Paul Wertico">
+                            <img src="http://www.drumchannel.com/custom/petelockettlesson.png" class="img-responsive" />
+                        </a>
+                        <div class="panel-body">
+                            <a href="#" title="Paul Wertico">
+                                <h2>Northern Indian Rhythms Part 1</h2>
+                            </a>
+                            <p><strong>Instructor: Pete Lockett</strong></p>
+                            <p>Pete will dive into detail regarding Northern Indian rhythms and how they can be applied in a Western musical fashion.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h2>Full Lesson</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Friday -->
+                <!--
+                <div class="col-xs-5ths schedule-day">
+                    <div class="panel panel-default" id="schedule-this-friday">
+
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Friday: 12/04</h1>
+                        </div>
+
+                        <img src="http://www.drumchannel.com/custom/cobuslivethumb.png" class="img-responsive" />
+
+                        <div class="panel-body">
+                            <h2>Live Q&amp;A with Cobus Potgieter</h2>
+                            <p><strong>Cobus Potgieter and Adam Kuns</strong></p>
+                            <p>Come and get your questions answered about music, drums, and life in general! We go live at 4pm PST so make sure to get your questions in ahead of time</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h2>Live at 4pm PST</h2>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <!-- End schedule for this week -->
+
+            <!-- Spacer -->
+            <!--
+            <div class="row" style="height: 40px;">
+                <div class="col-xs-12">
+                    <hr>
+                </div>
+            </div>
+            -->
+            <!-- End spacer -->
+
+            <!-- Footer items -->
+            <div class="row dashboard-footer">
+                <h1>Additional Resources:</h1>
+                <div class="col-xs-4 footer-item dc-faculty">
+                    <h2>DC Faculty</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4>Meet your instructors</h4>
+                            <a href="http://www.drumchannel.com/articles/drum-lessons-Additional-DC-Faculty" title="Meet your instructors">
+                                <img class="img-responsive" src="http://www.drumchannel.com/custom/HomepageApr2015.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 footer-item">
+                    <h2>DC Tour</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="http://www.drumchannel.com/articles/Tour-DC-Facility" title="Take a tour of Drum Channel">
+                                <img src="http://www.drumchannel.com/custom/studio-tour.png" class="img-responsive" alt="Take a tour of the DC Studio">
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <h4>Video Tour</h4>
+                            <p>See how the magic all comes together and where it happens</p>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 40px;">
+                        <div class="col-xs-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="http://www.drumchannel.com/articles/DC-Studio" title="Rent the DC Studio">
+                                <img src="http://www.drumchannel.com/custom/tour-studio.png" class="img-responsive" alt="Rent the DC Studio">
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <h4>Rent the Studio</h4>
+                            <p>Let us help you film and record your music or next drum cover</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 footer-item">
+                    <h2>DC Sponsors</h2>
+                    <ul class="list-group sponsors">
+                        <li class="list-group-item sponsor">GoPro</li>
+                        <li class="list-group-item sponsor">Ahead</li>
+                        <li class="list-group-item sponsor">Kickport</li>
+                        <li class="list-group-item sponsor">PreSonus</li>
+                        <li class="list-group-item sponsor">DRUM!</li>
+                        <li class="list-group-item sponsor">Yamaha</li>
+                        <li class="list-group-item sponsor">Jammit</li>
+                        <li class="list-group-item sponsor">Sabian</li>
+                        <li class="list-group-item sponsor">DW Drums</li>
+                        <li class="list-group-item sponsor">Roland</li>
+                        <li class="list-group-item sponsor">Cympad</li>
+                        <li class="list-group-item sponsor">Zildjian</li>
+                        <li class="list-group-item sponsor">TRX</li>
+                        <li class="list-group-item sponsor">Mycymbal.com</li>
+                        <li class="list-group-item sponsor">Bosphorus</li>
+                        <li class="list-group-item sponsor">Meinl</li>
+                        <li class="list-group-item sponsor">Big Bang</li>
+                        <li class="list-group-item sponsor">Slug Percussion</li>
+                        <li class="list-group-item sponsor">Dunnet Drum Company</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End footer items -->
+        </div>
+    </div>
+    <!-- End main container -->
+
+    <!-- Scripts -->
+    <script>
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var daysSpan = clock.querySelector('.days');
+            var hoursSpan = clock.querySelector('.hours');
+            var minutesSpan = clock.querySelector('.minutes');
+            var secondsSpan = clock.querySelector('.seconds');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+
+        var deadline = 'December 7 2015 16:00:00 UTC-0800';
+        initializeClock('clockdiv', deadline);
+    </script>
+
+    <script>
+        function scheduleHighlight() {
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n === 1) {
+                document.getElementById("schedule-this-monday").className = "panel panel-primary";
+            } else if (n === 2) {
+                document.getElementById("schedule-this-tuesday").className = "panel panel-primary";
+            } else if (n === 3) {
+                document.getElementById("schedule-this-wednesday").className = "panel panel-primary";
+            } else if (n === 4) {
+                document.getElementById("schedule-this-thursday").className = "panel panel-primary";
+            } else if (n === 5) {
+                document.getElementById("schedule-this-friday").className = "panel panel-primary";
+            } else {}
+        }
+        window.onload = scheduleHighlight;
+    </script>
+    <script>
+        $(document).ready(function() {
+            function startTime() {
+                var today = new Date();
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var dayOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                var day = today.getDate();
+                var year = today.getFullYear();
+                var h = today.getHours();
+                if (h > 12) {
+                    h -= 12;
+                    var ampm = 'pm';
+                } else {
+                    var ampm = 'am';
+                }
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('dayofweek').innerHTML = dayOfTheWeek[today.getDay()] + " " + h + ":" + m + ampm;
+                document.getElementById('date-today').innerHTML =
+                    months[today.getMonth()] + " " + day + ", " + year + " ";
+                var t = setTimeout(startTime, 500);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                } // add zero in front of numbers < 10
+                return i;
+            }
+            startTime();
+
+            function userName() {
+                var name = document.getElementsByClassName('hello_username')[0];
+                var helloName = document.getElementById('welcome-username');
+                helloName.innerHTML = "Welcome back " + name.innerHTML;
+            }
+            userName();
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
