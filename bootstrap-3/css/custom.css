@@ -709,8 +709,8 @@ h6 {
 
 /* line 631, ../scss/custom.scss */
 #clockdiv div > span {
-  padding: 0 15px;
-  line-height: 60px;
+  padding: 0 10px;
+  line-height: 50px;
   border-radius: 3px;
   background: #c20000;
   display: inline-block;

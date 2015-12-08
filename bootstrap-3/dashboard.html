@@ -20,6 +20,7 @@
 
     <div class="container">
 
+        <!--
         <script type="text/javascript">
             $(document).ready(function() {
                 $('.carousel').carousel({
@@ -27,20 +28,12 @@
                 })
             });
         </script>
+        -->
 
         <!-- Carousel -->
 
         <div id="myCarousel" class="carousel slide jumbotron">
             <div class="container">
-                <!--
-                <ol class="carousel-indicators">
-                    <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                </ol>
-                -->
                 <div class="carousel-inner">
                     <!--
                     <div class="item active">
@@ -48,8 +41,8 @@
                             <img src="http://www.drumchannel.com/custom/live-adambanner.png" alt="Live Lessons">
                         </a>
                     </div>
-                    -->
-                    <div class="item active">
+
+                    <div class="item">
                         <div class="jumbotron schedule-page-heading">
                             <div class="row">
                                 <span class="fa fa-dashboard" id="dashboard-icon"></span>
@@ -62,8 +55,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="item">
+                    -->
+                    <div class="item active">
                         <div class="countdown-timer jumbotron dc-live-banner">
                             <h2>Next Live Event</h2>
                             <div id="clockdiv">
@@ -460,7 +453,6 @@
         var deadline = 'December 9 2015 13:00:00 UTC-0800';
         initializeClock('clockdiv', deadline);
     </script>
-
     <script>
         function scheduleHighlight() {
             var d = new Date();
