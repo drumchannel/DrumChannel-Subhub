@@ -1,6 +1,23 @@
 /* Layout
 ============================== */
 
+.schedule-page-heading {
+    background-color: #fff;
+    background-image: url(http://www.drumchannel.com/custom/carbon.png);
+    background-size: cover;
+}
+
+.dc-live-banner {
+    background-image: url(http://www.drumchannel.com/custom/DCLivePageBanner.png);
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+    }
+    h2 {
+        margin-top: -20px;
+        font-size: 30px;
+    }
+}
+
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -66,6 +83,8 @@
         font-size: 24px;
     }
 }
+
+
 /* SubHub fixes
 ============================== */
 
@@ -122,12 +141,17 @@
     button.close {
         position: static;
     }
-    a, a:hover, a:focus, a:active {
+    a,
+    a:hover,
+    a:focus,
+    a:active {
         text-decoration: none;
         color: #c20000;
     }
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
     text-decoration: none;
 }
 
@@ -176,21 +200,41 @@ h6 {
 }
 
 .jumbotron {
+
+    .timer {
+        /*background: rgba(101, 101, 101, 0.27);*/
+        text-align: center;
+        border-radius: 5px;
+        h1, h2, h3, h4, h5, h6, p {
+            color: #d8d8de;
+            margin-top: 0;
+        }
+        h3 {
+            margin: 12px 0 10px 0;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        p.event-text {
+            padding: 10px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
     #welcome-username {
-        text-align: right;
-        font-weight: 300;
+        font-weight: 100;
         font-size: 36px;
         margin-top: 0;
+        color: #d8d8de;
     }
     #dayofweek {
         font-size: 32px;
-        font-weight: 200;
+        font-weight: 100;
         margin-bottom: 0;
-        text-align: right;
+        color: #d8d8de;
     }
     #date-today {
-        text-align: right;
         font-weight: 100;
+        color: #d8d8de;
     }
     #dashboard-icon {
         bottom: 20px;
@@ -201,11 +245,11 @@ h6 {
     }
     #dashboard-tagline {
         position: absolute;
-        bottom: 0;
-        left: 90px;
-        margin-bottom: 0;
+        bottom: 0px;
+        left: 0px;
         font-weight: bold;
-        color: #c20000
+        color: #656565;
+        font-size: 14px;
     }
     .dashboard {
         text-align: center;
@@ -268,6 +312,7 @@ h6 {
 
 /* Effects
 ============================== */
+
 #overlay {
     background: rgba(0, 0, 0, .75);
     text-align: center;
@@ -281,6 +326,7 @@ h6 {
     -webkit-transition: opacity .25s ease;
     -moz-transition: opacity .25s ease;
 }
+
 #overlay-text {
     position: absolute;
     display: inline-block;
@@ -299,6 +345,7 @@ h6 {
     -webkit-transition: opacity .25s ease;
     -moz-transition: opacity .25s ease;
 }
+
 .lesson-type-image {
     position: relative;
     width: 100%;
@@ -308,6 +355,7 @@ h6 {
         transition: all .3s ease-in-out;
     }
 }
+
 #lesson {
     @extend .lesson-type-image;
     &:hover {
@@ -321,6 +369,7 @@ h6 {
         }
     }
 }
+
 .hover-card {
     padding: 0px;
     position: relative;
@@ -560,10 +609,6 @@ h6 {
             background-color: #c20000;
         }
     }
-    .jumbotron {
-        margin: 0;
-        height: 260px;
-    }
     padding: 0;
     .schedule-page-heading {
         background-color: #fff;
@@ -619,27 +664,31 @@ h6 {
     font-weight: 100;
     text-align: center;
     font-size: 30px;
+    background: #222;
+    border-radius: 5px;
 }
 
 #clockdiv > div {
     padding: 10px;
     border-radius: 3px;
-    background: #333;
     display: inline-block;
+    width: 65px;
+    text-align: center;
 }
 
 #clockdiv div > span {
     padding: 0 10px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 40px;
     border-radius: 3px;
     background: #c20000;
-    ;
     display: inline-block;
+    width: 40px;
 }
 
 .smalltext {
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .countdown-timer {
