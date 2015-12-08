@@ -213,11 +213,13 @@ h6 {
             margin: 12px 0 10px 0;
             font-size: 20px;
             line-height: 20px;
+            color: #d8d8de;
         }
-        p.event-text {
+        > p.event-text {
             padding: 10px 0;
             font-size: 16px;
             text-align: center;
+            color: #d8d8de;
         }
     }
     #welcome-username {
