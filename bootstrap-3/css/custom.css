@@ -68,11 +68,12 @@
   text-align: center;
   color: #000;
   margin: 10px 0 10px 0;
+  font-size: 24px;
 }
 
 /* SubHub fixes
 ============================== */
-/* line 73, ../scss/custom.scss */
+/* line 74, ../scss/custom.scss */
 .documentContent p a,
 .listingBar a,
 .documentContent td a {
@@ -80,31 +81,31 @@
   font-size: 10px;
 }
 
-/* line 79, ../scss/custom.scss */
+/* line 80, ../scss/custom.scss */
 #documentContentInner p,
 #documentContentInner font {
   color: #000;
   font-size: 10px;
 }
 
-/* line 84, ../scss/custom.scss */
+/* line 85, ../scss/custom.scss */
 #header_loginblock {
   width: 378px;
 }
 
-/* line 88, ../scss/custom.scss */
+/* line 89, ../scss/custom.scss */
 #header_login input.searchtext {
   height: 35px;
 }
 
-/* line 92, ../scss/custom.scss */
+/* line 93, ../scss/custom.scss */
 #header_loginblock input.login_textbox {
   height: 30px !important;
   width: 130px !important;
   line-height: 30px !important;
 }
 
-/* line 98, ../scss/custom.scss */
+/* line 99, ../scss/custom.scss */
 #header_loginblock input.login {
   height: 30px;
   width: 80px;
@@ -112,12 +113,12 @@
   line-height: 30px;
 }
 
-/* line 105, ../scss/custom.scss */
+/* line 106, ../scss/custom.scss */
 #region-content #documentContentInner {
   background-color: #ffffff;
 }
 
-/* line 109, ../scss/custom.scss */
+/* line 110, ../scss/custom.scss */
 .searchsubmit {
   right: 140px;
   display: none;
@@ -125,27 +126,27 @@
 
 /* Typography
 ============================== */
-/* line 118, ../scss/custom.scss */
+/* line 119, ../scss/custom.scss */
 #live-alert {
   font-size: 20px;
   text-align: center;
 }
-/* line 121, ../scss/custom.scss */
+/* line 122, ../scss/custom.scss */
 #live-alert button.close {
   position: static;
 }
-/* line 124, ../scss/custom.scss */
+/* line 125, ../scss/custom.scss */
 #live-alert a, #live-alert a:hover, #live-alert a:focus, #live-alert a:active {
   text-decoration: none;
   color: #c20000;
 }
 
-/* line 129, ../scss/custom.scss */
+/* line 130, ../scss/custom.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 138, ../scss/custom.scss */
+/* line 139, ../scss/custom.scss */
 h1,
 h2,
 h3,
@@ -157,26 +158,26 @@ h6 {
   padding: 0;
 }
 
-/* line 145, ../scss/custom.scss */
+/* line 146, ../scss/custom.scss */
 .container > h1 {
   color: #000000;
 }
 
-/* line 151, ../scss/custom.scss */
+/* line 152, ../scss/custom.scss */
 .panel .panel-body h2 {
   margin-top: 0px;
   font-weight: bold;
 }
-/* line 155, ../scss/custom.scss */
+/* line 156, ../scss/custom.scss */
 .panel .panel-body > p {
   margin-bottom: 0px;
 }
 
-/* line 160, ../scss/custom.scss */
+/* line 161, ../scss/custom.scss */
 .panel .panel-footer {
   text-align: center;
 }
-/* line 162, ../scss/custom.scss */
+/* line 163, ../scss/custom.scss */
 .panel .panel-footer > h2 {
   margin: 0px;
   font-size: 14px;
@@ -184,35 +185,35 @@ h6 {
   color: #000;
 }
 
-/* line 170, ../scss/custom.scss */
+/* line 171, ../scss/custom.scss */
 .panel {
   border: none;
 }
-/* line 172, ../scss/custom.scss */
+/* line 173, ../scss/custom.scss */
 .panel .full-lesson-footer {
   text-align: left;
 }
 
-/* line 178, ../scss/custom.scss */
+/* line 179, ../scss/custom.scss */
 .jumbotron #welcome-username {
   text-align: right;
   font-weight: 300;
   font-size: 36px;
   margin-top: 0;
 }
-/* line 184, ../scss/custom.scss */
+/* line 185, ../scss/custom.scss */
 .jumbotron #dayofweek {
   font-size: 32px;
   font-weight: 200;
   margin-bottom: 0;
   text-align: right;
 }
-/* line 190, ../scss/custom.scss */
+/* line 191, ../scss/custom.scss */
 .jumbotron #date-today {
   text-align: right;
   font-weight: 100;
 }
-/* line 194, ../scss/custom.scss */
+/* line 195, ../scss/custom.scss */
 .jumbotron #dashboard-icon {
   bottom: 20px;
   color: #c20000;
@@ -220,7 +221,7 @@ h6 {
   left: 100px;
   position: absolute;
 }
-/* line 201, ../scss/custom.scss */
+/* line 202, ../scss/custom.scss */
 .jumbotron #dashboard-tagline {
   position: absolute;
   bottom: 0;
@@ -229,11 +230,11 @@ h6 {
   font-weight: bold;
   color: #c20000;
 }
-/* line 209, ../scss/custom.scss */
+/* line 210, ../scss/custom.scss */
 .jumbotron .dashboard {
   text-align: center;
 }
-/* line 217, ../scss/custom.scss */
+/* line 218, ../scss/custom.scss */
 .jumbotron h1,
 .jumbotron h2,
 .jumbotron h3,
@@ -242,7 +243,7 @@ h6 {
 .jumbotron h6 {
   color: #000;
 }
-/* line 220, ../scss/custom.scss */
+/* line 221, ../scss/custom.scss */
 .jumbotron .lead {
   margin-bottom: 20px;
   font-size: 16px;
@@ -251,13 +252,13 @@ h6 {
   color: #000;
 }
 @media (min-width: 768px) {
-  /* line 228, ../scss/custom.scss */
+  /* line 229, ../scss/custom.scss */
   .jumbotron .lead {
     font-size: 21px !important;
   }
 }
 
-/* line 236, ../scss/custom.scss */
+/* line 237, ../scss/custom.scss */
 .dashboard-footer .footer-item h2 {
   text-align: center;
   background-color: #000;
@@ -266,27 +267,27 @@ h6 {
   margin: 20px 0 10px;
   font-size: 30px;
 }
-/* line 244, ../scss/custom.scss */
+/* line 245, ../scss/custom.scss */
 .dashboard-footer .footer-item h4 {
   font-weight: bold;
   color: #c20000;
   margin-top: 0;
 }
-/* line 251, ../scss/custom.scss */
+/* line 252, ../scss/custom.scss */
 .dashboard-footer .dc-faculty h4 {
   text-align: center;
 }
 
 /* Show Blocks
 ============================== */
-/* line 262, ../scss/custom.scss */
+/* line 263, ../scss/custom.scss */
 .show-block img {
   width: 100%;
 }
 
 /* Effects
 ============================== */
-/* line 270, ../scss/custom.scss */
+/* line 271, ../scss/custom.scss */
 #overlay {
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
@@ -301,7 +302,7 @@ h6 {
   -moz-transition: opacity .25s ease;
 }
 
-/* line 283, ../scss/custom.scss */
+/* line 284, ../scss/custom.scss */
 #overlay-text {
   position: absolute;
   display: inline-block;
@@ -321,30 +322,30 @@ h6 {
   -moz-transition: opacity .25s ease;
 }
 
-/* line 301, ../scss/custom.scss */
+/* line 302, ../scss/custom.scss */
 .lesson-type-image, #lesson {
   position: relative;
   width: 100%;
   height: 183.75px;
   overflow: hidden;
 }
-/* line 306, ../scss/custom.scss */
+/* line 307, ../scss/custom.scss */
 .lesson-type-image img, #lesson img {
   transition: all .3s ease-in-out;
 }
 
-/* line 313, ../scss/custom.scss */
+/* line 314, ../scss/custom.scss */
 #lesson:hover img {
   transform: scale(1.5);
   filter: blur(3px);
 }
-/* line 318, ../scss/custom.scss */
+/* line 319, ../scss/custom.scss */
 #lesson:hover #overlay,
 #lesson:hover #overlay-text {
   opacity: 1;
 }
 
-/* line 323, ../scss/custom.scss */
+/* line 324, ../scss/custom.scss */
 .hover-card {
   padding: 0px;
   position: relative;
@@ -352,7 +353,7 @@ h6 {
   height: 275.625px;
 }
 
-/* line 330, ../scss/custom.scss */
+/* line 331, ../scss/custom.scss */
 .hover-card:hover .caption {
   opacity: 1;
   transform: translateY(-227px);
@@ -362,12 +363,12 @@ h6 {
   -o-transform: translateY(-227px);
 }
 
-/* line 339, ../scss/custom.scss */
+/* line 340, ../scss/custom.scss */
 .hover-card img {
   z-index: 4;
 }
 
-/* line 343, ../scss/custom.scss */
+/* line 344, ../scss/custom.scss */
 .hover-card .caption {
   position: absolute;
   top: 225px;
@@ -379,7 +380,7 @@ h6 {
   width: 100%;
 }
 
-/* line 354, ../scss/custom.scss */
+/* line 355, ../scss/custom.scss */
 .hover-card .blur {
   background-color: rgba(0, 0, 0, 0.7);
   height: 300px;
@@ -388,7 +389,7 @@ h6 {
   width: 100%;
 }
 
-/* line 362, ../scss/custom.scss */
+/* line 363, ../scss/custom.scss */
 .hover-card .caption-text {
   z-index: 10;
   color: #fff;
@@ -399,7 +400,7 @@ h6 {
   width: 100%;
   padding: 0px 20px 0px 20px;
 }
-/* line 371, ../scss/custom.scss */
+/* line 372, ../scss/custom.scss */
 .hover-card .caption-text > h1 {
   color: #fff;
   font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
@@ -411,7 +412,7 @@ h6 {
   padding: 0px;
 }
 
-/* line 383, ../scss/custom.scss */
+/* line 384, ../scss/custom.scss */
 .panel {
   -webkit-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   -moz-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
@@ -422,7 +423,7 @@ h6 {
 
 /* Colors
 ============================== */
-/* line 395, ../scss/custom.scss */
+/* line 396, ../scss/custom.scss */
 .btn-primary {
   transition: all .2s ease-in-out;
   background-color: #c20000;
@@ -431,33 +432,33 @@ h6 {
   text-decoration: none;
   color: #fff;
 }
-/* line 400, ../scss/custom.scss */
+/* line 401, ../scss/custom.scss */
 .btn-primary:hover {
   background-color: #a90000;
 }
 
-/* line 408, ../scss/custom.scss */
+/* line 409, ../scss/custom.scss */
 #back-to-top > a {
   color: #c20000;
   text-decoration: none;
 }
 
-/* line 416, ../scss/custom.scss */
+/* line 417, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary,
 .next-week .schedule-day .panel-primary {
   border-color: #000000;
 }
-/* line 418, ../scss/custom.scss */
+/* line 419, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-heading,
 .next-week .schedule-day .panel-primary .panel-heading {
   background-color: #c20000;
 }
-/* line 421, ../scss/custom.scss */
+/* line 422, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-heading,
 .next-week .schedule-day .panel-primary .panel-heading {
   border-color: #000000;
 }
-/* line 423, ../scss/custom.scss */
+/* line 424, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-heading > h1,
 .next-week .schedule-day .panel-primary .panel-heading > h1 {
   color: #fff;
@@ -467,27 +468,27 @@ h6 {
   margin: 0;
   padding: 0;
 }
-/* line 432, ../scss/custom.scss */
+/* line 433, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body,
 .next-week .schedule-day .panel-primary .panel-body {
   background: #e8e6e6;
   background: #333;
   height: 150px;
 }
-/* line 436, ../scss/custom.scss */
+/* line 437, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body a,
 .next-week .schedule-day .panel-primary .panel-body a {
   color: #fff;
   text-decoration: none;
 }
-/* line 440, ../scss/custom.scss */
+/* line 441, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body > p,
 .next-week .schedule-day .panel-primary .panel-body > p {
   line-height: 12px;
   color: #fff !important;
   margin: 5px 0 5px 0;
 }
-/* line 445, ../scss/custom.scss */
+/* line 446, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body h2,
 .next-week .schedule-day .panel-primary .panel-body h2 {
   color: #fff;
@@ -497,27 +498,27 @@ h6 {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 454, ../scss/custom.scss */
+/* line 455, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-footer,
 .next-week .schedule-day .panel-primary .panel-footer {
   background: #c4c4c4;
   background: #000;
   border-top: none;
 }
-/* line 457, ../scss/custom.scss */
+/* line 458, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-footer > h2,
 .next-week .schedule-day .panel-primary .panel-footer > h2 {
   color: #fff;
   margin: 0;
   padding: 0;
 }
-/* line 466, ../scss/custom.scss */
+/* line 467, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-heading,
 .next-week .schedule-day .panel-default .panel-heading {
   background: #ddd;
   color: #333;
 }
-/* line 469, ../scss/custom.scss */
+/* line 470, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-heading > h1,
 .next-week .schedule-day .panel-default .panel-heading > h1 {
   color: #333;
@@ -527,30 +528,30 @@ h6 {
   margin: 0;
   padding: 0;
 }
-/* line 478, ../scss/custom.scss */
+/* line 479, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-body,
 .next-week .schedule-day .panel-default .panel-body {
   background: #f8f8f8;
   height: 150px;
 }
-/* line 481, ../scss/custom.scss */
+/* line 482, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-body a,
 .next-week .schedule-day .panel-default .panel-body a {
   text-decoration: none;
 }
-/* line 484, ../scss/custom.scss */
+/* line 485, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-body h2,
 .next-week .schedule-day .panel-default .panel-body h2 {
   color: #000;
   line-height: 18px;
   font-weight: bold;
 }
-/* line 490, ../scss/custom.scss */
+/* line 491, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-footer,
 .next-week .schedule-day .panel-default .panel-footer {
   background: #eee;
 }
-/* line 492, ../scss/custom.scss */
+/* line 493, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-footer > h2,
 .next-week .schedule-day .panel-default .panel-footer > h2 {
   color: #000;
@@ -558,15 +559,15 @@ h6 {
   padding: 0;
 }
 
-/* line 502, ../scss/custom.scss */
+/* line 503, ../scss/custom.scss */
 .panel-default .panel-body {
   background: #f8f8f8;
 }
-/* line 504, ../scss/custom.scss */
+/* line 505, ../scss/custom.scss */
 .panel-default .panel-body a {
   text-decoration: none;
 }
-/* line 507, ../scss/custom.scss */
+/* line 508, ../scss/custom.scss */
 .panel-default .panel-body h2 {
   color: #000;
   line-height: 18px;
@@ -574,96 +575,96 @@ h6 {
   margin: 0;
   font-size: 16px;
 }
-/* line 514, ../scss/custom.scss */
+/* line 515, ../scss/custom.scss */
 .panel-default .panel-body h3 {
   margin: 0 0 0 0;
   padding: 0;
   font-size: 12px;
   color: #b3b3b3;
 }
-/* line 520, ../scss/custom.scss */
+/* line 521, ../scss/custom.scss */
 .panel-default .panel-body p {
   line-height: 12px;
   color: #000;
   margin: 5px 0 5px 0;
 }
-/* line 526, ../scss/custom.scss */
+/* line 527, ../scss/custom.scss */
 .panel-default .panel-footer {
   background: #eee;
 }
 
-/* line 531, ../scss/custom.scss */
+/* line 532, ../scss/custom.scss */
 .newest-panel, .lesson-panel {
   box-shadow: 0px 3px 3px #ccc;
 }
-/* line 533, ../scss/custom.scss */
+/* line 534, ../scss/custom.scss */
 .newest-panel .panel-body, .lesson-panel .panel-body {
   height: 150px;
 }
 
-/* line 538, ../scss/custom.scss */
+/* line 539, ../scss/custom.scss */
 .lesson-panel {
   margin-bottom: 10px;
 }
-/* line 541, ../scss/custom.scss */
+/* line 542, ../scss/custom.scss */
 .lesson-panel .panel-body {
   height: 130px;
 }
 
 /* Special Elements
 ============================== */
-/* line 550, ../scss/custom.scss */
+/* line 551, ../scss/custom.scss */
 #myCarousel {
   background-color: #fff;
   height: 260px;
   margin: 0;
   padding: 0;
 }
-/* line 555, ../scss/custom.scss */
+/* line 556, ../scss/custom.scss */
 #myCarousel .carousel-indicators li {
   border-color: #c20000;
 }
-/* line 558, ../scss/custom.scss */
+/* line 559, ../scss/custom.scss */
 #myCarousel .carousel-indicators .active {
   background-color: #c20000;
 }
-/* line 562, ../scss/custom.scss */
+/* line 563, ../scss/custom.scss */
 #myCarousel .jumbotron {
   margin: 0;
   height: 260px;
 }
-/* line 567, ../scss/custom.scss */
+/* line 568, ../scss/custom.scss */
 #myCarousel .schedule-page-heading {
   background-color: #fff;
   background-image: url(http://www.drumchannel.com/custom/price-bg.png);
 }
-/* line 571, ../scss/custom.scss */
+/* line 572, ../scss/custom.scss */
 #myCarousel .dc-live-banner {
   background-image: url(http://www.drumchannel.com/custom/DCLivePageBanner.png);
 }
-/* line 573, ../scss/custom.scss */
+/* line 574, ../scss/custom.scss */
 #myCarousel .dc-live-banner h1, #myCarousel .dc-live-banner h2, #myCarousel .dc-live-banner h3, #myCarousel .dc-live-banner h4, #myCarousel .dc-live-banner h5, #myCarousel .dc-live-banner h6 {
   color: #fff;
 }
-/* line 576, ../scss/custom.scss */
+/* line 577, ../scss/custom.scss */
 #myCarousel .dc-live-banner h2 {
   margin-top: -20px;
   font-size: 30px;
 }
-/* line 581, ../scss/custom.scss */
+/* line 582, ../scss/custom.scss */
 #myCarousel .carousel-control.right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-/* line 584, ../scss/custom.scss */
+/* line 585, ../scss/custom.scss */
 #myCarousel .carousel-control.left {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 588, ../scss/custom.scss */
+/* line 589, ../scss/custom.scss */
 #myCarousel .carousel-control.right,
 #myCarousel .carousel-control.left {
   width: 50px;
 }
-/* line 591, ../scss/custom.scss */
+/* line 592, ../scss/custom.scss */
 #myCarousel .carousel-control {
   background: transparent;
   border: none;
@@ -673,14 +674,14 @@ h6 {
   transition: all .3s ease-in-out;
 }
 
-/* line 601, ../scss/custom.scss */
+/* line 602, ../scss/custom.scss */
 .dashboard-schedule-header {
   background-image: url("http://www.drumchannel.com/custom/schedule_header1.png");
   background-size: cover;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 606, ../scss/custom.scss */
+/* line 607, ../scss/custom.scss */
 .dashboard-schedule-header h1 {
   text-align: center;
   font-size: 46px;
@@ -688,7 +689,7 @@ h6 {
   margin-top: 80px;
 }
 
-/* line 614, ../scss/custom.scss */
+/* line 615, ../scss/custom.scss */
 #clockdiv {
   font-family: sans-serif;
   color: #fff;
@@ -698,7 +699,7 @@ h6 {
   font-size: 30px;
 }
 
-/* line 623, ../scss/custom.scss */
+/* line 624, ../scss/custom.scss */
 #clockdiv > div {
   padding: 10px;
   border-radius: 3px;
@@ -706,7 +707,7 @@ h6 {
   display: inline-block;
 }
 
-/* line 630, ../scss/custom.scss */
+/* line 631, ../scss/custom.scss */
 #clockdiv div > span {
   padding: 0 15px;
   line-height: 60px;
@@ -715,22 +716,22 @@ h6 {
   display: inline-block;
 }
 
-/* line 639, ../scss/custom.scss */
+/* line 640, ../scss/custom.scss */
 .smalltext {
   padding-top: 5px;
   font-size: 16px;
 }
 
-/* line 644, ../scss/custom.scss */
+/* line 645, ../scss/custom.scss */
 .countdown-timer {
   text-align: center;
 }
 
-/* line 648, ../scss/custom.scss */
+/* line 649, ../scss/custom.scss */
 .lesson-image {
   position: relative;
 }
-/* line 650, ../scss/custom.scss */
+/* line 651, ../scss/custom.scss */
 .lesson-image .lesson-difficulty {
   cursor: default;
   position: absolute;
@@ -745,46 +746,46 @@ h6 {
   box-shadow: 0px 2px 3px #404040;
   transition: all .2s ease-in-out;
 }
-/* line 663, ../scss/custom.scss */
+/* line 664, ../scss/custom.scss */
 .lesson-image .lesson-difficulty:hover {
   opacity: 1;
 }
-/* line 667, ../scss/custom.scss */
+/* line 668, ../scss/custom.scss */
 .lesson-image .advanced-lesson {
   background-color: #c20000;
 }
-/* line 669, ../scss/custom.scss */
+/* line 670, ../scss/custom.scss */
 .lesson-image .advanced-lesson::before {
   content: "Advanced";
 }
-/* line 673, ../scss/custom.scss */
+/* line 674, ../scss/custom.scss */
 .lesson-image .intermediate-lesson {
   background-color: #ffba00;
 }
-/* line 675, ../scss/custom.scss */
+/* line 676, ../scss/custom.scss */
 .lesson-image .intermediate-lesson::before {
   content: "Intermediate";
 }
-/* line 679, ../scss/custom.scss */
+/* line 680, ../scss/custom.scss */
 .lesson-image .beginner-lesson {
   background-color: #008000;
 }
-/* line 681, ../scss/custom.scss */
+/* line 682, ../scss/custom.scss */
 .lesson-image .beginner-lesson::before {
   content: "Beginner";
 }
-/* line 685, ../scss/custom.scss */
+/* line 686, ../scss/custom.scss */
 .lesson-image .all-lesson {
   background-color: #800080;
 }
-/* line 687, ../scss/custom.scss */
+/* line 688, ../scss/custom.scss */
 .lesson-image .all-lesson::before {
   content: "All Levels";
 }
 
 /* Lists
 ============================= */
-/* line 697, ../scss/custom.scss */
+/* line 698, ../scss/custom.scss */
 .sponsor {
   width: 32%;
   display: inline-block;
@@ -798,12 +799,12 @@ h6 {
   vertical-align: middle;
 }
 
-/* line 710, ../scss/custom.scss */
+/* line 711, ../scss/custom.scss */
 .sponsors {
   margin: 0px;
 }
 
-/* line 714, ../scss/custom.scss */
+/* line 715, ../scss/custom.scss */
 .lesson-categories {
   background-color: transparent;
   border: none;
@@ -812,7 +813,7 @@ h6 {
 
 /* Buttons
 ============================== */
-/* line 724, ../scss/custom.scss */
+/* line 725, ../scss/custom.scss */
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -823,7 +824,7 @@ h6 {
   border-radius: 15px;
 }
 
-/* line 734, ../scss/custom.scss */
+/* line 735, ../scss/custom.scss */
 .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
@@ -833,7 +834,7 @@ h6 {
   border-radius: 25px;
 }
 
-/* line 743, ../scss/custom.scss */
+/* line 744, ../scss/custom.scss */
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
