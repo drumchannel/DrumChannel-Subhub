@@ -238,7 +238,7 @@ h6 {
   color: #d8d8de;
 }
 /* line 218, ../scss/custom.scss */
-.jumbotron .timer > p.event-text {
+.jumbotron .timer p, .jumbotron .timer #event-text {
   padding: 10px 0;
   font-size: 16px;
   text-align: center;
