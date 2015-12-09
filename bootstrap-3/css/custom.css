@@ -845,7 +845,7 @@ h6 {
 
 /* Additional pages
 ============================== */
-/* Secrets From the Pros page
+/* Secrets From the Pros
 ==============================
 ==============================
 */
@@ -853,7 +853,7 @@ h6 {
 ============================== */
 /* line 10, ../scss/_sftp.scss */
 .sftp-item {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-top: 15px;
 }
 
@@ -929,13 +929,15 @@ h6 {
   padding-bottom: 2px;
 }
 
-/* line 85, ../scss/_sftp.scss */
+/* Tooltip
+============================== */
+/* line 89, ../scss/_sftp.scss */
 .tool {
   cursor: default;
   position: relative;
 }
 
-/* line 91, ../scss/_sftp.scss */
+/* line 95, ../scss/_sftp.scss */
 .tool::before,
 .tool::after {
   position: absolute;
@@ -944,7 +946,7 @@ h6 {
   z-index: -100;
 }
 
-/* line 101, ../scss/_sftp.scss */
+/* line 105, ../scss/_sftp.scss */
 .tool:hover::before,
 .tool:focus::before,
 .tool:hover::after,
@@ -954,7 +956,7 @@ h6 {
   transform: scale(1) translateY(0);
 }
 
-/* line 107, ../scss/_sftp.scss */
+/* line 111, ../scss/_sftp.scss */
 .tool::before {
   border: solid;
   border-width: 1em .7em 0 .75em;
@@ -966,13 +968,13 @@ h6 {
   transition: all 0.65s cubic-bezier(0.85, -0.18, 0.31, 1.26), opacity 0.65s 0.5s;
 }
 
-/* line 119, ../scss/_sftp.scss */
+/* line 123, ../scss/_sftp.scss */
 .tool:hover::before,
 .tool:focus::before {
   transition-delay: .2s;
 }
 
-/* line 123, ../scss/_sftp.scss */
+/* line 127, ../scss/_sftp.scss */
 .tool::after {
   background: #3e474f;
   border-radius: .25em;
@@ -986,7 +988,7 @@ h6 {
   transition: all 0.65s cubic-bezier(0.85, -0.18, 0.31, 1.26) 0.2s;
 }
 
-/* line 137, ../scss/_sftp.scss */
+/* line 141, ../scss/_sftp.scss */
 .tool:hover::after,
 .tool:focus::after {
   transition-delay: .2s;
