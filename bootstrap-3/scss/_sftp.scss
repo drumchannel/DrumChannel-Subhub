@@ -4,13 +4,100 @@
 */
 
 
+/* SFTP layout
+============================== */
+
+.sftp-item {
+    margin-bottom: 20px;
+}
+
+
 /* SFTP panels
 ============================== */
+.lesson-image {
+    position: relative;
+    .sftp-number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #c20000;
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .advanced-lesson {
+        background-color: #c20000;
+        &::before {
+            content: "Advanced";
+        }
+    }
+    .intermediate-lesson {
+        background-color: #ffba00;
+        &::before {
+            content: "Intermediate";
+        }
+    }
+    .beginner-lesson {
+        background-color: #008000;
+        &::before {
+            content: "Beginner";
+        }
+    }
+    .all-lesson {
+        background-color: #800080;
+        &::before {
+            content: "All Levels";
+        }
+    }
+}
 
 .sftp-panel {
     box-shadow: 0px 3px 3px #ccc;
+    margin-bottom: 10px;
 }
 
 .sftp-meta-tags {
     display: none;
+}
+
+.panel-default {
+    .panel-body {
+
+    }
+    .lesson-meta {
+        background: #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        > p {
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        #lesson-difficulty {
+            display: inline-block;
+            float: left;
+            color: #d8d8de;
+        }
+        #lesson-length {
+            display: inline-block;
+            float: right;
+            color: #d8d8de;
+        }
+    }
+}
+
+
+/* Lesson categories
+============================== */
+
+.lesson-category-container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lesson-category {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }

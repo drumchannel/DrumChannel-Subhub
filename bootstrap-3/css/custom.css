@@ -1,19 +1,3 @@
-/* Secrets From the Pros page
-==============================
-==============================
-*/
-/* SFTP panels
-============================== */
-/* line 10, ../scss/_sftp.scss */
-.sftp-panel {
-  box-shadow: 0px 3px 3px #ccc;
-}
-
-/* line 14, ../scss/_sftp.scss */
-.sftp-meta-tags {
-  display: none;
-}
-
 /* Layout
 ============================== */
 /* line 7, ../scss/custom.scss */
@@ -798,65 +782,9 @@ h6 {
   text-align: center;
 }
 
-/* line 707, ../scss/custom.scss */
-.lesson-image {
-  position: relative;
-}
-/* line 709, ../scss/custom.scss */
-.lesson-image .lesson-difficulty {
-  cursor: default;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  padding: 5px 15px;
-  font-size: 12px;
-  text-shadow: 0px 0px 2px #333;
-  color: #fff;
-  border-radius: 5px;
-  opacity: .8;
-  box-shadow: 0px 2px 3px #404040;
-  transition: all .2s ease-in-out;
-}
-/* line 722, ../scss/custom.scss */
-.lesson-image .lesson-difficulty:hover {
-  opacity: 1;
-}
-/* line 726, ../scss/custom.scss */
-.lesson-image .advanced-lesson {
-  background-color: #c20000;
-}
-/* line 728, ../scss/custom.scss */
-.lesson-image .advanced-lesson::before {
-  content: "Advanced";
-}
-/* line 732, ../scss/custom.scss */
-.lesson-image .intermediate-lesson {
-  background-color: #ffba00;
-}
-/* line 734, ../scss/custom.scss */
-.lesson-image .intermediate-lesson::before {
-  content: "Intermediate";
-}
-/* line 738, ../scss/custom.scss */
-.lesson-image .beginner-lesson {
-  background-color: #008000;
-}
-/* line 740, ../scss/custom.scss */
-.lesson-image .beginner-lesson::before {
-  content: "Beginner";
-}
-/* line 744, ../scss/custom.scss */
-.lesson-image .all-lesson {
-  background-color: #800080;
-}
-/* line 746, ../scss/custom.scss */
-.lesson-image .all-lesson::before {
-  content: "All Levels";
-}
-
 /* Lists
 ============================= */
-/* line 756, ../scss/custom.scss */
+/* line 713, ../scss/custom.scss */
 .sponsor {
   width: 32%;
   display: inline-block;
@@ -870,12 +798,12 @@ h6 {
   vertical-align: middle;
 }
 
-/* line 769, ../scss/custom.scss */
+/* line 726, ../scss/custom.scss */
 .sponsors {
   margin: 0px;
 }
 
-/* line 773, ../scss/custom.scss */
+/* line 730, ../scss/custom.scss */
 .lesson-categories {
   background-color: transparent;
   border: none;
@@ -884,18 +812,18 @@ h6 {
 
 /* Buttons
 ============================== */
-/* line 783, ../scss/custom.scss */
+/* line 740, ../scss/custom.scss */
 .btn-circle {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   text-align: center;
   padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 50%;
 }
 
-/* line 793, ../scss/custom.scss */
+/* line 750, ../scss/custom.scss */
 .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
@@ -905,7 +833,7 @@ h6 {
   border-radius: 25px;
 }
 
-/* line 802, ../scss/custom.scss */
+/* line 759, ../scss/custom.scss */
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
@@ -913,4 +841,118 @@ h6 {
   font-size: 24px;
   line-height: 1.33;
   border-radius: 35px;
+}
+
+/* Additional pages
+============================== */
+/* Secrets From the Pros page
+==============================
+==============================
+*/
+/* SFTP layout
+============================== */
+/* line 10, ../scss/_sftp.scss */
+.sftp-item {
+  margin-bottom: 20px;
+}
+
+/* SFTP panels
+============================== */
+/* line 17, ../scss/_sftp.scss */
+.lesson-image {
+  position: relative;
+}
+/* line 19, ../scss/_sftp.scss */
+.lesson-image .sftp-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c20000;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 29, ../scss/_sftp.scss */
+.lesson-image .advanced-lesson {
+  background-color: #c20000;
+}
+/* line 31, ../scss/_sftp.scss */
+.lesson-image .advanced-lesson::before {
+  content: "Advanced";
+}
+/* line 35, ../scss/_sftp.scss */
+.lesson-image .intermediate-lesson {
+  background-color: #ffba00;
+}
+/* line 37, ../scss/_sftp.scss */
+.lesson-image .intermediate-lesson::before {
+  content: "Intermediate";
+}
+/* line 41, ../scss/_sftp.scss */
+.lesson-image .beginner-lesson {
+  background-color: #008000;
+}
+/* line 43, ../scss/_sftp.scss */
+.lesson-image .beginner-lesson::before {
+  content: "Beginner";
+}
+/* line 47, ../scss/_sftp.scss */
+.lesson-image .all-lesson {
+  background-color: #800080;
+}
+/* line 49, ../scss/_sftp.scss */
+.lesson-image .all-lesson::before {
+  content: "All Levels";
+}
+
+/* line 55, ../scss/_sftp.scss */
+.sftp-panel {
+  box-shadow: 0px 3px 3px #ccc;
+  margin-bottom: 10px;
+}
+
+/* line 60, ../scss/_sftp.scss */
+.sftp-meta-tags {
+  display: none;
+}
+
+/* line 68, ../scss/_sftp.scss */
+.panel-default .lesson-meta {
+  background: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 72, ../scss/_sftp.scss */
+.panel-default .lesson-meta > p {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+/* line 77, ../scss/_sftp.scss */
+.panel-default .lesson-meta #lesson-difficulty {
+  display: inline-block;
+  float: left;
+  color: #d8d8de;
+}
+/* line 82, ../scss/_sftp.scss */
+.panel-default .lesson-meta #lesson-length {
+  display: inline-block;
+  float: right;
+  color: #d8d8de;
+}
+
+/* Lesson categories
+============================== */
+/* line 94, ../scss/_sftp.scss */
+.lesson-category-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 99, ../scss/_sftp.scss */
+.lesson-category {
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
