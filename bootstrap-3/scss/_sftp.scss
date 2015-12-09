@@ -22,7 +22,7 @@
         padding: 10px 15px;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: #c20000;;
         color: #fff;
         font-size: 20px;
         line-height: 20px;
@@ -113,7 +113,7 @@
     border-width: 1em .7em 0 .75em;
     border-color: #3e474f transparent transparent transparent;
     bottom: 100%;
-    margin-left: -.5em;
+    margin-left: -0.70em;
     content: "";
     transform: scale(.6) translateY(-90%);
     transition: all .65s cubic-bezier(.85, -0.18, .31, 1.26), opacity .65s .5s;
@@ -133,6 +133,7 @@
     width: 8em;
     margin-left: -4em;
     content: attr(data-tip);
+    font-size: 12px;
     transform: scale(.6) translateY(50%);
     transition: all .65s cubic-bezier(.85, -.18, .31, 1.26) .2s;
 }
