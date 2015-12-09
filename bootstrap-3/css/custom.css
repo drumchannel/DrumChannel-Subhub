@@ -865,77 +865,57 @@ h6 {
 /* line 19, ../scss/_sftp.scss */
 .lesson-image .sftp-number {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: -25px;
+  left: -25px;
   background: #c20000;
-  padding: 10px 15px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 50px;
   font-weight: bold;
+  text-align: center;
 }
-/* line 29, ../scss/_sftp.scss */
+/* line 33, ../scss/_sftp.scss */
 .lesson-image .advanced-lesson {
   background-color: #c20000;
 }
-/* line 31, ../scss/_sftp.scss */
+/* line 35, ../scss/_sftp.scss */
 .lesson-image .advanced-lesson::before {
   content: "Advanced";
 }
-/* line 35, ../scss/_sftp.scss */
-.lesson-image .intermediate-lesson {
-  background-color: #ffba00;
-}
-/* line 37, ../scss/_sftp.scss */
-.lesson-image .intermediate-lesson::before {
-  content: "Intermediate";
-}
-/* line 41, ../scss/_sftp.scss */
-.lesson-image .beginner-lesson {
-  background-color: #008000;
-}
-/* line 43, ../scss/_sftp.scss */
-.lesson-image .beginner-lesson::before {
-  content: "Beginner";
-}
-/* line 47, ../scss/_sftp.scss */
-.lesson-image .all-lesson {
-  background-color: #800080;
-}
-/* line 49, ../scss/_sftp.scss */
-.lesson-image .all-lesson::before {
-  content: "All Levels";
-}
 
-/* line 55, ../scss/_sftp.scss */
+/* line 41, ../scss/_sftp.scss */
 .sftp-panel {
   box-shadow: 0px 3px 3px #ccc;
   margin-bottom: 10px;
 }
 
-/* line 60, ../scss/_sftp.scss */
+/* line 46, ../scss/_sftp.scss */
 .sftp-meta-tags {
   display: none;
 }
 
-/* line 68, ../scss/_sftp.scss */
+/* line 54, ../scss/_sftp.scss */
 .panel-default .lesson-meta {
   background: #333;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 72, ../scss/_sftp.scss */
+/* line 58, ../scss/_sftp.scss */
 .panel-default .lesson-meta > p {
   color: #fff;
   padding: 0;
   margin: 0;
 }
-/* line 77, ../scss/_sftp.scss */
+/* line 63, ../scss/_sftp.scss */
 .panel-default .lesson-meta #lesson-difficulty {
   display: inline-block;
   float: left;
   color: #d8d8de;
 }
-/* line 82, ../scss/_sftp.scss */
+/* line 68, ../scss/_sftp.scss */
 .panel-default .lesson-meta #lesson-length {
   display: inline-block;
   float: right;
@@ -944,13 +924,13 @@ h6 {
 
 /* Lesson categories
 ============================== */
-/* line 94, ../scss/_sftp.scss */
+/* line 80, ../scss/_sftp.scss */
 .lesson-category-container {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 99, ../scss/_sftp.scss */
+/* line 85, ../scss/_sftp.scss */
 .lesson-category {
   text-align: center;
   padding-top: 2px;

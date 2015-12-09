@@ -18,36 +18,22 @@
     position: relative;
     .sftp-number {
         position: absolute;
-        top: 0;
-        left: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: -25px;
+        left: -25px;
         background: #c20000;
-        padding: 10px 15px;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 50px;
         font-weight: bold;
+        text-align: center;
     }
     .advanced-lesson {
         background-color: #c20000;
         &::before {
             content: "Advanced";
-        }
-    }
-    .intermediate-lesson {
-        background-color: #ffba00;
-        &::before {
-            content: "Intermediate";
-        }
-    }
-    .beginner-lesson {
-        background-color: #008000;
-        &::before {
-            content: "Beginner";
-        }
-    }
-    .all-lesson {
-        background-color: #800080;
-        &::before {
-            content: "All Levels";
         }
     }
 }
