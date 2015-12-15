@@ -61,9 +61,9 @@
                             <div class="smalltext">Seconds</div>
                         </div>
                     </div>
-                    <p id="event-text">
+                    <div id="event-text">
                         Live Lesson with Walfredo Reyes Jr.
-                    </p>
+                    </div>
                 </div>
                 <div class="col-xs-12">
                     <div id="dashboard-tagline"><span class="fa fa-dashboard">&nbsp;</span>Member Dashboard</div>
@@ -198,7 +198,7 @@
                                 <h2>Lesson &amp; Q&amp;A</h2>
                             </a>
                             <p><strong>Instructor: Dave Elitch</strong></p>
-                            <p>Due to popular demand, we will be rebroadcasting our live lesson &amp; Q&amp;A with Dave Elitch.  He will discuss his education, versatility, and some of his favorite grooves and licks.</p>
+                            <p>Due to popular demand, we will be rebroadcasting our live lesson &amp; Q&amp;A with Dave Elitch. He will discuss his education, versatility, and some of his favorite grooves and licks.</p>
                         </div>
                         <div class="panel-footer">
                             <h2><strong>Encore Presentation</strong></h2>
@@ -376,22 +376,27 @@
             var hoursSpan = clock.querySelector('.hours');
             var minutesSpan = clock.querySelector('.minutes');
             var secondsSpan = clock.querySelector('.seconds');
+            var timeinterval;
 
             function updateClock() {
                 var t = getTimeRemaining(endtime);
 
-                daysSpan.innerHTML = t.days;
-                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
                 if (t.total <= 0) {
-                    clearInterval(timeinterval);
+                    daysSpan.innerHTML = '0';
+                    hoursSpan.innerHTML = '0';
+                    minutesSpan.innerHTML = '0';
+                    secondsSpan.innerHTML = '0';
+                    document.getElementById('event-text').innerHTML = "<a href='http://www.drumchannel.com/categories/dc-live' style='text-decoration: none; font-size: 3em;'><button class='btn btn-primary btn-xl'><span style='font-size: 1em;' class='fa fa-play'>&nbsp;</span>Live now!<br></button></a>";
+                } else {
+                    daysSpan.innerHTML = t.days;
+                    hoursSpan.innerHTML = t.hours;
+                    minutesSpan.innerHTML = t.minutes;
+                    secondsSpan.innerHTML = t.seconds;
                 }
-            }
 
+            }
             updateClock();
-            var timeinterval = setInterval(updateClock, 1000);
+            timeinterval = setInterval(updateClock, 1000);
         }
 
         var deadline = 'December 16 2015 13:00:00 UTC-0800';
