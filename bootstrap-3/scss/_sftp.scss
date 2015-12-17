@@ -15,14 +15,17 @@
 
 /* SFTP panels
 ============================== */
+
 .lesson-image {
     position: relative;
+    z-index: 1000;
     .sftp-number {
         position: absolute;
         padding: 10px 15px;
         top: 0;
         left: 0;
-        background: #c20000;;
+        background: #c20000;
+        ;
         color: #fff;
         font-size: 20px;
         line-height: 20px;
@@ -42,9 +45,7 @@
 }
 
 .panel-default {
-    .panel-body {
-
-    }
+    .panel-body {}
     .lesson-meta {
         background: #333;
         padding-top: 5px;
