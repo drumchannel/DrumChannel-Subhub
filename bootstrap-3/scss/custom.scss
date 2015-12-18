@@ -339,9 +339,9 @@ p {
         bottom: 0;
         left: 0;
         margin: auto;
-        font-size: 50px;
+        font-size: 40px;
         z-index: 1000;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.6);
         -webkit-transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
         -ms-transition: all .2s ease-in-out;
@@ -349,7 +349,6 @@ p {
         transition: all .2s ease-in-out;
         &:hover {
             transform: scale(1.5);
-            color: #c20000;
         }
     }
     #play-button {
