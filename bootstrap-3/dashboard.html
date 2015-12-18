@@ -19,7 +19,11 @@
 
 
     <div class="container">
-
+        <script>
+            $(document).ready(function() {
+                $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
+            });
+        </script>
         <!-- Live now banner start -->
         <!--
         <div class="row" style="padding-bottom:20px;">
@@ -92,20 +96,41 @@
             <!-- Newest Videos -->
             <div class="row" style="border-bottom: 1px solid #ccc; padding-bottom: 20px;">
 
-                <h1>Newest Videos:</h1>
+                <center>
+                    <h1><span style="color: #c20000; margin-bottom: 15px;" class="fa fa-star">&nbsp;</span>Newest Videos:</h1>
+                </center>
 
                 <!-- Start new videos -->
                 <div class="col-xs-5ths">
                     <div class="panel panel-default newest-panel">
                         <div class="newest-image">
-                            <a href="http://www.drumchannel.com/articles/dave-elitch-sftp-electronic-music" title="Dave Elitch">
-                                <div class="play-div">
-                                    <span class="fa fa-play-circle-o" id="play-button"></span>
-                                </div>
-                                <img src="http://www.drumchannel.com/custom/elitchsftp.png" class="img-responsive" />
+                            <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms-2" title="Pete Lockett">
+                                <span class="play-div"><br>&nbsp;</span>
                             </a>
+                            <img src="http://www.drumchannel.com/custom/petelockettlesson2.png" class="img-responsive" />
+
                         </div>
-                        <div class="panel-body" style="height: 150px;">
+                        <div class="panel-body">
+                            <h3>Lesson</h3>
+                            <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms-2" title="Pete Lockett">
+                                <h2>Northern Indian Rhythms 2</h2>
+                            </a>
+                            <p><strong>Instructor: Pete Lockett</strong></p>
+                            <p>Pete will expand upon Northern Indian rhythms and how you can apply them. These lessons are geared towards advanced users</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-5ths">
+                    <div class="panel panel-default newest-panel">
+                        <div class="newest-image">
+                            <a href="http://www.drumchannel.com/articles/dave-elitch-sftp-electronic-music" title="Dave Elitch">
+                                <span class="play-div"><br>&nbsp;</span>
+                            </a>
+                            <img src="http://www.drumchannel.com/custom/elitchsftp.png" class="img-responsive" />
+
+                        </div>
+                        <div class="panel-body">
                             <h3>Lesson</h3>
                             <a href="Dave Elitch will show you a way of working on your ear training and improving your musical sensibilities." title="Dave Elitch">
                                 <h2>Drumming to Electronic Music</h2>
@@ -120,13 +145,12 @@
                     <div class="panel panel-default newest-panel">
                         <div class="newest-image">
                             <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms" title="Pete Lockett">
-                                <div class="play-div">
-                                    <span class="fa fa-play-circle-o" id="play-button"></span>
-                                </div>
-                                <img src="http://www.drumchannel.com/custom/petelockettlesson.png" class="img-responsive" />
+                                <span class="play-div"><br>&nbsp;</span>
                             </a>
+                            <img src="http://www.drumchannel.com/custom/petelockettlesson.png" class="img-responsive" />
+
                         </div>
-                        <div class="panel-body" style="height: 150px;">
+                        <div class="panel-body">
                             <h3>Lesson</h3>
                             <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms" title="Pete Lockett">
                                 <h2>Northern Indian Rhythms</h2>
@@ -141,13 +165,12 @@
                     <div class="panel panel-default newest-panel">
                         <div class="newest-image">
                             <a href="http://www.drumchannel.com/articles/nick-ruffini-stick-control-1" title="Nick Ruffini">
-                                <div class="play-div">
-                                    <span class="fa fa-play-circle-o" id="play-button"></span>
-                                </div>
-                                <img src="http://www.drumchannel.com/custom/nickruffinisftp.png" class="img-responsive" />
+                                <span class="play-div"><br>&nbsp;</span>
                             </a>
+                            <img src="http://www.drumchannel.com/custom/nickruffinisftp.png" class="img-responsive" />
+
                         </div>
-                        <div class="panel-body" style="height: 150px;">
+                        <div class="panel-body">
                             <h3>Lesson</h3>
                             <a href="http://www.drumchannel.com/articles/nick-ruffini-stick-control-1" title="Nick Ruffini">
                                 <h2>Stick Control Variations</h2>
@@ -162,13 +185,12 @@
                     <div class="panel panel-default newest-panel">
                         <div class="newest-image">
                             <a href="http://www.drumchannel.com/articles/rudiments-on-drum-set" title="Adam Kuns">
-                                <div class="play-div">
-                                    <span class="fa fa-play-circle-o" id="play-button"></span>
-                                </div>
-                                <img src="http://www.drumchannel.com/custom/Adam-16-9.png" class="img-responsive" />
+                                <span class="play-div"><br>&nbsp;</span>
                             </a>
+                            <img src="http://www.drumchannel.com/custom/Adam-16-9.png" class="img-responsive" />
+
                         </div>
-                        <div class="panel-body" style="height: 150px;">
+                        <div class="panel-body">
                             <h3>Lesson</h3>
                             <a href="http://www.drumchannel.com/articles/rudiments-on-drum-set" title="Adam Kuns">
                                 <h2>Rudiments on Drum Set</h2>
@@ -178,34 +200,15 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xs-5ths">
-                    <div class="panel panel-default newest-panel">
-                        <div class="newest-image">
-                            <a href="http://www.drumchannel.com/articles/paul-wertico-art-of-soloing" title="Paul Wertico">
-                                <div class="play-div">
-                                    <span class="fa fa-play-circle-o" id="play-button"></span>
-                                </div>
-                                <img src="http://www.drumchannel.com/custom/paulw-lesson-sm.png" class="img-responsive" />
-                            </a>
-                        </div>
-                        <div class="panel-body" style="height: 150px;">
-                            <h3>Lesson</h3>
-                            <a href="http://www.drumchannel.com/articles/paul-wertico-art-of-soloing" title="Paul Wertico">
-                                <h2>The Art of Soloing</h2>
-                            </a>
-                            <p><strong>Instructor: Paul Wertico</strong></p>
-                            <p>Paul will give you some insight as to how you can shape your soloing sound and individual voice with some of the choices you make on the drums.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- End newest items -->
 
             <!-- Schedule for this week -->
             <div class="row this-week" style="border-bottom: 1px solid #ccc; padding-bottom: 20px;">
 
-                <h1>This Weeks Schedule:</h1>
+                <center>
+                    <h1><span style="color: #c20000; margin-bottom: 15px;" class="fa fa-calendar">&nbsp;</span>This Weeks Schedule:</h1>
+                </center>
 
                 <!-- Monday -->
                 <div class="col-xs-3 schedule-day">
@@ -284,11 +287,11 @@
                         <div class="panel-heading">
                             <h1 class="panel-title">Thursday: 12/17</h1>
                         </div>
-                        <a href="#" title="Full Lesson">
+                        <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms-2" title="Full Lesson">
                             <img src="http://www.drumchannel.com/custom/petelockettlesson.png" class="img-responsive" />
                         </a>
                         <div class="panel-body">
-                            <a href="#" title="Full Lesson">
+                            <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms-2" title="Full Lesson">
                                 <h2>Northern Indian Rhythms Part 2</h2>
                             </a>
                             <p><strong>Instructor: Pete Lockett</strong></p>
@@ -305,7 +308,9 @@
 
             <!-- Footer items -->
             <div class="row dashboard-footer">
-                <h1>Additional Resources:</h1>
+                <center>
+                    <h1><span style="color: #c20000; margin-bottom: 15px;" class="fa fa-check-circle">&nbsp;</span>Additional Resources:</h1>
+                </center>
                 <div class="col-xs-4 footer-item dc-faculty">
                     <h2>DC Faculty</h2>
                     <div class="row">
@@ -487,6 +492,7 @@
             userName();
         });
     </script>
+
     <script src="js/bootstrap.min.js"></script>
 
 </body>

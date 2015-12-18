@@ -31,7 +31,7 @@
 
                 <!-- Monday -->
                 <div class="col-xs-3 schedule-day">
-                    <div class="panel panel-default" id="schedule-this-monday">
+                    <div class="panel panel-default schedule-panel" id="schedule-this-monday">
                         <div class="panel-heading">
                             <h1 class="panel-title">Monday: 12/14</h1>
                         </div>
@@ -41,10 +41,10 @@
 
                         <div class="panel-body">
                             <a href="http://www.drumchannel.com/categories/dc-live" title="Live Lesson">
-                                <h2>Live Lesson &amp; Q&amp;A</h2>
+                                <h2>Lesson &amp; Q&amp;A</h2>
                             </a>
                             <p><strong>Instructor: Dave Elitch</strong></p>
-                            <p>Due to popular demand, we will be rebroadcasting our live lesson &amp; Q&amp;A with Dave Elitch.  He will discuss his education, versatility, and some of his favorite grooves and licks.</p>
+                            <p>Due to popular demand, we will be rebroadcasting our live lesson &amp; Q&amp;A with Dave Elitch. He will discuss his education, versatility, and some of his favorite grooves and licks.</p>
                         </div>
                         <div class="panel-footer">
                             <h2><strong>Encore Presentation</strong></h2>
@@ -54,7 +54,7 @@
 
                 <!-- Tuesday -->
                 <div class="col-xs-3 schedule-day">
-                    <div class="panel panel-default" id="schedule-this-tuesday">
+                    <div class="panel panel-default schedule-panel" id="schedule-this-tuesday">
 
                         <div class="panel-heading">
                             <h1 class="panel-title">Tuesday: 12/15</h1>
@@ -78,7 +78,7 @@
 
                 <!-- Wednesday -->
                 <div class="col-xs-3 schedule-day">
-                    <div class="panel panel-default" id="schedule-this-wednesday">
+                    <div class="panel panel-default schedule-panel" id="schedule-this-wednesday">
 
                         <div class="panel-heading">
                             <h1 class="panel-title">Wednesday: 12/16</h1>
@@ -101,16 +101,16 @@
 
                 <!-- Thursday -->
                 <div class="col-xs-3 schedule-day">
-                    <div class="panel panel-default" id="schedule-this-thursday">
+                    <div class="panel panel-default schedule-panel" id="schedule-this-thursday">
 
                         <div class="panel-heading">
                             <h1 class="panel-title">Thursday: 12/17</h1>
                         </div>
-                        <a href="#" title="Full Lesson">
+                        <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms-2" title="Full Lesson">
                             <img src="http://www.drumchannel.com/custom/petelockettlesson.png" class="img-responsive" />
                         </a>
                         <div class="panel-body">
-                            <a href="#" title="Full Lesson">
+                            <a href="http://www.drumchannel.com/articles/pete-lockett-north-indian-rhythms-2" title="Full Lesson">
                                 <h2>Northern Indian Rhythms Part 2</h2>
                             </a>
                             <p><strong>Instructor: Pete Lockett</strong></p>
@@ -131,15 +131,15 @@
             var n = d.getDay();
 
             if (n === 1) {
-                document.getElementById("schedule-this-monday").className = "panel panel-primary";
+                document.getElementById("schedule-this-monday").className = "panel panel-primary schedule-panel";
             } else if (n === 2) {
-                document.getElementById("schedule-this-tuesday").className = "panel panel-primary";
+                document.getElementById("schedule-this-tuesday").className = "panel panel-primary schedule-panel";
             } else if (n === 3) {
-                document.getElementById("schedule-this-wednesday").className = "panel panel-primary";
+                document.getElementById("schedule-this-wednesday").className = "panel panel-primary schedule-panel";
             } else if (n === 4) {
-                document.getElementById("schedule-this-thursday").className = "panel panel-primary";
+                document.getElementById("schedule-this-thursday").className = "panel panel-primary schedule-panel";
             } else if (n === 5) {
-                document.getElementById("schedule-this-friday").className = "panel panel-primary";
+                document.getElementById("schedule-this-friday").className = "panel panel-primary schedule-panel";
             } else {}
         }
         window.onload = scheduleHighlight;
