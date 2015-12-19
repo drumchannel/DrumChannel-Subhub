@@ -337,59 +337,76 @@ h6 {
   text-align: center;
 }
 
-/* line 310, ../scss/custom.scss */
+/* line 311, ../scss/custom.scss */
 p {
   line-height: 1.1;
 }
 
 /* Show Blocks
 ============================== */
-/* line 318, ../scss/custom.scss */
+/* line 320, ../scss/custom.scss */
 .show-block img {
   width: 100%;
 }
 
 /* Effects
 ============================== */
-/* line 327, ../scss/custom.scss */
+/* line 336, ../scss/custom.scss */
 .newest-image {
   position: relative;
   text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-/* line 330, ../scss/custom.scss */
+/* line 341, ../scss/custom.scss */
+.newest-image:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 343, ../scss/custom.scss */
+.newest-image:hover > div {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transform: rotate(360deg) scale(1.3);
+  color: #ddd;
+}
+/* line 349, ../scss/custom.scss */
 .newest-image .play-div {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
   display: inline-block;
   position: absolute;
   text-align: center;
-  width: 100%;
-  height: 100px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  width: 40px;
+  height: 40px;
+  bottom: 5px;
+  right: 5px;
   font-size: 40px;
   z-index: 1000;
   color: rgba(255, 255, 255, 0.4);
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
-/* line 350, ../scss/custom.scss */
-.newest-image .play-div:hover {
-  transform: scale(1.5);
-}
-/* line 354, ../scss/custom.scss */
+/* line 363, ../scss/custom.scss */
 .newest-image #play-button {
   cursor: pointer;
-  vertical-align: middle;
-  line-height: 100px;
+  vertical-align: top;
+  line-height: 40px;
 }
 
-/* line 361, ../scss/custom.scss */
+/* line 370, ../scss/custom.scss */
 #overlay {
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
@@ -400,11 +417,15 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  background-color: #c20000;
 }
 
-/* line 375, ../scss/custom.scss */
+/* line 384, ../scss/custom.scss */
 #overlay-text {
   position: absolute;
   display: inline-block;
@@ -420,33 +441,40 @@ p {
   font-size: 14px;
   opacity: 0;
   text-decoration: none;
-  -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
-/* line 394, ../scss/custom.scss */
+/* line 402, ../scss/custom.scss */
 .lesson-type-image, #lesson {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-/* line 398, ../scss/custom.scss */
+/* line 406, ../scss/custom.scss */
 .lesson-type-image img, #lesson img {
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-/* line 406, ../scss/custom.scss */
+/* line 414, ../scss/custom.scss */
 #lesson:hover img {
   transform: scale(1.5);
   filter: blur(3px);
 }
-/* line 411, ../scss/custom.scss */
+/* line 419, ../scss/custom.scss */
 #lesson:hover #overlay,
 #lesson:hover #overlay-text {
   opacity: 1;
 }
 
-/* line 417, ../scss/custom.scss */
+/* line 425, ../scss/custom.scss */
 .hover-card {
   padding: 0px;
   position: relative;
@@ -454,7 +482,7 @@ p {
   height: 275.625px;
 }
 
-/* line 424, ../scss/custom.scss */
+/* line 432, ../scss/custom.scss */
 .hover-card:hover .caption {
   opacity: 1;
   transform: translateY(-227px);
@@ -464,24 +492,24 @@ p {
   -o-transform: translateY(-227px);
 }
 
-/* line 433, ../scss/custom.scss */
+/* line 441, ../scss/custom.scss */
 .hover-card img {
   z-index: 4;
 }
 
-/* line 437, ../scss/custom.scss */
+/* line 445, ../scss/custom.scss */
 .hover-card .caption {
   position: absolute;
   top: 225px;
   -webkit-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   -moz-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
-  -o-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   -ms-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
+  -o-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   width: 100%;
 }
 
-/* line 448, ../scss/custom.scss */
+/* line 452, ../scss/custom.scss */
 .hover-card .blur {
   background-color: rgba(0, 0, 0, 0.7);
   height: 300px;
@@ -490,7 +518,7 @@ p {
   width: 100%;
 }
 
-/* line 456, ../scss/custom.scss */
+/* line 460, ../scss/custom.scss */
 .hover-card .caption-text {
   z-index: 10;
   color: #fff;
@@ -501,7 +529,7 @@ p {
   width: 100%;
   padding: 0px 20px 0px 20px;
 }
-/* line 465, ../scss/custom.scss */
+/* line 469, ../scss/custom.scss */
 .hover-card .caption-text > h1 {
   color: #fff;
   font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
@@ -513,12 +541,12 @@ p {
   padding: 0px;
 }
 
-/* line 477, ../scss/custom.scss */
+/* line 481, ../scss/custom.scss */
 .panel {
   -webkit-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   -moz-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
-  -o-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   -ms-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
+  -o-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
 }
 
@@ -527,44 +555,49 @@ p {
 /* line 489, ../scss/custom.scss */
 .btn-primary {
   transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #c20000;
   background-image: none !important;
   border-color: #a90000;
   text-decoration: none;
   color: #fff;
 }
-/* line 494, ../scss/custom.scss */
+/* line 495, ../scss/custom.scss */
 .btn-primary:hover {
   background-color: #a90000;
 }
 
-/* line 502, ../scss/custom.scss */
+/* line 503, ../scss/custom.scss */
 #back-to-top > a {
   color: #c20000;
   text-decoration: none;
 }
 
-/* line 510, ../scss/custom.scss */
+/* line 511, ../scss/custom.scss */
 .this-week .schedule-day .schedule-panel,
 .next-week .schedule-day .schedule-panel {
   box-shadow: 0px 6px 5px -5px #585858;
 }
-/* line 513, ../scss/custom.scss */
+/* line 514, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary,
 .next-week .schedule-day .panel-primary {
   border-color: #000000;
 }
-/* line 515, ../scss/custom.scss */
+/* line 516, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-heading,
 .next-week .schedule-day .panel-primary .panel-heading {
   background-color: #c20000;
 }
-/* line 518, ../scss/custom.scss */
+/* line 519, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-heading,
 .next-week .schedule-day .panel-primary .panel-heading {
   border-color: #000000;
 }
-/* line 520, ../scss/custom.scss */
+/* line 521, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-heading > h1,
 .next-week .schedule-day .panel-primary .panel-heading > h1 {
   color: #fff;
@@ -574,27 +607,27 @@ p {
   margin: 0;
   padding: 0;
 }
-/* line 529, ../scss/custom.scss */
+/* line 530, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body,
 .next-week .schedule-day .panel-primary .panel-body {
   background: #e8e6e6;
   background: #333;
   height: 180px;
 }
-/* line 533, ../scss/custom.scss */
+/* line 534, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body a,
 .next-week .schedule-day .panel-primary .panel-body a {
   color: #fff;
   text-decoration: none;
 }
-/* line 537, ../scss/custom.scss */
+/* line 538, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body > p,
 .next-week .schedule-day .panel-primary .panel-body > p {
   line-height: 1.1;
   color: #fff !important;
   margin: 5px 0 5px 0;
 }
-/* line 542, ../scss/custom.scss */
+/* line 543, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-body h2,
 .next-week .schedule-day .panel-primary .panel-body h2 {
   color: #fff;
@@ -604,14 +637,14 @@ p {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 551, ../scss/custom.scss */
+/* line 552, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-footer,
 .next-week .schedule-day .panel-primary .panel-footer {
   background: #c4c4c4;
   background: #000;
   border-top: none;
 }
-/* line 554, ../scss/custom.scss */
+/* line 555, ../scss/custom.scss */
 .this-week .schedule-day .panel-primary .panel-footer > h2,
 .next-week .schedule-day .panel-primary .panel-footer > h2 {
   color: #fff;
@@ -619,13 +652,13 @@ p {
   padding: 0;
   font-weight: bold;
 }
-/* line 564, ../scss/custom.scss */
+/* line 565, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-heading,
 .next-week .schedule-day .panel-default .panel-heading {
   background: #ddd;
   color: #333;
 }
-/* line 567, ../scss/custom.scss */
+/* line 568, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-heading > h1,
 .next-week .schedule-day .panel-default .panel-heading > h1 {
   color: #333;
@@ -635,30 +668,30 @@ p {
   margin: 0;
   padding: 0;
 }
-/* line 576, ../scss/custom.scss */
+/* line 577, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-body,
 .next-week .schedule-day .panel-default .panel-body {
   background: #f8f8f8;
   height: 180px;
 }
-/* line 579, ../scss/custom.scss */
+/* line 580, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-body a,
 .next-week .schedule-day .panel-default .panel-body a {
   text-decoration: none;
 }
-/* line 582, ../scss/custom.scss */
+/* line 583, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-body h2,
 .next-week .schedule-day .panel-default .panel-body h2 {
   color: #000;
   line-height: 18px;
   font-weight: bold;
 }
-/* line 588, ../scss/custom.scss */
+/* line 589, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-footer,
 .next-week .schedule-day .panel-default .panel-footer {
   background: #eee;
 }
-/* line 590, ../scss/custom.scss */
+/* line 591, ../scss/custom.scss */
 .this-week .schedule-day .panel-default .panel-footer > h2,
 .next-week .schedule-day .panel-default .panel-footer > h2 {
   color: #000;
@@ -667,15 +700,15 @@ p {
   font-weight: bold;
 }
 
-/* line 601, ../scss/custom.scss */
+/* line 602, ../scss/custom.scss */
 .panel-default .panel-body {
   background: #f8f8f8;
 }
-/* line 603, ../scss/custom.scss */
+/* line 604, ../scss/custom.scss */
 .panel-default .panel-body a {
   text-decoration: none;
 }
-/* line 606, ../scss/custom.scss */
+/* line 607, ../scss/custom.scss */
 .panel-default .panel-body h2 {
   color: #000;
   line-height: 18px;
@@ -683,7 +716,7 @@ p {
   margin: 0;
   font-size: 16px;
 }
-/* line 613, ../scss/custom.scss */
+/* line 614, ../scss/custom.scss */
 .panel-default .panel-body h3 {
   margin: 0 0 0 0;
   padding: 0;
@@ -691,101 +724,106 @@ p {
   color: #c20000;
   font-weight: bold;
 }
-/* line 620, ../scss/custom.scss */
+/* line 621, ../scss/custom.scss */
 .panel-default .panel-body p {
   line-height: 1.1;
   color: #000;
   margin: 5px 0 5px 0;
 }
-/* line 626, ../scss/custom.scss */
+/* line 627, ../scss/custom.scss */
 .panel-default .panel-footer {
   background: #eee;
 }
 
-/* line 631, ../scss/custom.scss */
+/* line 632, ../scss/custom.scss */
 .newest-panel, .lesson-panel {
   box-shadow: 0px 3px 3px #ccc;
 }
-/* line 633, ../scss/custom.scss */
+/* line 634, ../scss/custom.scss */
 .newest-panel .panel-body, .lesson-panel .panel-body {
   height: 170px;
 }
 
-/* line 638, ../scss/custom.scss */
+/* line 639, ../scss/custom.scss */
 .lesson-panel {
   margin-bottom: 10px;
 }
-/* line 641, ../scss/custom.scss */
+/* line 642, ../scss/custom.scss */
 .lesson-panel .panel-body {
   height: 130px;
 }
 
 /* Special Elements
 ============================== */
-/* line 650, ../scss/custom.scss */
+/* line 651, ../scss/custom.scss */
 #myCarousel {
   background-color: #fff;
   height: 260px;
   margin: 0;
   padding: 0;
 }
-/* line 655, ../scss/custom.scss */
+/* line 656, ../scss/custom.scss */
 #myCarousel .carousel-indicators li {
   border-color: #c20000;
 }
-/* line 658, ../scss/custom.scss */
+/* line 659, ../scss/custom.scss */
 #myCarousel .carousel-indicators .active {
   background-color: #c20000;
 }
-/* line 663, ../scss/custom.scss */
+/* line 664, ../scss/custom.scss */
 #myCarousel .schedule-page-heading {
   background-color: #fff;
   background-image: url(http://www.drumchannel.com/custom/price-bg.png);
 }
-/* line 667, ../scss/custom.scss */
+/* line 668, ../scss/custom.scss */
 #myCarousel .dc-live-banner {
   background-image: url(http://www.drumchannel.com/custom/DCLivePageBanner.png);
 }
-/* line 669, ../scss/custom.scss */
+/* line 670, ../scss/custom.scss */
 #myCarousel .dc-live-banner h1, #myCarousel .dc-live-banner h2, #myCarousel .dc-live-banner h3, #myCarousel .dc-live-banner h4, #myCarousel .dc-live-banner h5, #myCarousel .dc-live-banner h6 {
   color: #fff;
 }
-/* line 672, ../scss/custom.scss */
+/* line 673, ../scss/custom.scss */
 #myCarousel .dc-live-banner h2 {
   margin-top: -20px;
   font-size: 30px;
 }
-/* line 677, ../scss/custom.scss */
+/* line 678, ../scss/custom.scss */
 #myCarousel .carousel-control.right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-/* line 680, ../scss/custom.scss */
+/* line 681, ../scss/custom.scss */
 #myCarousel .carousel-control.left {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 684, ../scss/custom.scss */
+/* line 685, ../scss/custom.scss */
 #myCarousel .carousel-control.right,
 #myCarousel .carousel-control.left {
   width: 50px;
 }
-/* line 687, ../scss/custom.scss */
+/* line 688, ../scss/custom.scss */
 #myCarousel .carousel-control {
   background: transparent;
   border: none;
   border-radius: 0px;
   height: auto;
   margin-top: 0;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #c20000;
 }
 
-/* line 697, ../scss/custom.scss */
+/* line 699, ../scss/custom.scss */
 .dashboard-schedule-header {
   background-image: url("http://www.drumchannel.com/custom/schedule_header1.png");
   background-size: cover;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 702, ../scss/custom.scss */
+/* line 704, ../scss/custom.scss */
 .dashboard-schedule-header h1 {
   text-align: center;
   font-size: 46px;
@@ -793,7 +831,7 @@ p {
   margin-top: 80px;
 }
 
-/* line 710, ../scss/custom.scss */
+/* line 712, ../scss/custom.scss */
 #clockdiv {
   font-family: sans-serif;
   color: #fff;
@@ -805,7 +843,7 @@ p {
   border-radius: 5px;
 }
 
-/* line 721, ../scss/custom.scss */
+/* line 723, ../scss/custom.scss */
 #clockdiv > div {
   padding: 10px;
   border-radius: 3px;
@@ -814,7 +852,7 @@ p {
   text-align: center;
 }
 
-/* line 729, ../scss/custom.scss */
+/* line 731, ../scss/custom.scss */
 #clockdiv div > span {
   padding: 0 10px;
   font-size: 20px;
@@ -825,20 +863,20 @@ p {
   width: 40px;
 }
 
-/* line 739, ../scss/custom.scss */
+/* line 741, ../scss/custom.scss */
 .smalltext {
   padding-top: 5px;
   font-size: 12px;
 }
 
-/* line 744, ../scss/custom.scss */
+/* line 746, ../scss/custom.scss */
 .countdown-timer {
   text-align: center;
 }
 
 /* Lists
 ============================= */
-/* line 752, ../scss/custom.scss */
+/* line 754, ../scss/custom.scss */
 .sponsor {
   width: 32%;
   display: inline-block;
@@ -852,12 +890,12 @@ p {
   vertical-align: middle;
 }
 
-/* line 765, ../scss/custom.scss */
+/* line 767, ../scss/custom.scss */
 .sponsors {
   margin: 0px;
 }
 
-/* line 769, ../scss/custom.scss */
+/* line 771, ../scss/custom.scss */
 .lesson-categories {
   background-color: transparent;
   border: none;
@@ -866,7 +904,7 @@ p {
 
 /* Buttons
 ============================== */
-/* line 779, ../scss/custom.scss */
+/* line 781, ../scss/custom.scss */
 .btn-circle {
   width: 40px;
   height: 40px;
@@ -877,7 +915,7 @@ p {
   border-radius: 50%;
 }
 
-/* line 789, ../scss/custom.scss */
+/* line 791, ../scss/custom.scss */
 .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
@@ -887,7 +925,7 @@ p {
   border-radius: 25px;
 }
 
-/* line 798, ../scss/custom.scss */
+/* line 800, ../scss/custom.scss */
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;

@@ -307,9 +307,11 @@ h6 {
         }
     }
 }
+
 p {
     line-height: 1.1;
 }
+
 
 /* Show Blocks
 ============================== */
@@ -324,37 +326,44 @@ p {
 /* Effects
 ============================== */
 
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
 .newest-image {
     position: relative;
     text-align: center;
+    cursor: pointer;
+    @include transition(all .4s ease-in-out);
+    &:hover {
+        @include transition(all .4s ease-in-out);
+        > div {
+            @include transition(all .4s ease-in-out);
+            transform: rotate(360deg) scale(1.3);
+            color: #ddd;
+        }
+    }
     .play-div {
+        @include transition(all .4s ease-in-out);
         cursor: pointer;
         display: inline-block;
         position: absolute;
         text-align: center;
-        width: 100%;
-        height: 100px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
+        width: 40px;
+        height: 40px;
+        bottom: 5px;
+        right: 5px;
         font-size: 40px;
         z-index: 1000;
         color: rgba(255, 255, 255, 0.4);
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -ms-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-        &:hover {
-            transform: scale(1.5);
-        }
     }
     #play-button {
         cursor: pointer;
-        vertical-align: middle;
-        line-height: 100px;
+        vertical-align: top;
+        line-height: 40px;
     }
 }
 
@@ -368,8 +377,8 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
+    @include transition(opacity .25s ease);
+    background-color: #c20000;
 }
 
 #overlay-text {
@@ -387,8 +396,7 @@ p {
     font-size: 14px;
     opacity: 0;
     text-decoration: none;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
+    @include transition(opacity .25s ease);
 }
 
 .lesson-type-image {
@@ -396,7 +404,7 @@ p {
     width: 100%;
     overflow: hidden;
     img {
-        transition: all .3s ease-in-out;
+        @include transition(all .3s ease-in-out);
     }
 }
 
@@ -437,11 +445,7 @@ p {
 .hover-card .caption {
     position: absolute;
     top: 225px;
-    -webkit-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    -moz-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    -o-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    -ms-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
+    @include transition(all .45s cubic-bezier(.85, -.18, .31, 1.26));
     width: 100%;
 }
 
@@ -475,11 +479,7 @@ p {
 }
 
 .panel {
-    -webkit-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    -moz-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    -o-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    -ms-transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
-    transition: all .45s cubic-bezier(.85, -.18, .31, 1.26);
+    @include transition(all .45s cubic-bezier(.85, -.18, .31, 1.26));
 }
 
 
@@ -488,6 +488,7 @@ p {
 
 .btn-primary {
     transition: all .2s ease-in-out;
+    @include transition(all .2s ease-in-out);
     background-color: #c20000;
     background-image: none !important;
     border-color: darken(#c20000, 5%);
@@ -690,7 +691,8 @@ p {
         border-radius: 0px;
         height: auto;
         margin-top: 0;
-        transition: all .3s ease-in-out;
+        @include transition(all .3s ease-in-out);
+        background-color: #c20000;
     }
 }
 
