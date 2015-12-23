@@ -1086,3 +1086,74 @@ p {
 .tool:focus::after {
   transition-delay: .2s;
 }
+
+/* Homepage
+==============================
+==============================
+*/
+/* Typography
+============================== */
+/* line 9, ../scss/_homepage.scss */
+.overlay-bg {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Layout
+============================== */
+/* line 17, ../scss/_homepage.scss */
+#pattern {
+  background-image: url("http://i.imgur.com/NJtzy2r.png");
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 24, ../scss/_homepage.scss */
+#content-sample {
+  height: 435px;
+  background-image: url("http://i.imgur.com/R8G54rF.png");
+  background-size: contain;
+  background-position: top 60px left 0px;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+/* line 33, ../scss/_homepage.scss */
+#content-sample h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 20px 0 20px;
+  padding: 0;
+}
+
+/* line 43, ../scss/_homepage.scss */
+#call-to-action {
+  background-image: url("http://i.imgur.com/0Vld2YC.jpg");
+  background-size: cover;
+  padding: 40px 0;
+  margin: 0;
+}
+/* line 48, ../scss/_homepage.scss */
+#call-to-action h1, #call-to-action h2, #call-to-action h3, #call-to-action h4, #call-to-action h5, #call-to-action h6 {
+  color: #fff;
+  padding: 0;
+}
+/* line 52, ../scss/_homepage.scss */
+#call-to-action h3 {
+  margin: 0;
+}
+
+/* Shadows and other styling
+============================== */
+/* line 58, ../scss/_homepage.scss */
+.overlay-bg {
+  background: rgba(65, 57, 57, 0.77) none repeat scroll 0 0;
+}
+
+/* line 61, ../scss/_homepage.scss */
+#bc-video {
+  box-shadow: 3px 3px 5px #333;
+}

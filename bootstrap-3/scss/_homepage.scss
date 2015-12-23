@@ -1,0 +1,63 @@
+/* Homepage
+==============================
+==============================
+*/
+
+/* Typography
+============================== */
+
+.overlay-bg {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Layout
+============================== */
+
+#pattern {
+    background-image: url('http://i.imgur.com/NJtzy2r.png');
+    background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+}
+
+#content-sample {
+    height: 435px;
+    background-image: url('http://i.imgur.com/R8G54rF.png');
+    background-size: contain;
+    background-position: top 60px left 0px;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0 0 0;
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        margin: 20px 0 20px;
+        padding: 0;
+    }
+
+}
+
+#call-to-action {
+    background-image: url('http://i.imgur.com/0Vld2YC.jpg');
+    background-size: cover;
+    padding: 40px 0;
+    margin: 0;
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+        padding: 0;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+/* Shadows and other styling
+============================== */
+.overlay-bg {
+    background: rgba(65, 57, 57, 0.77) none repeat scroll 0 0;
+}
+#bc-video {
+    box-shadow: 3px 3px 5px #333;
+}
