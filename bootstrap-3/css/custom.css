@@ -1099,34 +1099,51 @@ p {
 */
 /* Typography
 ============================== */
-/* line 9, ../scss/_homepage.scss */
+/* line 10, ../scss/_homepage.scss */
 .overlay-bg {
   text-align: center;
   padding: 20px 0;
 }
 
+/* line 15, ../scss/_homepage.scss */
+.cta-btn {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+
+/* line 20, ../scss/_homepage.scss */
+#big-cta-header {
+  font-size: 24px;
+}
+
 /* Layout
 ============================== */
-/* line 17, ../scss/_homepage.scss */
+/* line 28, ../scss/_homepage.scss */
+.lesson-icons {
+  width: 220px;
+  margin: 0 auto;
+}
+
+/* line 33, ../scss/_homepage.scss */
 #pattern {
-  background-image: url("http://i.imgur.com/NJtzy2r.png");
+  background-image: url("http://www.drumchannel.com/custom/bgpattern.png");
   background-repeat: repeat;
-  padding: 0;
+  padding-bottom: 40px;
   margin: 0;
 }
 
-/* line 24, ../scss/_homepage.scss */
+/* line 40, ../scss/_homepage.scss */
 #content-sample {
-  height: 435px;
-  background-image: url("http://i.imgur.com/R8G54rF.png");
+  height: 496px;
+  /*background-image: url('http://www.drumchannel.com/custom/blackboardbg5.jpg');*/
+  background-image: url("http://www.drumchannel.com/custom/vectorboard2.jpg");
   background-size: contain;
-  background-position: top 60px left 0px;
   background-repeat: no-repeat;
   color: #fff;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
 }
-/* line 33, ../scss/_homepage.scss */
+/* line 49, ../scss/_homepage.scss */
 #content-sample h1 {
   font-size: 40px;
   font-weight: bold;
@@ -1135,31 +1152,91 @@ p {
   padding: 0;
 }
 
-/* line 43, ../scss/_homepage.scss */
+/* line 58, ../scss/_homepage.scss */
 #call-to-action {
-  background-image: url("http://i.imgur.com/0Vld2YC.jpg");
+  /*background-image: url('http://www.drumchannel.com/custom/darkbg.png');*/
   background-size: cover;
-  padding: 40px 0;
-  margin: 0;
+  padding: 0px 0;
+  margin: 10px 0 0 0;
 }
-/* line 48, ../scss/_homepage.scss */
+/* line 63, ../scss/_homepage.scss */
 #call-to-action h1, #call-to-action h2, #call-to-action h3, #call-to-action h4, #call-to-action h5, #call-to-action h6 {
-  color: #fff;
+  color: #000;
   padding: 0;
 }
-/* line 52, ../scss/_homepage.scss */
+/* line 67, ../scss/_homepage.scss */
 #call-to-action h3 {
   margin: 0;
 }
 
 /* Shadows and other styling
 ============================== */
-/* line 58, ../scss/_homepage.scss */
+/* line 76, ../scss/_homepage.scss */
 .overlay-bg {
   background: rgba(65, 57, 57, 0.77) none repeat scroll 0 0;
 }
 
-/* line 61, ../scss/_homepage.scss */
+/* line 80, ../scss/_homepage.scss */
 #bc-video {
   box-shadow: 3px 3px 5px #333;
+}
+
+/* Effects
+============================== */
+/* line 88, ../scss/_homepage.scss */
+.arrow_box {
+  position: relative;
+  border-bottom: 8px solid #554B39;
+}
+
+/* line 94, ../scss/_homepage.scss */
+.arrow_box:after,
+.arrow_box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 105, ../scss/_homepage.scss */
+.arrow_box:after {
+  border-color: rgba(210, 216, 222, 0);
+  border-top-color: #554B39;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
+/* line 112, ../scss/_homepage.scss */
+.arrow_box:before {
+  border-color: rgba(210, 216, 222, 0);
+  border-top-color: #554B39;
+  border-width: 26px;
+  margin-left: -26px;
+}
+
+/* Colors schemes
+============================== */
+/* line 123, ../scss/_homepage.scss */
+#inverse-btn {
+  background: #fff;
+  color: #c20000;
+  border: 4px solid #c20000;
+  padding: 20px 80px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+/* line 130, ../scss/_homepage.scss */
+#inverse-btn:hover {
+  background: #c20000;
+  color: #fff;
+  padding: 20px 350px;
+}
+
+/* line 137, ../scss/_homepage.scss */
+#day-icon {
+  color: #c20000;
 }
