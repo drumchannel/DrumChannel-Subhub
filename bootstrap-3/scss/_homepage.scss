@@ -40,7 +40,7 @@
 
 .cta-btn {
     font-size: 24px;
-    padding: 10px 30px;
+    padding: 20px 70px;
 }
 
 #big-cta-header {
@@ -86,7 +86,7 @@
 }
 
 .lesson-icons {
-    width: 220px;
+    width: 190px;
     margin: 0 auto;
 }
 
@@ -197,16 +197,13 @@
     &:hover {
         background: #c20000;
         color: #fff;
-        padding: 20px 350px;
         box-shadow: none;
     }
 }
 
 #final-cta-btn {
-    @extend #inverse-btn;
-    &:hover {
-        padding: 20px 300px;
-    }
+    @extend #cta-btn;
+    padding: 20px 200px;
 }
 #day-icon {
     color: #444;
