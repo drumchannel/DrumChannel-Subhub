@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Page with Playlist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <script>
+            $(document).ready(function() {
+                $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
+            });
+        </script>
+        <div class="row">
+            <div class="col-xs-8" style="margin: -15px 0 0 0;">
+                <iframe src="http://html.drumchannel.com/brightcoveplayer_1.html?playlist=4688451262001" scrolling="auto" width="598" height="506" frameborder="no">
+                </iframe>
+            </div>
+            <div class="col-xs-4 marginless">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 style="margin-top: 0;">Efrain Toro Master Class</h1>
+                        <h2>Part 2</h2>
+                        <p><strong>Instructor: Efrain Toro</strong></p>
+                        <p>Efrain explains how everything we play is 'ripples' on top of the pulse. This concept helps to explain how the time and pulse is multi-dimensional and has depth beyond the surface level. He is joined by a group of very special guests: Fausto Cuevas, Brendan Buckley, and Maria Petrova</p>
+                    </div>
+                    <div class="panel-body lesson-meta">
+                        <span id="lesson-difficulty">Difficulty: Advanced</span>
+                        <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>31:07</span>
+                    </div>
+                </div>
+                <div class="row lesson-category-container">
+                    <div class="col-xs-2 marginless lesson-category">
+                        <button class="btn btn-circle btn-primary tool" data-tip="Musicality"><span class="fa fa-music" style="font-size: 25px;"><br />&nbsp;</span></button>
+                    </div>
+                    <div class="col-xs-2 marginless lesson-category">
+                        <button class="btn btn-circle btn-primary tool" data-tip="Clinic"><span class="fa fa-graduation-cap" style="font-size: 25px;"><br />&nbsp;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 20px;">
+            <div class="well">
+                <div class="row">
+                    <center>
+                        <h1>Efrain Toro Master Class</h1>
+                    </center>
+                </div>
+                <div class="row">
+
+                    <!-- Start masterclass items -->
+                    <div class="col-xs-4">
+                        <div class="panel panel-default newest-panel">
+                            <div class="newest-image">
+                                <a href="http://www.drumchannel.com/articles/efrain-toro-guests-1" title="Lesson">
+                                    <img src="http://www.drumchannel.com/custom/efrainmc1.png" class="img-responsive" />
+                                </a>
+                                <div class="play-div">
+                                    <br>&nbsp;</div>
+
+                            </div>
+                            <div class="panel-body" style="height: 120px;">
+                                <a href="http://www.drumchannel.com/articles/efrain-toro-guests-1" title="Lesson">
+                                    <h2>Part 1</h2>
+                                </a>
+                                <p>Efrain Toro is a world-renowned authority on the study of rhythm and music. He was gracious enough to give a clinic for some special guests regarding the topic.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="panel panel-default newest-panel">
+                            <div class="newest-image">
+                                <a href="http://www.drumchannel.com/articles/efrain-toro-guests-2" title="Lesson">
+                                    <img src="http://www.drumchannel.com/custom/efrainmc2.png" class="img-responsive" />
+                                </a>
+                                <div class="play-div">
+                                    <br>&nbsp;</div>
+
+                            </div>
+                            <div class="panel-body" style="height: 120px;">
+                                <a href="http://www.drumchannel.com/articles/efrain-toro-guests-2" title="Lesson">
+                                    <h2>Part 2</h2>
+                                </a>
+                                <p>Efrain explains how everything we play is 'ripples' on top of the pulse. This concept helps to explain how the time and pulse is multi-dimensional and has depth beyond the surface level.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End masterclass items -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
