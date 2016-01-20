@@ -72,7 +72,13 @@
 
 /* Layout
 ============================== */
-
+.day-col {
+    text-align: center;
+    img {
+        width: 150px;
+        margin: 0 auto;
+    }
+}
 .final-cta {
     height: 600px;
     background-image: url('http://www.drumchannel.com/custom/final-cta2.png');
