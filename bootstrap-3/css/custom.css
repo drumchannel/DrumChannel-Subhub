@@ -1099,31 +1099,52 @@ p {
 */
 /* Typography
 ============================== */
-/* line 10, ../scss/_homepage.scss */
+/* line 9, ../scss/_homepage.scss */
+.top-header {
+  text-align: center;
+  padding: 35px;
+}
+/* line 12, ../scss/_homepage.scss */
+.top-header h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+/* line 18, ../scss/_homepage.scss */
+.top-header h2 {
+  color: #444;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 26, ../scss/_homepage.scss */
 #last-cta-pitch {
   font-size: 21px !important;
   color: #fff !important;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
-/* line 16, ../scss/_homepage.scss */
+/* line 32, ../scss/_homepage.scss */
 #lead {
   font-size: 18px;
 }
 
-/* line 20, ../scss/_homepage.scss */
+/* line 36, ../scss/_homepage.scss */
 .overlay-bg {
   text-align: center;
   padding: 20px 0;
 }
 
-/* line 25, ../scss/_homepage.scss */
+/* line 41, ../scss/_homepage.scss */
 .cta-btn {
   font-size: 24px;
-  padding: 10px 30px;
+  padding: 20px 70px;
 }
 
-/* line 30, ../scss/_homepage.scss */
+/* line 46, ../scss/_homepage.scss */
 #big-cta-header {
   font-size: 30px;
   margin: 0;
@@ -1131,30 +1152,40 @@ p {
   line-height: 1.5;
 }
 
-/* line 38, ../scss/_homepage.scss */
+/* line 54, ../scss/_homepage.scss */
 .learn-at-your-pace h1 {
   margin: 0;
   padding: 0 0 40px;
 }
 
-/* line 44, ../scss/_homepage.scss */
+/* line 60, ../scss/_homepage.scss */
 .final-cta {
   padding: 80px 40px;
 }
-/* line 46, ../scss/_homepage.scss */
+/* line 62, ../scss/_homepage.scss */
 .final-cta h1 {
   color: #fff;
   margin: 0;
   padding: 0 0 40px;
 }
-/* line 51, ../scss/_homepage.scss */
+/* line 67, ../scss/_homepage.scss */
 .final-cta p {
   color: #fff;
 }
 
 /* Layout
 ============================== */
-/* line 60, ../scss/_homepage.scss */
+/* line 75, ../scss/_homepage.scss */
+.day-col {
+  text-align: center;
+}
+/* line 77, ../scss/_homepage.scss */
+.day-col img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* line 82, ../scss/_homepage.scss */
 .final-cta {
   height: 600px;
   background-image: url("http://www.drumchannel.com/custom/final-cta2.png");
@@ -1162,19 +1193,19 @@ p {
   background-position: bottom;
 }
 
-/* line 67, ../scss/_homepage.scss */
+/* line 89, ../scss/_homepage.scss */
 .learn-at-your-pace {
   margin: 0;
   padding: 40px 0;
 }
 
-/* line 72, ../scss/_homepage.scss */
+/* line 94, ../scss/_homepage.scss */
 .lesson-icons {
-  width: 220px;
+  width: 190px;
   margin: 0 auto;
 }
 
-/* line 77, ../scss/_homepage.scss */
+/* line 99, ../scss/_homepage.scss */
 #pattern {
   /*
   background-image: url('http://www.drumchannel.com/custom/bgpattern.png');
@@ -1184,7 +1215,7 @@ p {
   margin: 0;
 }
 
-/* line 86, ../scss/_homepage.scss */
+/* line 108, ../scss/_homepage.scss */
 #content-sample {
   height: 496px;
   background-image: url("http://www.drumchannel.com/custom/vectorboard2.jpg");
@@ -1194,7 +1225,7 @@ p {
   margin: 0;
   padding: 20px 0;
 }
-/* line 94, ../scss/_homepage.scss */
+/* line 116, ../scss/_homepage.scss */
 #content-sample h1 {
   font-size: 40px;
   font-weight: bold;
@@ -1203,44 +1234,44 @@ p {
   padding: 0;
 }
 
-/* line 103, ../scss/_homepage.scss */
+/* line 125, ../scss/_homepage.scss */
 #call-to-action {
   /*background-image: url('http://www.drumchannel.com/custom/darkbg.png');*/
   background-size: cover;
   padding: 0px 0;
   margin: 10px 0 0 0;
 }
-/* line 108, ../scss/_homepage.scss */
+/* line 130, ../scss/_homepage.scss */
 #call-to-action h1, #call-to-action h2, #call-to-action h3, #call-to-action h4, #call-to-action h5, #call-to-action h6 {
   color: #000;
   padding: 0;
 }
-/* line 112, ../scss/_homepage.scss */
+/* line 134, ../scss/_homepage.scss */
 #call-to-action h3 {
   margin: 0;
 }
 
 /* Shadows and other styling
 ============================== */
-/* line 121, ../scss/_homepage.scss */
+/* line 143, ../scss/_homepage.scss */
 .overlay-bg {
   background: rgba(65, 57, 57, 0.77) none repeat scroll 0 0;
 }
 
-/* line 125, ../scss/_homepage.scss */
+/* line 147, ../scss/_homepage.scss */
 #bc-video {
   box-shadow: 3px 3px 5px #333;
 }
 
 /* Effects
 ============================== */
-/* line 133, ../scss/_homepage.scss */
+/* line 155, ../scss/_homepage.scss */
 .arrow_box {
   position: relative;
   border-bottom: 8px solid #444;
 }
 
-/* line 139, ../scss/_homepage.scss */
+/* line 161, ../scss/_homepage.scss */
 .arrow_box:after,
 .arrow_box:before {
   top: 100%;
@@ -1253,7 +1284,7 @@ p {
   pointer-events: none;
 }
 
-/* line 150, ../scss/_homepage.scss */
+/* line 172, ../scss/_homepage.scss */
 .arrow_box:after {
   border-color: rgba(210, 216, 222, 0);
   border-top-color: #444;
@@ -1261,7 +1292,7 @@ p {
   margin-left: -20px;
 }
 
-/* line 157, ../scss/_homepage.scss */
+/* line 179, ../scss/_homepage.scss */
 .arrow_box:before {
   border-color: rgba(210, 216, 222, 0);
   border-top-color: #444;
@@ -1271,108 +1302,102 @@ p {
 
 /* Colors schemes
 ============================== */
-/* line 168, ../scss/_homepage.scss */
-#inverse-btn, #final-cta-btn {
+/* line 190, ../scss/_homepage.scss */
+#inverse-btn {
   background: #fff;
   color: #c20000;
   border: 4px solid #c20000;
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 20px 80px;
   font-weight: bold;
-  box-shadow: 10px -10px #444444;
+  /*box-shadow: 10px -10px #444;*/
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-/* line 181, ../scss/_homepage.scss */
-#inverse-btn:hover, #final-cta-btn:hover {
+/* line 203, ../scss/_homepage.scss */
+#inverse-btn:hover {
   background: #c20000;
   color: #fff;
-  padding: 20px 350px;
   box-shadow: none;
 }
 
-/* line 191, ../scss/_homepage.scss */
-#final-cta-btn:hover {
-  padding: 20px 300px;
+/* line 210, ../scss/_homepage.scss */
+#final-cta-btn {
+  padding: 20px 200px;
 }
 
-/* line 195, ../scss/_homepage.scss */
+/* line 214, ../scss/_homepage.scss */
 #day-icon {
-  color: #c20000;
+  color: #444;
 }
 
 /* Price Tables
 ============================== */
-/* line 203, ../scss/_homepage.scss */
+/* line 222, ../scss/_homepage.scss */
 .price-tables {
   background-image: url("http://www.drumchannel.com/custom/price-bg.png");
   margin: 0;
 }
 
-/* line 208, ../scss/_homepage.scss */
+/* line 227, ../scss/_homepage.scss */
 .panel-price {
   text-align: center;
   border: 4px solid #444;
   border-radius: 10px;
   box-shadow: 0px 20px 10px -10px #444444;
 }
-/* line 213, ../scss/_homepage.scss */
+/* line 232, ../scss/_homepage.scss */
 .panel-price .panel-heading {
   background: #444;
   color: #fff;
 }
-/* line 216, ../scss/_homepage.scss */
+/* line 235, ../scss/_homepage.scss */
 .panel-price .panel-heading h2 {
   font-size: 24px;
   padding: 10px;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
-/* line 223, ../scss/_homepage.scss */
+/* line 242, ../scss/_homepage.scss */
 .panel-price table {
   font-size: 13px;
 }
-/* line 226, ../scss/_homepage.scss */
+/* line 245, ../scss/_homepage.scss */
 .panel-price table tr td {
   text-align: center;
   line-height: 2.5;
   color: #000;
 }
-/* line 230, ../scss/_homepage.scss */
+/* line 249, ../scss/_homepage.scss */
 .panel-price table tr td mark {
   background-color: yellow;
   padding: .35em;
 }
-/* line 238, ../scss/_homepage.scss */
+/* line 257, ../scss/_homepage.scss */
 .panel-price .panel-price-tag h3 {
   font-size: 24px;
   font-weight: normal;
   margin: 0;
   padding: 0 0 15px;
 }
-/* line 244, ../scss/_homepage.scss */
+/* line 263, ../scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn {
   font-size: 20px;
-  border: 4px solid #c20000;
-  background: #fff;
-  color: #c20000;
-  border-radius: 0px;
-  padding: 5px 60px;
+  padding: 10px 30px;
   margin-bottom: 10px;
-  box-shadow: 5px -5px #444444;
+  /*
+  box-shadow: 5px -5px #444;
+  */
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-/* line 258, ../scss/_homepage.scss */
+/* line 275, ../scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn:hover {
-  background: #c20000;
-  color: #fff;
-  box-shadow: none;
-  padding: 5px 90px;
+  box-shadow: 0px 8px 8px -8px black;
 }
