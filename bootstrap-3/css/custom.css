@@ -1099,19 +1099,19 @@ p {
 */
 /* Typography
 ============================== */
-/* line 9, ../scss/_homepage.scss */
+/* line 10, ../scss/_homepage.scss */
 .top-header {
   text-align: center;
   padding: 35px;
 }
-/* line 12, ../scss/_homepage.scss */
+/* line 13, ../scss/_homepage.scss */
 .top-header h1 {
   font-size: 36px;
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
 }
-/* line 18, ../scss/_homepage.scss */
+/* line 19, ../scss/_homepage.scss */
 .top-header h2 {
   color: #444;
   font-size: 30px;
@@ -1120,31 +1120,31 @@ p {
   padding: 0;
 }
 
-/* line 26, ../scss/_homepage.scss */
+/* line 28, ../scss/_homepage.scss */
 #last-cta-pitch {
   font-size: 21px !important;
   color: #fff !important;
   padding-bottom: 20px;
 }
 
-/* line 32, ../scss/_homepage.scss */
+/* line 34, ../scss/_homepage.scss */
 #lead {
   font-size: 18px;
 }
 
-/* line 36, ../scss/_homepage.scss */
+/* line 38, ../scss/_homepage.scss */
 .overlay-bg {
   text-align: center;
   padding: 20px 0;
 }
 
-/* line 41, ../scss/_homepage.scss */
-.cta-btn {
+/* line 43, ../scss/_homepage.scss */
+.cta-btn, #final-cta-btn {
   font-size: 24px;
   padding: 20px 70px;
 }
 
-/* line 46, ../scss/_homepage.scss */
+/* line 48, ../scss/_homepage.scss */
 #big-cta-header {
   font-size: 30px;
   margin: 0;
@@ -1152,40 +1152,78 @@ p {
   line-height: 1.5;
 }
 
-/* line 54, ../scss/_homepage.scss */
+/* line 56, ../scss/_homepage.scss */
 .learn-at-your-pace h1 {
   margin: 0;
   padding: 0 0 40px;
 }
 
-/* line 60, ../scss/_homepage.scss */
+/* line 62, ../scss/_homepage.scss */
 .final-cta {
   padding: 80px 40px;
 }
-/* line 62, ../scss/_homepage.scss */
+/* line 64, ../scss/_homepage.scss */
 .final-cta h1 {
   color: #fff;
   margin: 0;
   padding: 0 0 40px;
 }
-/* line 67, ../scss/_homepage.scss */
+/* line 69, ../scss/_homepage.scss */
 .final-cta p {
   color: #fff;
 }
 
 /* Layout
 ============================== */
-/* line 75, ../scss/_homepage.scss */
+/* line 78, ../scss/_homepage.scss */
+.event-schedule {
+  padding: 30px;
+  background: #444;
+}
+/* line 81, ../scss/_homepage.scss */
+.event-schedule .event-title {
+  border-right: 1px solid #eee;
+}
+/* line 83, ../scss/_homepage.scss */
+.event-schedule .event-title p {
+  font-size: 18px !important;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+/* line 92, ../scss/_homepage.scss */
+.event-schedule .event-content p {
+  font-size: 18px !important;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+
+/* line 102, ../scss/_homepage.scss */
+.container .hero {
+  text-align: center;
+  border-radius: 6px 6px 0px 0px;
+  margin-bottom: 0px;
+}
+
+/* line 108, ../scss/_homepage.scss */
+.btn-hero {
+  text-transform: uppercase;
+}
+
+/* line 112, ../scss/_homepage.scss */
 .day-col {
   text-align: center;
 }
-/* line 77, ../scss/_homepage.scss */
+/* line 114, ../scss/_homepage.scss */
 .day-col img {
   width: 150px;
   margin: 0 auto;
 }
 
-/* line 82, ../scss/_homepage.scss */
+/* line 120, ../scss/_homepage.scss */
 .final-cta {
   height: 600px;
   background-image: url("http://www.drumchannel.com/custom/final-cta2.png");
@@ -1193,19 +1231,19 @@ p {
   background-position: bottom;
 }
 
-/* line 89, ../scss/_homepage.scss */
+/* line 127, ../scss/_homepage.scss */
 .learn-at-your-pace {
   margin: 0;
   padding: 40px 0;
 }
 
-/* line 94, ../scss/_homepage.scss */
+/* line 132, ../scss/_homepage.scss */
 .lesson-icons {
   width: 190px;
   margin: 0 auto;
 }
 
-/* line 99, ../scss/_homepage.scss */
+/* line 137, ../scss/_homepage.scss */
 #pattern {
   /*
   background-image: url('http://www.drumchannel.com/custom/bgpattern.png');
@@ -1215,7 +1253,7 @@ p {
   margin: 0;
 }
 
-/* line 108, ../scss/_homepage.scss */
+/* line 146, ../scss/_homepage.scss */
 #content-sample {
   height: 496px;
   background-image: url("http://www.drumchannel.com/custom/vectorboard2.jpg");
@@ -1225,7 +1263,7 @@ p {
   margin: 0;
   padding: 20px 0;
 }
-/* line 116, ../scss/_homepage.scss */
+/* line 154, ../scss/_homepage.scss */
 #content-sample h1 {
   font-size: 40px;
   font-weight: bold;
@@ -1234,44 +1272,44 @@ p {
   padding: 0;
 }
 
-/* line 125, ../scss/_homepage.scss */
+/* line 163, ../scss/_homepage.scss */
 #call-to-action {
   /*background-image: url('http://www.drumchannel.com/custom/darkbg.png');*/
   background-size: cover;
   padding: 0px 0;
   margin: 10px 0 0 0;
 }
-/* line 130, ../scss/_homepage.scss */
+/* line 168, ../scss/_homepage.scss */
 #call-to-action h1, #call-to-action h2, #call-to-action h3, #call-to-action h4, #call-to-action h5, #call-to-action h6 {
   color: #000;
   padding: 0;
 }
-/* line 134, ../scss/_homepage.scss */
+/* line 172, ../scss/_homepage.scss */
 #call-to-action h3 {
   margin: 0;
 }
 
 /* Shadows and other styling
 ============================== */
-/* line 143, ../scss/_homepage.scss */
+/* line 181, ../scss/_homepage.scss */
 .overlay-bg {
   background: rgba(65, 57, 57, 0.77) none repeat scroll 0 0;
 }
 
-/* line 147, ../scss/_homepage.scss */
+/* line 185, ../scss/_homepage.scss */
 #bc-video {
   box-shadow: 3px 3px 5px #333;
 }
 
 /* Effects
 ============================== */
-/* line 155, ../scss/_homepage.scss */
+/* line 193, ../scss/_homepage.scss */
 .arrow_box {
   position: relative;
   border-bottom: 8px solid #444;
 }
 
-/* line 161, ../scss/_homepage.scss */
+/* line 199, ../scss/_homepage.scss */
 .arrow_box:after,
 .arrow_box:before {
   top: 100%;
@@ -1284,7 +1322,7 @@ p {
   pointer-events: none;
 }
 
-/* line 172, ../scss/_homepage.scss */
+/* line 210, ../scss/_homepage.scss */
 .arrow_box:after {
   border-color: rgba(210, 216, 222, 0);
   border-top-color: #444;
@@ -1292,7 +1330,7 @@ p {
   margin-left: -20px;
 }
 
-/* line 179, ../scss/_homepage.scss */
+/* line 217, ../scss/_homepage.scss */
 .arrow_box:before {
   border-color: rgba(210, 216, 222, 0);
   border-top-color: #444;
@@ -1302,7 +1340,7 @@ p {
 
 /* Colors schemes
 ============================== */
-/* line 190, ../scss/_homepage.scss */
+/* line 228, ../scss/_homepage.scss */
 #inverse-btn {
   background: #fff;
   color: #c20000;
@@ -1317,73 +1355,73 @@ p {
   -o-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-/* line 203, ../scss/_homepage.scss */
+/* line 241, ../scss/_homepage.scss */
 #inverse-btn:hover {
   background: #c20000;
   color: #fff;
   box-shadow: none;
 }
 
-/* line 210, ../scss/_homepage.scss */
+/* line 248, ../scss/_homepage.scss */
 #final-cta-btn {
   padding: 20px 200px;
 }
 
-/* line 214, ../scss/_homepage.scss */
+/* line 253, ../scss/_homepage.scss */
 #day-icon {
   color: #444;
 }
 
 /* Price Tables
 ============================== */
-/* line 222, ../scss/_homepage.scss */
+/* line 261, ../scss/_homepage.scss */
 .price-tables {
   background-image: url("http://www.drumchannel.com/custom/price-bg.png");
   margin: 0;
 }
 
-/* line 227, ../scss/_homepage.scss */
+/* line 266, ../scss/_homepage.scss */
 .panel-price {
   text-align: center;
   border: 4px solid #444;
   border-radius: 10px;
   box-shadow: 0px 20px 10px -10px #444444;
 }
-/* line 232, ../scss/_homepage.scss */
+/* line 271, ../scss/_homepage.scss */
 .panel-price .panel-heading {
   background: #444;
   color: #fff;
 }
-/* line 235, ../scss/_homepage.scss */
+/* line 274, ../scss/_homepage.scss */
 .panel-price .panel-heading h2 {
   font-size: 24px;
   padding: 10px;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
-/* line 242, ../scss/_homepage.scss */
+/* line 281, ../scss/_homepage.scss */
 .panel-price table {
   font-size: 13px;
 }
-/* line 245, ../scss/_homepage.scss */
+/* line 284, ../scss/_homepage.scss */
 .panel-price table tr td {
   text-align: center;
   line-height: 2.5;
   color: #000;
 }
-/* line 249, ../scss/_homepage.scss */
+/* line 288, ../scss/_homepage.scss */
 .panel-price table tr td mark {
   background-color: yellow;
   padding: .35em;
 }
-/* line 257, ../scss/_homepage.scss */
+/* line 296, ../scss/_homepage.scss */
 .panel-price .panel-price-tag h3 {
   font-size: 24px;
   font-weight: normal;
   margin: 0;
   padding: 0 0 15px;
 }
-/* line 263, ../scss/_homepage.scss */
+/* line 302, ../scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn {
   font-size: 20px;
   padding: 10px 30px;
@@ -1397,7 +1435,7 @@ p {
   -o-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-/* line 275, ../scss/_homepage.scss */
+/* line 314, ../scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn:hover {
   box-shadow: 0px 8px 8px -8px black;
 }
