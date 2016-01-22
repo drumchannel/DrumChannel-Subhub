@@ -3,6 +3,12 @@
 ==============================
 */
 
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
 
 /* Typography
 ============================== */
@@ -32,7 +38,9 @@
 }
 
 #lead {
-    font-size: 18px;
+    font-size: 21px;
+    margin: 20px;
+    padding: 0;
 }
 
 .overlay-bg {
@@ -74,14 +82,46 @@
 
 /* Layout
 ============================== */
+.features {
+    text-align: center;
+    padding: 40px 0 20px;
+    .feature-items {
+    }
+    .feature-item {
+        padding: 0 40px;
+    }
+    span {
+        font-size: 80px;
+        @include transition(all .4s ease-in-out);
+        line-height: 80px;
+    }
+}
 
 .event-schedule {
-    padding: 30px;
-    background: #444;
     .event-title {
-        border-right: 1px solid #eee;
+        padding: 30px 0px 30px 45px;
+        background: #444;
+        position: relative;
+        &::after {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(136, 183, 213, 0);
+            border-left-color: #444;
+            border-width: 40px 0 40px 20px;
+            margin-top: -40px;
+            z-index: 1000;
+            -webkit-transform: rotate(360deg)
+        }
         p {
             font-size: 18px !important;
+            font-weight: bold;
+            line-height: 18px;
             color: #fff;
             text-transform: uppercase;
             margin: 0;
@@ -89,9 +129,13 @@
         }
     }
     .event-content {
+        padding: 30px 60px 30px;
+        margin: 0;
+        background: #ccc;
         p {
             font-size: 18px !important;
-            color: #fff;
+            line-height: 18px;
+            color: #000;
             margin: 0;
             padding: 0;
             text-transform: none;
@@ -101,12 +145,21 @@
 
 .container .hero {
     text-align: center;
-    border-radius: 6px 6px 0px 0px;
+    @include border-radius(6px 6px 0px 0px);
     margin-bottom: 0px;
+    h1 {
+        margin-bottom: 20px;
+        padding: 0;
+        font-size: 48px;
+    }
 }
 
 .btn-hero {
     text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 80px;
+    margin: 20px;
+    @include border-radius(0px);
 }
 
 .day-col {
@@ -220,7 +273,6 @@
     border-width: 26px;
     margin-left: -26px;
 }
-
 
 /* Colors schemes
 ============================== */

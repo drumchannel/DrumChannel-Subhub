@@ -13,6 +13,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 400);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -28,14 +44,53 @@
             </div>
         </div>
         <div class="row event-schedule">
-            <div class="col-xs-4 event-title">
+            <div class="col-xs-3 event-title">
                 <p>Next live lesson</p>
             </div>
-            <div class="col-xs-8 event-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="col-xs-9 event-content">
+                <p><strong>LIVE, Mon 6pm PST:</strong> Guitar Center Drum-Off Winner</p>
             </div>
         </div>
-
+        <div class="row features">
+            <div class="row feature-items">
+                <div class="col-xs-4 feature-item">
+                    <p>
+                        <strong>Live Lessons &amp; Q&amp;A</strong>
+                    </p>
+                    <p>Discover new styles and expand your skills.</p>
+                </div>
+                <div class="col-xs-4 feature-item">
+                    <p>
+                        <strong>Unlimited Access</strong>
+                    </p>
+                    <p>800+ broadcast quality video lessons with notation and downloadable charts.</p>
+                </div>
+                <div class="col-xs-4 feature-item">
+                    <p>
+                        <strong>Learn on Your Time</strong>
+                    </p>
+                    <p>Weekly schedule offers flexible times that work for you.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 scroll-down"><a href="#page-break"><span class="fa fa-angle-down"></span></a></div>
+            </div>
+        </div>
+        <div class="row study-section" id="page-break" style="text-align: center; border: 1px solid black; padding: 80px; margin-bottom: 20px;">
+            <h2>Study with the world's greatest drummers</h2>
+        </div>
+        <div class="row how-it-works" style="text-align: center; border: 1px solid black; padding: 80px; margin-bottom: 20px;">
+            <h2>How it works</h2>
+        </div>
+        <div class="row home-schedule" style="text-align: center; border: 1px solid black; padding: 80px; margin-bottom: 20px;">
+            <h2>Schedule</h2>
+        </div>
+        <div class="row home-schedule" style="text-align: center; border: 1px solid black; padding: 80px; margin-bottom: 20px;">
+            <h2>Customer testimonials/Social Proof</h2>
+        </div>
+        <div class="row home-schedule" style="text-align: center; border: 1px solid black; padding: 80px; margin-bottom: 20px;">
+            <h2>Pricing</h2>
+        </div>
     </div>
 </body>
 
