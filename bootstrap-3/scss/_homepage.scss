@@ -271,9 +271,10 @@
 ============================== */
 
 .price-tables {
-    background-image: url('http://www.drumchannel.com/custom/price-bg.png');
+    /*background-image: url('http://www.drumchannel.com/custom/price-bg.png');*/
     margin: 0;
 }
+
 
 .panel-price {
     text-align: center;
@@ -297,6 +298,7 @@
                 text-align: center;
                 line-height: 2.5;
                 color: #000;
+                font-size: 120%;
                 mark {
                     background-color: yellow;
                     padding: .35em;
