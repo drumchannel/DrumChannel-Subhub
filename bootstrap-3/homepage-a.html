@@ -13,27 +13,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 400);
-                        return false;
-                    }
-                }
-            });
-        });
-    </script>
+
 </head>
 
 <body>
     <!-- Start main container -->
     <div class="container">
+
+       <!-- Smooth scroll script -->
+        <script>
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 400);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+        <!-- End smooth scroll script -->
 
         <!-- Hero section -->
         <div class="row">
@@ -59,26 +63,27 @@
         <div class="row features">
             <div class="row feature-items">
                 <div class="col-xs-4 feature-item">
-                    <p>
+                    <p style="font-size: 16px;">
                         <strong>Live Lessons &amp; Q&amp;A</strong>
                     </p>
-                    <p>Discover new styles and expand your skills.</p>
+                    <p style="font-size: 16px;">Discover new styles and expand your skills.</p>
                 </div>
                 <div class="col-xs-4 feature-item">
-                    <p>
+                    <p style="font-size: 16px;">
                         <strong>Unlimited Access</strong>
                     </p>
-                    <p>800+ broadcast quality video lessons with notation and downloadable charts.</p>
+                    <p style="font-size: 16px;">800+ broadcast quality video lessons with notation and downloadable charts.</p>
                 </div>
                 <div class="col-xs-4 feature-item">
-                    <p>
+                    <p style="font-size: 16px;">
                         <strong>Learn on Your Time</strong>
                     </p>
-                    <p>Weekly schedule offers flexible times that work for you.</p>
+                    <p style="font-size: 16px;">Weekly schedule offers flexible times that work for you.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 scroll-down"><a href="#instructors"><span class="fa fa-angle-down"></span></a></div>
+                <div class="col-xs-12 scroll-down"><a href="#instructors" ><span class="fa fa-angle-down"><br>&nbsp;
+                </span></a></div>
             </div>
         </div>
         <!-- End brief features section -->
@@ -86,8 +91,8 @@
         <!-- Instructors section -->
         <div class="row home-section" id="instructors">
             <h1>Our instructors are legendary.</h1>
-            <p id="lead">Collectively they've earned 200 Grammy's, recorded 187 records, toured over a million miles and shaped some of the music you love.</p>
-            <img src="img/instructors.png" alt="DC instructors are legendary" class="img-responsive" />
+            <p id="lead" style="font-size: 21px; margin: 20px;">Collectively they've earned 200 Grammy's, recorded 187 records, toured over a million miles and shaped some of the music you love.</p>
+            <img src="http://www.drumchannel.com/custom/instructors.png" alt="DC instructors are legendary" class="img-responsive" />
         </div>
         <!-- End instructors section -->
 
@@ -97,7 +102,7 @@
             <div class="row" style="padding: 40px;">
                 <div class="col-xs-6">
                     <H2>Live Lessons</H2>
-                    <p>Broadcasted from our DC studio, live lessons give you the opportunity to learn from. interact with and get your questions answered by the biggest names in the business.  All live lessons are recorded and available later at any time.  Typically 30 mins + Q&amp;A.</p>
+                    <p>Broadcasted from our DC studio, live lessons give you the opportunity to learn from. interact with and get your questions answered by the biggest names in the business. All live lessons are recorded and available later at any time. Typically 30 mins + Q&amp;A.</p>
                 </div>
                 <div class="col-xs-6">
                     <img src="http://www.drumchannel.com/custom/169placeholder1.png" alt="" class="img-responsive img-rounded">
@@ -109,7 +114,7 @@
                 </div>
                 <div class="col-xs-6">
                     <H2>Secrets From the Pros</H2>
-                    <p>Short on time? Secrets from the pros are shot "micro" lessons designed for maximum impact and information in as little amount of time as possible.  Typically 2-10 minutes.</p>
+                    <p>Short on time? Secrets from the pros are shot "micro" lessons designed for maximum impact and information in as little amount of time as possible. Typically 2-10 minutes.</p>
                 </div>
             </div>
             <div class="row" style="padding: 40px;">
@@ -128,82 +133,82 @@
         <div class="row home-section" id="price">
             <h1>Let's get started</h1>
             <!-- Price tables -->
-        <div class="row price-tables" style="padding: 40px 0;">
+            <div class="row price-tables" style="padding: 40px 0;">
 
-            <div class="col-xs-1"></div>
+                <div class="col-xs-1"></div>
 
-            <!-- Monthly price table -->
-            <div class="col-xs-5">
-                <div class="panel panel-price">
-                    <div class="panel-heading">
-                        <h2 class="panel-title">Monthly</h2>
-                    </div>
-                    <table class="table table-striped">
-                        <tbody>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>4 new lessons every week</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>800+ video archive</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>Live artist Q&amp;A's</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>Exclusive special events</td>
-                            </tr>
-                            <tr>
-                                <td><strike>Year subscription to DRUM! Magazine</strike></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="panel-body panel-price-tag">
-                        <h3>$14/month</h3>
-                        <a id="price-btn" href="http://www.drumchannel.com/subscribe" class="btn btn-xl btn-primary">Join</a>
-                        <p>($14 billed once every month)</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End monthly price table -->
-
-            <!-- Annual price table -->
-            <div class="col-xs-5">
-                <div class="panel panel-price">
-                    <div class="panel-heading">
-                        <h2 class="panel-title">Annual</h2>
-                    </div>
-                    <table class="table table-striped">
-                        <tbody>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>4 new lessons every week</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>800+ video archive</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>Live artist Q&amp;A's</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>Exclusive special events</td>
-                            </tr>
-                            <tr>
-                                <td><span class="fa fa-check">&nbsp;</span>
-                                    <mark>Year subscription to DRUM! Magazine</mark>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="panel-body panel-price-tag">
-                        <h3>$8/month</h3>
-                        <a id="price-btn" href="http://www.drumchannel.com/subscribe" class="btn btn-xl btn-primary">Join</a>
-                        <p>($96 billed once every year)</p>
+                <!-- Monthly price table -->
+                <div class="col-xs-5">
+                    <div class="panel panel-price">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Monthly</h2>
+                        </div>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>4 new lessons every week</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>800+ video archive</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>Live artist Q&amp;A's</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>Exclusive special events</td>
+                                </tr>
+                                <tr>
+                                    <td><strike>Year subscription to DRUM! Magazine</strike></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel-body panel-price-tag">
+                            <h3>$14/month</h3>
+                            <a id="price-btn" href="http://www.drumchannel.com/subscribe" class="btn btn-xl btn-primary">Join</a>
+                            <p>($14 billed once every month)</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End annual price table -->
+                <!-- End monthly price table -->
 
-            <div class="col-xs-1"></div>
-        </div>
+                <!-- Annual price table -->
+                <div class="col-xs-5">
+                    <div class="panel panel-price">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Annual</h2>
+                        </div>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>4 new lessons every week</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>800+ video archive</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>Live artist Q&amp;A's</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>Exclusive special events</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-check">&nbsp;</span>
+                                        <mark>Year subscription to DRUM! Magazine</mark>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel-body panel-price-tag">
+                            <h3>$8/month</h3>
+                            <a id="price-btn" href="http://www.drumchannel.com/subscribe" class="btn btn-xl btn-primary">Join</a>
+                            <p>($96 billed once every year)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End annual price table -->
+
+                <div class="col-xs-1"></div>
+            </div>
         </div>
 
     </div>
