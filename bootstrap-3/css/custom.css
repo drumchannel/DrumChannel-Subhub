@@ -1304,7 +1304,7 @@ p {
   font-size: 18px;
   color: #c20000;
   line-height: 1.3;
-  text-align: left;
+  text-align: justify;
 }
 /* line 191, ../scss/_homepage.scss */
 #learn-at-your-pace h2 {
