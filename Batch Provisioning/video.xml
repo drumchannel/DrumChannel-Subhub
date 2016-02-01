@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest 
+    publisher-id="2534274852001" 
+    preparer="Drum Channel" 
+    report-success="true">
+    <notify email="adamk@drumchannel.com" />
+    <asset 
+        filename="airport_gibbous_full.flv" 
+        refid="airport_gibbous_full.flv-52aaedfc6f568c8c86472c2df324050f" 
+        size="31590808" 
+        hash-code="52aaedfc6f568c8c86472c2df324050f" 
+        type="VIDEO_FULL" />
+    <title 
+        name="NYPA Fire Fight" 
+        refid="NYPAFireFightTitle" 
+        active="TRUE" 
+        flash-preview-refid="airport_firetruck_30sec_preview.flv-6d77209fa60f5de6b7bf068" 
+        video-full-refid="airport_gibbous_full.flv-52aaedfc6f568c82df324050f" 
+        thumbnail-refid="airport_firetruck_120x90_thumb.jpg-3070f5e058d847149ad464f8e" 
+        video-still-refid="airport_firetruck_480x360_still.jpg-693cbdaceadf34e907525427">
+        <short-description>
+            The men of the New York Port Authority demonstrate modern fire fighting techniques.
+        </short-description>
+        <long-description>
+            The men of the New York Port Authority demonstrate modern fire fighting techniques under a gibbous moon (long).
+        </long-description>
+    </title>
+</publisher-upload-manifest>
