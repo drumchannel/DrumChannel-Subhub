@@ -92,6 +92,26 @@
     }
 }
 
+.hero {
+    text-align: center;
+    background-image: url(http://www.drumchannel.com/custom/hero-image1.png);
+    background-size: cover;
+    @include border-radius(6px 6px 0px 0px);
+    margin-bottom: 0px;
+    padding: 150px 80px 150px;
+    .hero-cta {
+        padding-bottom: 80px;
+        h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            padding: 0;
+            font-size: 81px;
+        }
+        #lead {
+            color: #fff;
+        }
+    }
+}
 .btn-hero {
     text-transform: uppercase;
     font-weight: bold;
@@ -332,4 +352,28 @@
             }
         }
     }
+}
+
+/* Navbar
+============================== */
+
+.navbar {
+    margin: 0;
+    border-radius: none;
+}
+
+/* Dammit
+============================== */
+
+#portlet-nav-1 #static_211 a, #portlet-nav-1 #static_236 a, #portlet-nav-1 #static_251 a, #portlet-nav-1 #static_251 a {
+    background-image: none;
+    border: none;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    padding: 0 14px;
+    text-decoration: none;
+    text-transform: none;
 }
