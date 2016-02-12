@@ -1529,3 +1529,15 @@ p {
   text-decoration: none;
   text-transform: none;
 }
+
+/* Featured
+==============================
+==============================
+*/
+/* Headings
+============================== */
+/* line 10, ../scss/_featured.scss */
+.schedule-2-col h2, .schedule-2-col h3, .schedule-2-col h4 {
+  margin: 10px;
+  padding: 0;
+}
