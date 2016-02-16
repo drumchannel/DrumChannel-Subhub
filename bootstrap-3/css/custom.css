@@ -1541,3 +1541,22 @@ p {
   margin: 10px;
   padding: 0;
 }
+
+/* line 16, ../scss/_featured.scss */
+.new {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: #c20000;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+}
