@@ -1,11 +1,13 @@
 /* Layout
 ============================== */
+
 .well {
     h1 {
         margin: 20px 0;
         padding: 0;
     }
 }
+
 .schedule-page-heading {
     background-color: #fff;
     background-image: url(http://www.drumchannel.com/custom/carbon.png);
@@ -146,6 +148,37 @@
 
 /* Typography
 ============================== */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #000;
+}
+
+.chapter-marks {
+    list-style: none;
+    margin-left: 0 !important;
+    padding: 0;
+    color: #000;
+    .list-group-item {
+        color: #000;
+        position: relative;
+        display: block;
+        padding: 5px 15px;
+        margin-bottom: -1px;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+    }
+}
+.lesson-info {
+    #class-description {
+        font-size: 14px;
+        line-height: 1.3;
+        padding-bottom: 10px;
+    }
+    > h2 {
+        color: #c20000;
+    }
+
+}
 
 #live-alert {
     font-size: 20px;
@@ -338,6 +371,7 @@ p {
     -o-transition: $transition;
     transition: $transition;
 }
+
 .newest-image {
     position: relative;
     text-align: center;
@@ -486,6 +520,22 @@ p {
     @include transition(all .45s cubic-bezier(.85, -.18, .31, 1.26));
 }
 
+.tilt-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(http://www.drumchannel.com/custom/small-logo.png);
+    background-size: contain;
+    z-index: 0;
+}
+
+.video-playlist-well,
+.lesson-info {
+    position: relative;
+}
+
 
 /* Colors
 ============================== */
@@ -498,6 +548,9 @@ p {
     border-color: darken(#c20000, 5%);
     &:hover {
         background-color: darken(#c20000, 5%);
+    }
+    &:visited {
+        background-color: #c20000;
     }
     text-decoration: none;
     color: #fff;
@@ -809,6 +862,7 @@ p {
     line-height: 1.33;
     border-radius: 35px;
 }
+
 
 
 /* Additional pages
