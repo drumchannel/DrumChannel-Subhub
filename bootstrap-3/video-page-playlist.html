@@ -18,31 +18,72 @@
 <body>
 
     <div class="container">
+        <!-- Add play button to playlist cards -->
         <script>
             $(document).ready(function() {
                 $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
             });
         </script>
+
+        <!-- Lesson buttons functionality -->
+        <script>
+            $(document).ready(function() {
+                $('#notation').hide();
+                $('#show-notation').click(function() {
+
+                    var link = $(this);
+                    $('#notation').slideToggle("500ms", function() {
+                        if ($(this).is(':visible')) {
+                            link.text('Hide Notation');
+                            link.prepend('<span class="fa fa-times">&nbsp;</span>')
+                        } else {
+                            link.text('Show Notation');
+                            link.prepend('<span class="fa fa-music">&nbsp;</span>')
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <!-- Lesson video and description -->
         <div class="row">
             <div class="col-xs-8" style="margin: 0px 0 0 0;">
-                <div style="display: block; position: relative; max-width: 100%;">
-                    <div style="padding-top: 56.25%;">
-                        <iframe src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4760882567001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="no" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;"></iframe>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div style="display: block; position: relative; max-width: 100%;">
+                            <div style="padding-top: 56.25%;">
+                                <iframe src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4762712374001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="no" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Lesson buttons -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="btn-group btn-group-justified">
+                            <!-- Previous Lesson -->
+                            <a href="http://www.drumchannel.com/articles/rudiments-5-stroke-roll" id="prev-lesson" class="btn btn-info" style="width: 100%;"><span class="fa fa-arrow-left">&nbsp;</span>Previous Lesson</a>
+                            <!-- Show Notation -->
+                            <a href="#/" id="show-notation" class="btn btn-info" style="width: 100%;"><span class="fa fa-music">&nbsp;</span>Show Notation</a>
+                            <!-- Next Lesson -->
+                            <a href="#" id="next-lesson" class="btn btn-info disabled" style="width: 100%;"><span class="fa fa-arrow-right">&nbsp;</span>Next Lesson</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End lesson buttons -->
             </div>
             <div class="col-xs-4 marginless">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <h1 style="margin-top: 0;">Rudimental Crash Course</h1>
-                        <h2>7 - 5 Stroke Roll</h2>
+                        <h2>8 - 6 Stroke Roll</h2>
                         <p><strong>Instructor: Adam Kuns</strong></p>
-                        <p>Time to start with the roll rudiments! The 5 stroke roll is one of the staple rudiments in our arsenal. This lesson explains the timing and demonstrates the motion.</p>
+                        <p>The 6 stroke roll is a great rudiment to add to your vocabulary. This rudiment is very versatile and can be used around the drum set to great effect once you have mastered it.</p>
                         <a href="http://www.drumchannel.com/articles/rudimental-crash-course" class="btn btn-primary btn-sm"><span class="fa fa-arrow-left">&nbsp;</span>Back to Master Class</a>
                     </div>
                     <div class="panel-body lesson-meta">
                         <span id="lesson-difficulty">Difficulty: All Levels</span>
-                        <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>2:19</span>
+                        <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>2:17</span>
                     </div>
                 </div>
                 <div class="row lesson-category-container">
@@ -52,6 +93,20 @@
                 </div>
             </div>
         </div>
+
+        <!-- Notation section -->
+        <div class="row" id="notation">
+            <div class="col-xs-12" style="padding-top: 20px;">
+                <img src="http://www.drumchannel.com/custom/6-stroke-roll.png" class="img-responsive" alt="6 Stroke Roll" />
+            </div>
+            <div class="col-xs-12">
+                <!--
+                <button id="hide-notation" class="btn btn-info btn-block"><span class="fa fa-times">&nbsp;</span>Hide Notation</button>
+                -->
+            </div>
+        </div>
+        <!-- End notation section -->
+
         <div class="row" style="padding-top: 20px;">
             <div class="well">
                 <div class="row">
@@ -191,6 +246,25 @@
                                     <h2>7 - 5 Stroke Roll</h2>
                                 </a>
                                 <p>Time to start with the roll rudiments! The 5 stroke roll is one of the staple rudiments in our arsenal. This lesson explains the timing and demonstrates the motion.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="panel panel-default newest-panel">
+                            <div class="newest-image">
+                                <a href="http://www.drumchannel.com/articles/rudiments-6-stroke-roll" title="Lesson">
+                                    <img src="http://www.drumchannel.com/custom/adam8.png" class="img-responsive" />
+                                </a>
+                                <div class="play-div">
+                                    <br>&nbsp;</div>
+
+                            </div>
+                            <div class="panel-body" style="height: 120px;">
+                                <a href="http://www.drumchannel.com/articles/rudiments-6-stroke-roll" title="Lesson">
+                                    <h2>8 - 6 Stroke Roll</h2>
+                                </a>
+                                <p>The 6 stroke roll is a great rudiment to add to your vocabulary. This rudiment is very versatile and can be used around the drum set to great effect once you have mastered it.</p>
                             </div>
                         </div>
                     </div>

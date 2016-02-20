@@ -541,7 +541,6 @@ p {
 ============================== */
 
 .btn-primary {
-    transition: all .2s ease-in-out;
     @include transition(all .2s ease-in-out);
     background-color: #c20000;
     background-image: none !important;
@@ -554,6 +553,15 @@ p {
     }
     text-decoration: none;
     color: #fff;
+}
+
+.btn-success {
+    @include transition(all .2s ease-in-out);
+    text-decoration: none;
+}
+.btn-info {
+    @include transition(all .2s ease-in-out);
+    text-decoration: none;
 }
 
 #back-to-top {
@@ -861,6 +869,11 @@ p {
     font-size: 24px;
     line-height: 1.33;
     border-radius: 35px;
+}
+
+.btn {
+    background-image: none !important;
+    text-decoration: none !important;
 }
 
 
