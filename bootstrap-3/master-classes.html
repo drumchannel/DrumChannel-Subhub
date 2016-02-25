@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Page with Playlist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="http://html.drumchannel.com/dc-custom/css/masterclasses_no_lato.css" type="text/css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.quicksearch/2.0.5/jquery.quicksearch.min.js"></script>
+    <script type="text/javascript" src="http://html.drumchannel.com/masterclass-filters/search.js"></script>
+</head>
+
+<body>
+
+
+    <div class="mc-main">
+        <div class="sort">
+            <div class="mc-search"><span class="isotope-heading">Search for something specific:</span>
+                <input id="quicksearch" class="search-input" type="text" />
+            </div>
+            <div class="col-half" id="filter-column"><span class="isotope-heading">Filter by:</span>
+                <div id="filters" class="button-group">
+                    <button class="button is-checked" data-filter="*">Show All</button>
+                    <button class="button" data-filter=".rudiments"><span class="fa fa-cubes"></span>&nbsp;Rudiments</button>
+                    <button class="button" data-filter=".technique, .hands, .feet"><span class="fa fa-cogs"></span>&nbsp;Technique</button>
+                    <button class="button" data-filter=".musicality"><span class="fa fa-music"></span>&nbsp;Musicality</button>
+                    <button class="button" data-filter=".independence"><span class="fa fa-arrows-alt"></span>&nbsp;Independence</button>
+                    <button class="button" data-filter=".reading"><span class="fa fa-book"></span>&nbsp;Reading</button>
+                    <button class="button" data-filter=".styles"><span class="fa fa-globe"></span>&nbsp;Styles</button>
+                    <!--<button class="button" data-filter=".clinics"><span class="fa fa-graduation-cap"></span>&nbsp;Clinics</button>-->
+                </div>
+            </div>
+            <div class="col-half" id="sort-column"><span class="isotope-heading">Sort by:</span>
+                <div id="sort-order" class="button-group">
+                    <button class="button is-checked" data-sort-value="original-order">Newest</button>
+                    <button class="button" data-sort-value="title"><span class="fa fa-sort-alpha-asc"></span>&nbsp;Title</button>
+                    <button class="button" data-sort-value="teacher"><span class="fa fa-user"></span>&nbsp;Teacher</button>
+                    <button class="button" data-sort-value="difficulty"><span class="fa fa-signal"></span>&nbsp;Difficulty</button>
+                </div>
+            </div>
+        </div>
+        <!-- =================================MASTER CLASSES START HERE================================= -->
+        <div class="mc-masterclasses">
+            <!-- START MASTERCLASS ITEM -->
+            <!--
+<div class="mc-masterclass-item rudiments">
+<div class="post-tags">rhythm, pulse, rudiments, paradiddles</div>
+<div class="mc-image"><a href="http://www.drumchannel.com/articles/rudimental-crash-course"> <img src="http://www.drumchannel.com/custom/adam2.png" border="0" width="306px" height="153px" /> </a>
+<div class="mc-difficulty mc-difficulty-all">All Levels</div>
+</div>
+<div class="mc-content">
+<div class="mc-title">Rudimental Crash Course</div>
+<div class="mc-teacher">Teacher: <span style="color: #c20000;">Adam Kuns</span></div>
+<div class="mc-description">n this course, we are going to learn our 40 standard rudiments. It doesn't matter what level you are at, it's important to have these all under your belt so that you can be well rounded and will have a wide variety of sticking choices and different ways of playing and approaching music.</div>
+</div>
+<a href="http://www.drumchannel.com/articles/rudimental-crash-course" class="btn btn-primary mc-view-class"> View Class </a>
+<div class="mc-lesson-number">40* Lessons</div>
+<div class="mc-category-container"><a title="Rudiments" class="mc-category"> <span class="fa fa-cudes" style="line-height: 40px;"><br />
+&nbsp;</span> </a> </div>
+</div>
+-->
+            <!-- END MASTERCLASS ITEM -->
+
+            <div class="mc-masterclass-item styles">
+                <div class="post-tags">shuffles, funk, funky, beats, drum set, texas, chicago, blues</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/rick-latham-serious-shuffles"> <img src="http://www.drumchannel.com/custom/ricklatham.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Serious Shuffles</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Rick Latham</span></div>
+                    <div class="mc-description">Rick Latham has played with some of the biggest names in the music industry. His credits range from Edgar Winter to Stevie Ray Vaughan. In this series of lessons, he will show you different stylistic interpretations of the shuffle, as well as exercises to improve your groove and coordination as it relates to the shuffle.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/rick-latham-serious-shuffles" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">6 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality clinics">
+                <div class="post-tags">rhythm, pulse, percussion, songs, drum set, drumset, q&amp;a, qa</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/efrain-toro-guests-1"> <img src="http://www.drumchannel.com/custom/efrainmc1.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Pulse and Rhythms</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Efrain Toro</span></div>
+                    <div class="mc-description">Efrain Toro is a world-renowned authority on the study of rhythm and music. He was gracious enough to give a clinic for some special guests regarding the topic. He is joined by a group of very special guests: Fausto Cuevas, Brendan Buckley, and Maria Petrova</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/efrain-toro-guests-1" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">2 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Clinic" class="mc-category"> <span class="fa fa-graduation-cap" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality clinics">
+                <div class="post-tags">tracks, songs, drum set, drumset, q&amp;a, qa</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/AaronSpearsMasterClass"> <img src="http://www.drumchannel.com/custom/aaronspearsmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-all">All Levels</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Aaron Spears Master Class</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Aaron Spears</span></div>
+                    <div class="mc-description">Aaron Spears "hopes to inspire future drummers the way that he was inspired by all those greats that came before him". He is currently playing with Usher and has played for the American Idol Tour, Alicia Keys, James Brown, Gideon Band, and many others. See for yourself how inspiration comes through in his playing! He answers a lot of great questions in this Master Class series, plays some fantastic solos in numerous tracks, and demonstrates a great practice routine to improve your speed.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/AaronSpearsMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">4 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Clinic" class="mc-category"> <span class="fa fa-graduation-cap" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality reading styles">
+                <div class="post-tags">david lee roth, maynard ferguson, jazz, rock, funk, latin, play alongs, school, complete, bonham, purdie, led zepellin, van halen, tony williams, steve gadd</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Gregg-Bissonette-Drum-School"> <img src="http://www.drumchannel.com/custom/greggbissonettedrumschoolmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-all">All Levels</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Gregg Bissonette Drum School</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Gregg Bissonette</span></div>
+                    <div class="mc-description">Gregg Bissonette's Drum School is about adding to your drumming vocabulary and this series of classic drum beats and fills is a must. The idea is not only to learn Gregg's interpretation of these classics, but for you to put your "spin" on them so your vocabulary becomes part of your style.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Gregg-Bissonette-Drum-School" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">58 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Reading" class="mc-category"> <span class="fa fa-book" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality styles">
+                <div class="post-tags">hlag, girl, women, woman, drumset, drum set, basic, fundamental, rock, rock and roll</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/categories/Val-Sepulveda-Lesson-1"> <img src="http://www.drumchannel.com/custom/valsepulvedamc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Beginner Drum Set Lessons</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Val Sepulveda</span></div>
+                    <div class="mc-description">This lesson plan is designed to get you from square 1 to playing with a band on the drum set. This series focuses on some key grooves and will teach you essential musical elements needed to perform with confidence and accuracy on the drum set.</div>
+                </div>
+                <a href="http://www.drumchannel.com/categories/Val-Sepulveda-Lesson-1" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">10 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item independence">
+                <div class="post-tags">independence, hands, feet, coordination, time, drums, drumset, drum set</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Technique_HandsFeet_Semester3"> <img src="http://www.drumchannel.com/custom/timefunction3mc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Four-Way Time Function Coordination</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Ralph Humphrey</span></div>
+                    <div class="mc-description">These 4-way coordination exercises will open the door to future advanced patterns and make them easy to play. Learning to lead with both hands will give you amazing freedom in playing patterns. As noted in the fundamental lessons, you can go through these exercises first with just your natural lead hand.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Technique_HandsFeet_Semester3" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">9 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item independence">
+                <div class="post-tags">independence, hands, feet, coordination, time, drums, drumset, drum set</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Technique_HandsFeet_Semester2"> <img src="http://www.drumchannel.com/custom/timefunction2mc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Three-Way Time Function Coordination</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Ralph Humphrey</span></div>
+                    <div class="mc-description">While you may be learning to play Rock patterns and Jazz or Latin and other Master Classes or lessons it is important that you systematically study your time function coordination. These are systematic exercises and while they are preparing you for the future, they can also be used in patterns and fills as you progress.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Technique_HandsFeet_Semester2" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">10 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item independence">
+                <div class="post-tags">independence, hands, feet, coordination, time, drums, drumset, drum set</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Technique_HandsFeet_Semester1"> <img src="http://www.drumchannel.com/custom/timefunction1mc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Two-Way Time Function Coordination</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Ralph Humphrey</span></div>
+                    <div class="mc-description">There are many great books available with exercises for the drum set using your hands and feet. This course will prepare you to easily play those books as we teach you how to play combinations of hands and feet in a way that will enhance your time function and coordination.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Technique_HandsFeet_Semester1" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">11 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item technique feet">
+                <div class="post-tags">technique, foot, feet, double bass, speed, fast, basics</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/DC-Academy_Bass-Drum-Technique"> <img src="http://www.drumchannel.com/custom/mikepackermc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Bass Drum Foot Technique</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Mike Packer</span></div>
+                    <div class="mc-description">At the completion of the DC Bass Drum Technique Series, students will have the knowledge and ability to play many commonly used bass drum rhythms and patterns accurately. Through detailed explanation of motion, control and weight distribution, students will understand how the pedal functions and the options they have when playing notes or patterns.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/DC-Academy_Bass-Drum-Technique" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">10 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Foot Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item technique feet">
+                <div class="post-tags">technique, foot, feet, double bass, speed, fast</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/DC-Academy_Bass-Drum-Speed_Marco_Iannetta"> <img src="http://www.drumchannel.com/custom/marcoianettamc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Bass Drum Speed</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Marco Ianetta</span></div>
+                    <div class="mc-description">This is a series on Bass Drum Speed. Marco has some of the quickest feet in the world! He shares some of his tips on how he plays. Pay close attention and start out slow.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/DC-Academy_Bass-Drum-Speed_Marco_Iannetta" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">6 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Foot Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item technique musicality clinics">
+                <div class="post-tags">the police, sting, drumset, drums, clinic, dare to drum</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Master-Class-Stewart-Copeland-Part1"> <img src="http://www.drumchannel.com/custom/stewartcopelandmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Stewart Copeland Master Class</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Stewart Copeland</span></div>
+                    <div class="mc-description">Stewart Copeland is a drumming legend who has influenced generations of players all around the world. Chosen by the readers of Modern Drummer magazine as one of the "50 Greatest Drummers Of All Time&rdquo; and best known for his precise, energetic, signature drumming with The Police, he is also a highly-respected TV/Film soundtrack composer.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Master-Class-Stewart-Copeland-Part1" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">6 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Clinic" class="mc-category"> <span class="fa fa-graduation-cap" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality clinics">
+                <div class="post-tags">harmonic, linear, clinic, efrain toro, alex acuna, terry bozzio, music theory, latin</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/EfrainToroMasterClassLineartoHarmonic"> <img src="http://www.drumchannel.com/custom/lineartoharmonicmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">From Linear to Harmonic</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Efrain Toro</span></div>
+                    <div class="mc-description">These two lectures on rhythm will open your mind to a new way to think about rhythm. The first is Efrain and student Terry Bozzio. The second is with David Elitch, Al Velasquez and Andy Sanesi. These lectures are continuing the journey about rhythm from Efrain's Master Class "The Study Of Rhythm".</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/EfrainToroMasterClassLineartoHarmonic" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">2 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Clinic" class="mc-category"> <span class="fa fa-graduation-cap" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item styles">
+                <div class="post-tags">alex acuna, hand percussion, perc, percussion, samba, merengue, songo, cascara, calypso, tumbao, drum set, drumset, latin, clave</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/AlexAcunaMasterClassLatinRhythms"> <img src="http://www.drumchannel.com/custom/authenticlatinrhythmsmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Authentic Latin Rhythms on the Drum Set</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Alex Acu&ntilde;a</span></div>
+                    <div class="mc-description">Winner of Modern Drummer's Reader Poll for five consecutive years as "Best Latin/Brazilian Percussionist" Alex is both a master and historian of Latin rhythms. He covers Cha Cha Cha, Bolero, Salsa, Son Montuno, Caribbean Rhythms, African Rhythms, Samba, Rumba, Tango, Meringue and Mambo.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/AlexAcunaMasterClassLatinRhythms" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">9 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality clinics">
+                <div class="post-tags">harmonic, linear, clinic, efrain toro, alex acuna, terry bozzio, music theory, latin</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/EfrainToroMasterClassRhythm"> <img src="http://www.drumchannel.com/custom/studyofrhythmmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">The Study of Rhythm</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Efrain Toro, Alex Acu&ntilde;a, Terry Bozzio</span></div>
+                    <div class="mc-description">The Best Drummers In The World Respect Efrain As A Genius On The Study Of Rhythm. Alex Acuna and Terry Bozzio are students in this Master Class series and long time students of Efrain. Listen to Efrain and you will see a whole new world!</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/EfrainToroMasterClassRhythm" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">11 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Clinic" class="mc-category"> <span class="fa fa-graduation-cap" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item clinics">
+                <div class="post-tags">jethro tull, traveling wilburys, RUSH, clinic</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/RoundtableDiscussion"> <img src="http://www.drumchannel.com/custom/drummersthatcomposemc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-all">All Levels</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Drummers that Compose</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Neil Peart, Jim Keltner, Doane Perry and host Don Lombardi</span></div>
+                    <div class="mc-description">50 students attended this class and they all agreed they would never approach the drum set the same again. It's not about writing the song, it's about how a drummer should compose his part to enhance the song. This is a passionate in-depth look at how these legends approach their instrument. This is a Master Class that could shape your entire career.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/RoundtableDiscussion" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">4 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Clinic" class="mc-category"> <span class="fa fa-graduation-cap" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality styles">
+                <div class="post-tags">maynard ferguson, david lee roth, drumset, drum set, jazz, swing, big band</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/GreggBissonetteMasterClass"> <img src="http://www.drumchannel.com/custom/greggbissonettemc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Introduction to Jazz: Beginning to Advanced</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Gregg Bissonette</span></div>
+                    <div class="mc-description">If you&rsquo;ve never played Jazz before, this series of drum lessons will teach you basic patterns and how to approach the drumset with a Jazz feel. The best drummers in the world have commented on Drum Channel about the importance of understanding a Jazz time feel to enhance any genre of music you might be playing.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/GreggBissonetteMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">7 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality">
+                <div class="post-tags">RUSH, drumset, drum set, solo, soloing,</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/NeilPeartMasterClass"> <img src="http://www.drumchannel.com/custom/neilpeartmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Frontiers of Composition and Articulation</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Neil Peart</span></div>
+                    <div class="mc-description">This is a Master Class, an amazing drum jam, a conversation with world-renowned teacher Freddie Gruber, and an introspective look into the creative concepts of one of the most iconic musicians of our time.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/NeilPeartMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">10 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality independence">
+                <div class="post-tags">missing persons, huge drumset, drum set, ostinato</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/TerryBozzioRhythm1"> <img src="http://www.drumchannel.com/custom/rhythm1mc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Rhythm 1</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Terry Bozzio</span></div>
+                    <div class="mc-description">Terry teaches basic permutations of triplets and sixteenth notes and how to use them in an ostinato with your hands. This Rhythm 1 class consists of seven online drum lessons and is the 1st in the series Terry will develop entitled, &ldquo;The Art of Drumming.&rdquo;</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/TerryBozzioRhythm1" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">7 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality independence">
+                <div class="post-tags">missing persons, huge drumset, drum set, ostinato</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/TerryBozzioRhythm2"> <img src="http://www.drumchannel.com/custom/rhythm2mc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Rhythm 2</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Terry Bozzio</span></div>
+                    <div class="mc-description">In Rhythm 2, Terry teaches basic permutations of triplets and 16th notes and how to use them in an ostinato with your feet. He starts on a pad, then a 5-piece kit, then his monster kit. There's no better way to learn then from the master himself.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/TerryBozzioRhythm2" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">7 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality styles">
+                <div class="post-tags">red hot chili peppers, drumset, drum set, rock, rim shots</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/ChadSmithMasterClass"> <img src="http://www.drumchannel.com/custom/chadsmithmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Basic Rock Drumming: Chad's Way</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Chad Smith</span></div>
+                    <div class="mc-description">Chad will give you a unique insight into the difference between playing a beat and playing a "groove." By that, we mean the nuances that Chad explains regarding the way he hits the drums and how he expresses what he feels.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/ChadSmithMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">10 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality styles">
+                <div class="post-tags">jane's addiction, janes, perkins, drumset, drum set, rock</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/StephenPerkinsMasterClass"> <img src="http://www.drumchannel.com/custom/stephenperkinsmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Hands * Feet * Mind * Soul</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Stephen Perkins</span></div>
+                    <div class="mc-description">Stephen Perkins&rsquo; Master Class breaks down 11 different Jane&rsquo;s Addiction songs and gives students a full analysis of each song. The goal of this Master Class is to add new beats to your drumming vocabulary.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/StephenPerkinsMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">11 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality">
+                <div class="post-tags">foot, feet, technique, fast, speed</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/ColinBaileyMasterClass"> <img src="http://www.drumchannel.com/custom/colinbaileymc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Bass Drum Technique</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Colin Bailey</span></div>
+                    <div class="mc-description">Colin Bailey's legendary book Bass Drum Control has sold over 50,000 copies. Now for the first time Colin explains his amazing bass drum technique, focusing on the critical principles of Speed, Control and Endurance.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/ColinBaileyMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">11 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Foot Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item hands">
+                <div class="post-tags">basics, fundamental, drum set, drumset</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/AlVelasquezMasterClass"> <img src="http://www.drumchannel.com/custom/alvelasquezmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Beginner to Intermediate Drum Lessons</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Al Velasquez</span></div>
+                    <div class="mc-description">These beginning lessons will teach you what you need to know so you can play your drums for fun, play along with records or play with a band. They are a great way to prepare you for private instruction and for more advanced Drum Channel lessons.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/AlVelasquezMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">16 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item rudiments technique hands">
+                <div class="post-tags">rudiments, hands, flam, flams, drag, drags, paradiddle, paradiddles, inverted, flam tap, single, double, triple</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Technique_Hands_Semester3"> <img src="http://www.drumchannel.com/custom/flamsanddragsmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Rudiments: Flams, Drags, and Paradiddles</div>
+                    <div class="mc-teacher">Teachers: <span style="color: #c20000;">Ralph Humphrey</span></div>
+                    <div class="mc-description">With more advanced rudiments in this lesson you will be adding to your vocabulary on the snare drum and drum set. The goal of this lesson system is to give you the tools to play whatever you hear.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Technique_Hands_Semester3" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">12 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Rudiments" class="mc-category"> <span class="fa fa-cubes" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item rudiments technique hands">
+                <div class="post-tags">rudiments, hands, roll, rolls, drags, ruff, ruffs, 5 stroke, 6, 7, 8, 9, buzz roll, press roll</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Technique_Hands_Semester2"> <img src="http://www.drumchannel.com/custom/rollandruffsmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Rudiments: Rolls and Ruffs</div>
+                    <div class="mc-teacher">Teachers: <span style="color: #c20000;">Ralph Humphrey</span></div>
+                    <div class="mc-description">In these lessons, you will begin to apply the motions learned in "Basic Body Motion" to sticking patterns covering basic rudiments. Many of these lessons are in two parts. They are applied to a pad or snare drum and to the drum set.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Technique_Hands_Semester2" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">15 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Rudiments" class="mc-category"> <span class="fa fa-cubes" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item hands">
+                <div class="post-tags">hand technique, hands, fundamentals, body motion</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/HandTechnique3"> <img src="http://www.drumchannel.com/custom/wristturns.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Basic Body Motion - Part 3</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Don Lombardi, Ralph Humphrey, Joe Porcaro</span></div>
+                    <div class="mc-description">The more solid your foundation is, you will be able to play more musically with greater ease and flow. The more solid your foundation is, you will be able to play more musically with greater ease and flow.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/HandTechnique3" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">9 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item hands">
+                <div class="post-tags">hand technique, hands, fundamentals, body motion</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/HandTechnique2"> <img src="http://www.drumchannel.com/custom/lesson7.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Basic Body Motion - Part 2</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Don Lombardi, Ralph Humphrey, Joe Porcaro</span></div>
+                    <div class="mc-description">These lessons are the foundation for developing your technique, your time and your groove. We suggest you spend one week on each lesson so they become natural for you. At the beginning of each practice session you should quickly review the first three lessons to be sure you're holding the stick, turning your wrist and allowing the stick to bounce as you proceed.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/HandTechnique2" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">9 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item hands">
+                <div class="post-tags">hand technique, hands, fundamentals, body motion</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/HandTechnique1"> <img src="http://www.drumchannel.com/custom/holding-the-sticks.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Basic Body Motion - Part 1</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Don Lombardi, Ralph Humphrey, Joe Porcaro</span></div>
+                    <div class="mc-description">It is important to understand that the drums are the instrument that creates the sound and the drummers body is the instrument that plays the drums. These lessons will show you how to use your body to motivate and follow the bounce of the stick. They are the foundation for developing your technique, your time and your groove.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/HandTechnique1" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">9 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item hands rudiments">
+                <div class="post-tags">hand technique, hands, fundamentals, body motion, murray spivack, rudiments</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/ChadWackermanMasterClassSpivackMethod"> <img src="http://www.drumchannel.com/custom/wackermanmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">The Murray Spivack Method</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Chad Wackerman</span></div>
+                    <div class="mc-description">Murray Spivack was one of the greatest Teacher of all time. Chad reflects on his experience studying with him and discusses Murray&rsquo;s philosophy about economy of motion, the importance of relaxation and his unique approach to the rudiments.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/ChadWackermanMasterClassSpivackMethod" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">29 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Rudiments" class="mc-category"> <span class="fa fa-cubes" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item musicality styles">
+                <div class="post-tags">rudiments, congas, percussion, hand percussion, acuna, latin, samba, bongos, songo, salsa</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/AlexAcunaCongaRudiments"> <img src="http://www.drumchannel.com/custom/alexacunamc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">How to Apply Rudiments on Congas</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Alex Acu&ntilde;a</span></div>
+                    <div class="mc-description">Alex breaks down in detail eight rudimentary sounds you can produce on one conga. These will be used in combination with rudimental stickings in future lessons to create rhythms. This simple system will allow you to add hand percussion to your personal resume.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/AlexAcunaCongaRudiments" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">13 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Musicality" class="mc-category"> <span class="fa fa-music" style="line-height: 40px;"></span> </a>
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item independence technique">
+                <div class="post-tags">advanced, hard, crazy, feet, hands</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/MarcoMinnemannMC"> <img src="http://www.drumchannel.com/custom/marcominnemanmc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-advanced">Advanced</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Six-Way Independence</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Marco Minneman</span></div>
+                    <div class="mc-description">Marco's master class is a series of eight lessons that will open your mind and body to new melodic adventures on the drumset. It will get you into Marco&rsquo;s head, understanding what he practiced and how he developed his amazing technique.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/MarcoMinnemannMC" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">9 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Hand Technique" class="mc-category"> <span class="fa fa-cogs" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item technique styles independence">
+                <div class="post-tags">jazz, brushes, swing, big band</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/PeterErskineMasterClass"> <img src="http://www.drumchannel.com/custom/petererskinemc.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-intermediate">Intermediate</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">A Work in Progress</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Peter Erskine</span></div>
+                    <div class="mc-description">Peter demonstrates and explores How-To's, Hows and Whys of jazz and contemporary drumming. If you're a jazz novice, this is where you'll find the quickest introduction and instruction to jazz drumming. If you're more experienced, these drum lessons will confirm what you know and show you new ways to approach music-making. This is the most complete set of drum lessons Peter has ever done.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/PeterErskineMasterClass" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">16 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Independence" class="mc-category"> <span class="fa fa-arrows-alt" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                    <a title="Styles" class="mc-category"> <span class="fa fa-globe" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item reading">
+                <div class="post-tags">music, music theory, whole notes, half notes, quarter notes, rests</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Reading_Lessons"> <img src="http://www.drumchannel.com/custom/reading2.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Reading Whole, Half, and Quarter Notes in 4/4</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Don Lombardi, Joe Porcaro, Ralph Humphrey</span></div>
+                    <div class="mc-description">Learning to read music can be fun. If you are taking private lessons, the more you learn about reading on Drum Channel, the more time your teacher will have for you on the drumset. These lessons will give you some often used terms and get you thinking about the principles of music, along with starting to play what you read.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Reading_Lessons" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">6 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Reading" class="mc-category"> <span class="fa fa-book" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+            <!-- START MASTERCLASS ITEM -->
+            <div class="mc-masterclass-item reading">
+                <div class="post-tags">music, music theory, whole notes, half notes, quarter notes, eighth notes, rests</div>
+                <div class="mc-image">
+                    <a href="http://www.drumchannel.com/articles/Reading_Lessons_Part_2"> <img src="http://www.drumchannel.com/custom/reading1.png" border="0" width="306px" height="153px" /> </a>
+                    <div class="mc-difficulty mc-difficulty-beginner">Beginner</div>
+                </div>
+                <div class="mc-content">
+                    <div class="mc-title">Reading Eighth Notes in 4/4, 2/4, 3/4, 5/4</div>
+                    <div class="mc-teacher">Teacher: <span style="color: #c20000;">Don Lombardi, Joe Porcaro, Ralph Humphrey</span></div>
+                    <div class="mc-description">You will now be adding eighth notes and eighth rests along with all the other note values you have learned to read. It is important to practice with a metronome to keep your time even. Repetition of these exercises are important to not only prepare you for reading sixteenth notes, but also for future lessons on site reading.</div>
+                </div>
+                <a href="http://www.drumchannel.com/articles/Reading_Lessons_Part_2" class="btn btn-primary mc-view-class"> View Class </a>
+                <div class="mc-lesson-number">6 Lessons</div>
+                <div class="mc-category-container">
+                    <a title="Reading" class="mc-category"> <span class="fa fa-book" style="line-height: 40px;"><br /> &nbsp;</span> </a>
+                </div>
+            </div>
+            <!-- END MASTERCLASS ITEM -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
