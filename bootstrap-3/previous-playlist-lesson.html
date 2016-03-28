@@ -1,605 +1,641 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Video Page with Playlist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <!-- Custom -->
-    <link href="css/custom.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</head>
+    <head>
+        <title>Video Page with Playlist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+        <!-- Custom -->
+        <link href="css/custom.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
 
-<body>
+    <body>
 
-    <div class="container">
-        <!-- Add play button to playlist cards -->
-        <script>
-            $(document).ready(function() {
-                $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
-            });
-        </script>
+        <div class="container">
+            <!-- Add play button to playlist cards -->
+            <script>
+                $(document).ready(function() {
+                    $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
+                });
+            </script>
 
-        <!-- Lesson buttons functionality -->
-        <script>
-            $(document).ready(function() {
-                $('#notation').hide();
-                $('#show-notation').click(function() {
+            <!-- Lesson buttons functionality -->
+            <script>
+                $(document).ready(function() {
+                    $('#notation').hide();
+                    $('#show-notation').click(function() {
 
-                    var link = $(this);
-                    $('#notation').slideToggle("500ms", function() {
-                        if ($(this).is(':visible')) {
-                            link.text('Hide Notation');
-                            link.prepend('<span class="fa fa-times">&nbsp;</span>')
-                        } else {
-                            link.text('Show Notation');
-                            link.prepend('<span class="fa fa-music">&nbsp;</span>')
-                        }
+                        var link = $(this);
+                        $('#notation').slideToggle("500ms", function() {
+                            if ($(this).is(':visible')) {
+                                link.text('Hide Notation');
+                                link.prepend('<span class="fa fa-times">&nbsp;</span>')
+                            } else {
+                                link.text('Show Notation');
+                                link.prepend('<span class="fa fa-music">&nbsp;</span>')
+                            }
+                        });
                     });
                 });
-            });
-        </script>
+            </script>
 
-        <!-- Lesson video and description -->
-        <div class="row">
-            <div class="col-xs-8" style="margin: 0px 0 0 0;">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <!-- Start of video -->
-                        <div style="display: block; position: relative; max-width: 100%;">
-                            <div style="padding-top: 56.25%;">
-                                <iframe src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4807228391001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="no" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;"></iframe>
+            <!-- Lesson video and description -->
+            <div class="row">
+                <div class="col-xs-8" style="margin: 0px 0 0 0;">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Start of video -->
+                            <div style="display: block; position: relative; max-width: 100%;">
+                                <div style="padding-top: 56.25%;">
+                                    <iframe src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4807247341001" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="no" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;"></iframe>
+                                </div>
+                            </div>
+                            <!-- End of video -->
+                        </div>
+                    </div>
+                    <!-- Lesson buttons -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="btn-group btn-group-justified">
+                                <!-- Previous Lesson -->
+                                <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle-diddle" id="prev-lesson" class="btn btn-info" style="width: 100%;"><span class="fa fa-arrow-left">&nbsp;</span>Previous Lesson</a>
+                                <!-- Show Notation -->
+                                <a href="#/" id="show-notation" class="btn btn-info" style="width: 100%;"><span class="fa fa-music">&nbsp;</span>Show Notation</a>
+                                <!-- Next Lesson -->
+                                <a href="http://www.drumchannel.com/articles/rudiments-inverted-flam-tap" id="next-lesson" class="btn btn-info" style="width: 100%;"><span class="fa fa-arrow-right">&nbsp;</span>Next Lesson</a>
                             </div>
                         </div>
-                        <!-- End of video -->
                     </div>
+                    <!-- End lesson buttons -->
                 </div>
-                <!-- Lesson buttons -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="btn-group btn-group-justified">
-                            <!-- Previous Lesson -->
-                            <a href="http://www.drumchannel.com/articles/rudiments-pataflafla" id="prev-lesson" class="btn btn-info" style="width: 100%;"><span class="fa fa-arrow-left">&nbsp;</span>Previous Lesson</a>
-                            <!-- Show Notation -->
-                            <a href="#/" id="show-notation" class="btn btn-info disabled" style="width: 100%;"><span class="fa fa-music">&nbsp;</span>Show Notation</a>
-                            <!-- Next Lesson -->
-                            <a href="http://www.drumchannel.com/articles/rudiments-flammed-mill" id="next-lesson" class="btn btn-info disabled" style="width: 100%;"><span class="fa fa-arrow-right">&nbsp;</span>Next Lesson</a>
+                <div class="col-xs-4 marginless">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h1 style="margin-top: 0;">Rudimental Crash Course</h1>
+                            <h2>28 - Swiss Triplet</h2>
+                            <p><strong>Instructor: Adam Kuns</strong></p>
+                            <p>The swiss triplet is a great rudiment that can be applied to so many different areas. Once you are comfortable with it, experiment by adding different accents and diddles to it.</p>
+                            <a href="http://www.drumchannel.com/articles/rudimental-crash-course" class="btn btn-primary btn-sm"><span class="fa fa-arrow-left">&nbsp;</span>Back to Master Class</a>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: All Levels</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>3:22</span>
+                        </div>
+                    </div>
+                    <div class="row lesson-category-container">
+                        <div class="col-xs-2 marginless lesson-category">
+                            <button class="btn btn-circle btn-primary tool" data-tip="Rudiments"><span class="fa fa-cubes" style="font-size: 25px;"><br />&nbsp;</span></button>
                         </div>
                     </div>
                 </div>
-                <!-- End lesson buttons -->
             </div>
-            <div class="col-xs-4 marginless">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h1 style="margin-top: 0;">Rudimental Crash Course</h1>
-                        <h2>26 - Flammed Mill</h2>
-                        <p><strong>Instructor: Adam Kuns</strong></p>
-                        <p>The flammed mill is a take on the second inversion of the paradiddle.  This sticking is actually easier than the flam paradiddle as you only ever play two consecutive notes.</p>
-                        <a href="http://www.drumchannel.com/articles/rudimental-crash-course" class="btn btn-primary btn-sm"><span class="fa fa-arrow-left">&nbsp;</span>Back to Master Class</a>
-                    </div>
-                    <div class="panel-body lesson-meta">
-                        <span id="lesson-difficulty">Difficulty: All Levels</span>
-                        <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>2:53</span>
-                    </div>
+
+            <!-- Notation section -->
+            <div class="row" id="notation">
+                <div class="col-xs-12" style="padding-top: 20px;">
+                    <img src="http://www.drumchannel.com/custom/swiss-triplet.png" class="img-responsive" alt="Swiss Triplet" />
                 </div>
-                <div class="row lesson-category-container">
-                    <div class="col-xs-2 marginless lesson-category">
-                        <button class="btn btn-circle btn-primary tool" data-tip="Rudiments"><span class="fa fa-cubes" style="font-size: 25px;"><br />&nbsp;</span></button>
+            </div>
+            <!-- End notation section -->
+
+            <div class="row" style="padding-top: 20px;">
+                <div class="well">
+                    <div class="row">
+                        <center>
+                            <h1>Rudimental Crash Course</h1>
+                        </center>
+                    </div>
+                    <div class="row">
+
+                        <!-- Start masterclass items -->
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam1rudiments.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-roll" title="Lesson">
+                                        <h2>1 - Single Stroke Roll</h2>
+                                    </a>
+                                    <p>In this series of lessons, we will be learning our 40 standard rudiments! Beginning with the fundamental single stroke roll.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-four" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam2.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-four" title="Lesson">
+                                        <h2>2 - Single Stroke Four</h2>
+                                    </a>
+                                    <p>We will add the concept of space to the single stroke roll, which will allow us to begin working on the mechanics of motion for our single stroke roll. This is also known as the 4 stroke ruff.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-seven" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam3.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-seven" title="Lesson">
+                                        <h2>3 - Single Stroke Seven</h2>
+                                    </a>
+                                    <p>We continue to the single stroke seven which allows more of the repetitive motion in the single stroke so we can begin to build up the feeling of relaxation in the hands.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-buzz-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adambuzz.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-buzz-roll" title="Lesson">
+                                        <h2>4 - Buzz Roll</h2>
+                                    </a>
+                                    <p>This lesson introduces the idea of adding pressure to the fulcrum to create multiple bounce notes with each stroke. This will eventually develop into the double stroke roll.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-double-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam5.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-double-stroke-roll" title="Lesson">
+                                        <h2>5 - Double Stroke Roll</h2>
+                                    </a>
+                                    <p>The double stroke roll is one of the the most fundamental and important rudiments that we have as drummers. This, along with the single stroke roll are two of the primary motions that we will use.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-triple-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam7.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-triple-stroke-roll" title="Lesson">
+                                        <h2>6 - Triple Stroke Roll</h2>
+                                    </a>
+                                    <p>The triple stroke roll is a great supplementary rudiment. It will become more important later on as we begin to talk about flam rudiments.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-5-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam6.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-5-stroke-roll" title="Lesson">
+                                        <h2>7 - 5 Stroke Roll</h2>
+                                    </a>
+                                    <p>Time to start with the roll rudiments! The 5 stroke roll is one of the staple rudiments in our arsenal. This lesson explains the timing and demonstrates the motion.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-6-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam8.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-6-stroke-roll" title="Lesson">
+                                        <h2>8 - 6 Stroke Roll</h2>
+                                    </a>
+                                    <p>The 6 stroke roll is a great rudiment to add to your vocabulary. This rudiment is very versatile and can be used around the drum set to great effect once you have mastered it.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-7-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam9.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-7-stroke-roll" title="Lesson">
+                                        <h2>9 - 7 Stroke Roll</h2>
+                                    </a>
+                                    <p>The seven stroke roll can be played in either a duple or a triplet feel. It is always comprised of three groups of double strokes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-9-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam10.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-9-stroke-roll" title="Lesson">
+                                        <h2>10 - 9 Stroke Roll</h2>
+                                    </a>
+                                    <p>The nine stroke roll is played primarily in a duple feel, and always has four groups of double strokes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-10-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam11.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-10-stroke-roll" title="Lesson">
+                                        <h2>11 - 10 Stroke Roll</h2>
+                                    </a>
+                                    <p>The ten stroke roll is similar to the six stroke roll in that it begins with a tap on one hand and ends with a release on the other hand. Like the nine stroke roll, there are always four groups of double strokes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-11-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam12.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-11-stroke-roll" title="Lesson">
+                                        <h2>12 - 11 Stroke Roll</h2>
+                                    </a>
+                                    <p>The eleven stroke roll is characterized as having a tap at the beginning followed by five groups of double strokes. It fits very nicely into a triplet feel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-13-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam13.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-13-stroke-roll" title="Lesson">
+                                        <h2>13 - 13 Stroke Roll</h2>
+                                    </a>
+                                    <p>The thirteen stroke roll can be played easily within either a duple or a triplet feel. It always has six groups of double strokes and a release.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-15-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam14.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-15-stroke-roll" title="Lesson">
+                                        <h2>14 - 15 Stroke Roll</h2>
+                                    </a>
+                                    <p>The fifteen stroke roll fits really well within a duple context. It has seven groups of double strokes and a tap at the beginning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-17-stroke-roll" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam15.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-17-stroke-roll" title="Lesson">
+                                        <h2>15 - 17 Stroke Roll</h2>
+                                    </a>
+                                    <p>Beyond the seventeen stroke roll, you cross into the territory of playing arbitrarily long rolls. The seventeen stroke roll however has eight groups of double strokes and a release at the end.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-paradiddle" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam16.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-single-paradiddle" title="Lesson">
+                                        <h2>16 - Single Paradiddle</h2>
+                                    </a>
+                                    <p>The single paradiddle might be the single most versatile rudiment you will learn. It is the beginning of mixed stickings and will serve you well if learned correctly!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-double-paradiddle" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam17.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div">
+                                        <br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-double-paradiddle" title="Lesson">
+                                        <h2>17 - Double Paradiddle</h2>
+                                    </a>
+                                    <p>Also known as the paraparadiddle, this rudiment is incredibly versatile and useful on the drumset.  Just like the single paradiddle, it switches hands every time you play it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-triple-paradiddle" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam18.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-triple-paradiddle" title="Lesson">
+                                        <h2>18 - Triple Paradiddle</h2>
+                                    </a>
+                                    <p>This could also be called the Paraparaparadiddle!  Three sets of singles and one set of doubles.  The triple paradiddle alternates hand to hand just like the previous two paradiddle rudiments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-paradiddlediddle" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam19.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-paradiddlediddle" title="Lesson">
+                                        <h2>19 - Paradiddlediddle</h2>
+                                    </a>
+                                    <p>This is one of the most useful and well known rudiments that we as drummers can have in our arsenal. It is similar to the double paradiddle in that it is 6 notes in length, but there is only one set of singles and two sets of doubles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam20.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam" title="Lesson">
+                                        <h2>20 - Flam</h2>
+                                    </a>
+                                    <p>This rudiment is a simple principle, but as we apply it to other rudiments and begin learning the various flam rudiments, you will begin to build and understand hand dexterity through its use.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-accent" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam21.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-accent" title="Lesson">
+                                        <h2>21 - Flam Accent</h2>
+                                    </a>
+                                    <p>This rudiment is a great pattern upon which to add different diddle and extra flams to.  It is a relatively simple motion, but this rudiment works your ability to play multiple bounces on each hand in a controlled way.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-tap" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam22.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-tap" title="Lesson">
+                                        <h2>22 - Flam Tap</h2>
+                                    </a>
+                                    <p>The flam tap, like the flam accent, practices your ability to play controlled multiple bounce strokes on each hand. The basis of the flam tap is the three stroke roll.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flamacue" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam23.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flamacue" title="Lesson">
+                                        <h2>23 - Flamacue</h2>
+                                    </a>
+                                    <p>This is the first rudiment that has something close to an 'inverted' sticking motion on the hands.  The secondary hand will need to be dexterous and quick to pull out the accent after the flam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam24.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle" title="Lesson">
+                                        <h2>24 - Flam Paradiddle</h2>
+                                    </a>
+                                    <p>Let's take the classic paradiddle and add flams! This is one of the more difficult flam rudiments as you will be playing four strokes in a row on each hand every time it switches.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-pataflafla" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam6.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-pataflafla" title="Lesson">
+                                        <h2>25 - Pataflafla</h2>
+                                    </a>
+                                    <p>This exotically named rudiment is another one that requires a quick inverted motion from the wrists.  This rudiment will lend itself well to Brazilian rhythms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flammed-mill" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam3.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flammed-mill" title="Lesson">
+                                        <h2>26 - Flammed Mill</h2>
+                                    </a>
+                                    <p>The flammed mill is a take on the second inversion of the paradiddle.  This sticking is actually easier than the flam paradiddle as you only ever play two consecutive notes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle-diddle" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam4.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle-diddle" title="Lesson">
+                                        <h2>27 - Flam Paradiddle-diddle</h2>
+                                    </a>
+                                    <p>This rudiment requires a lot of hand dexterity and endurance. It is not meant to be played fast, but it will build up hand strength even at slower tempos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="panel panel-default newest-panel">
+                                <div class="newest-image">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-swiss-triplet" title="Lesson">
+                                        <img src="http://www.drumchannel.com/custom/adam16.png" class="img-responsive" />
+                                    </a>
+                                    <div class="play-div"><br>&nbsp;</div>
+                                </div>
+                                <div class="panel-body" style="height: 120px;">
+                                    <a href="http://www.drumchannel.com/articles/rudiments-swiss-triplet" title="Lesson">
+                                        <h2>28 - Swiss Triplet</h2>
+                                    </a>
+                                    <p>The swiss triplet is a great rudiment that can be applied to so many different areas. Once you are comfortable with it, experiment by adding different accents and diddles to it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End masterclass items -->
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Notation section -->
-        <div class="row" id="notation">
-            <div class="col-xs-12" style="padding-top: 20px;">
-                <img src="http://www.drumchannel.com/custom/flam-paradiddle.png" class="img-responsive" alt="flam paradiddle" />
-            </div>
-        </div>
-        <!-- End notation section -->
-
-        <div class="row" style="padding-top: 20px;">
-            <div class="well">
-                <div class="row">
-                    <center>
-                        <h1>Rudimental Crash Course</h1>
-                    </center>
-                </div>
-                <div class="row">
-
-                    <!-- Start masterclass items -->
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam1rudiments.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-roll" title="Lesson">
-                                    <h2>1 - Single Stroke Roll</h2>
-                                </a>
-                                <p>In this series of lessons, we will be learning our 40 standard rudiments! Beginning with the fundamental single stroke roll.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-four" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam2.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-four" title="Lesson">
-                                    <h2>2 - Single Stroke Four</h2>
-                                </a>
-                                <p>We will add the concept of space to the single stroke roll, which will allow us to begin working on the mechanics of motion for our single stroke roll. This is also known as the 4 stroke ruff.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-seven" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam3.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-stroke-seven" title="Lesson">
-                                    <h2>3 - Single Stroke Seven</h2>
-                                </a>
-                                <p>We continue to the single stroke seven which allows more of the repetitive motion in the single stroke so we can begin to build up the feeling of relaxation in the hands.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-buzz-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adambuzz.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-buzz-roll" title="Lesson">
-                                    <h2>4 - Buzz Roll</h2>
-                                </a>
-                                <p>This lesson introduces the idea of adding pressure to the fulcrum to create multiple bounce notes with each stroke. This will eventually develop into the double stroke roll.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-double-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam5.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-double-stroke-roll" title="Lesson">
-                                    <h2>5 - Double Stroke Roll</h2>
-                                </a>
-                                <p>The double stroke roll is one of the the most fundamental and important rudiments that we have as drummers. This, along with the single stroke roll are two of the primary motions that we will use.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-triple-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam7.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-triple-stroke-roll" title="Lesson">
-                                    <h2>6 - Triple Stroke Roll</h2>
-                                </a>
-                                <p>The triple stroke roll is a great supplementary rudiment. It will become more important later on as we begin to talk about flam rudiments.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-5-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam6.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-5-stroke-roll" title="Lesson">
-                                    <h2>7 - 5 Stroke Roll</h2>
-                                </a>
-                                <p>Time to start with the roll rudiments! The 5 stroke roll is one of the staple rudiments in our arsenal. This lesson explains the timing and demonstrates the motion.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-6-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam8.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-6-stroke-roll" title="Lesson">
-                                    <h2>8 - 6 Stroke Roll</h2>
-                                </a>
-                                <p>The 6 stroke roll is a great rudiment to add to your vocabulary. This rudiment is very versatile and can be used around the drum set to great effect once you have mastered it.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-7-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam9.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-7-stroke-roll" title="Lesson">
-                                    <h2>9 - 7 Stroke Roll</h2>
-                                </a>
-                                <p>The seven stroke roll can be played in either a duple or a triplet feel. It is always comprised of three groups of double strokes.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-9-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam10.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-9-stroke-roll" title="Lesson">
-                                    <h2>10 - 9 Stroke Roll</h2>
-                                </a>
-                                <p>The nine stroke roll is played primarily in a duple feel, and always has four groups of double strokes.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-10-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam11.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-10-stroke-roll" title="Lesson">
-                                    <h2>11 - 10 Stroke Roll</h2>
-                                </a>
-                                <p>The ten stroke roll is similar to the six stroke roll in that it begins with a tap on one hand and ends with a release on the other hand. Like the nine stroke roll, there are always four groups of double strokes.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-11-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam12.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-11-stroke-roll" title="Lesson">
-                                    <h2>12 - 11 Stroke Roll</h2>
-                                </a>
-                                <p>The eleven stroke roll is characterized as having a tap at the beginning followed by five groups of double strokes. It fits very nicely into a triplet feel.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-13-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam13.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-13-stroke-roll" title="Lesson">
-                                    <h2>13 - 13 Stroke Roll</h2>
-                                </a>
-                                <p>The thirteen stroke roll can be played easily within either a duple or a triplet feel. It always has six groups of double strokes and a release.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-15-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam14.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-15-stroke-roll" title="Lesson">
-                                    <h2>14 - 15 Stroke Roll</h2>
-                                </a>
-                                <p>The fifteen stroke roll fits really well within a duple context. It has seven groups of double strokes and a tap at the beginning.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-17-stroke-roll" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam15.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-17-stroke-roll" title="Lesson">
-                                    <h2>15 - 17 Stroke Roll</h2>
-                                </a>
-                                <p>Beyond the seventeen stroke roll, you cross into the territory of playing arbitrarily long rolls. The seventeen stroke roll however has eight groups of double strokes and a release at the end.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-paradiddle" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam16.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-single-paradiddle" title="Lesson">
-                                    <h2>16 - Single Paradiddle</h2>
-                                </a>
-                                <p>The single paradiddle might be the single most versatile rudiment you will learn. It is the beginning of mixed stickings and will serve you well if learned correctly!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-double-paradiddle" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam17.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div">
-                                    <br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-double-paradiddle" title="Lesson">
-                                    <h2>17 - Double Paradiddle</h2>
-                                </a>
-                                <p>Also known as the paraparadiddle, this rudiment is incredibly versatile and useful on the drumset.  Just like the single paradiddle, it switches hands every time you play it.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-triple-paradiddle" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam18.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-triple-paradiddle" title="Lesson">
-                                    <h2>18 - Triple Paradiddle</h2>
-                                </a>
-                                <p>This could also be called the Paraparaparadiddle!  Three sets of singles and one set of doubles.  The triple paradiddle alternates hand to hand just like the previous two paradiddle rudiments.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-paradiddlediddle" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam19.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-paradiddlediddle" title="Lesson">
-                                    <h2>19 - Paradiddlediddle</h2>
-                                </a>
-                                <p>This is one of the most useful and well known rudiments that we as drummers can have in our arsenal. It is similar to the double paradiddle in that it is 6 notes in length, but there is only one set of singles and two sets of doubles.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam20.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam" title="Lesson">
-                                    <h2>20 - Flam</h2>
-                                </a>
-                                <p>This rudiment is a simple principle, but as we apply it to other rudiments and begin learning the various flam rudiments, you will begin to build and understand hand dexterity through its use.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam-accent" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam21.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam-accent" title="Lesson">
-                                    <h2>21 - Flam Accent</h2>
-                                </a>
-                                <p>This rudiment is a great pattern upon which to add different diddle and extra flams to.  It is a relatively simple motion, but this rudiment works your ability to play multiple bounces on each hand in a controlled way.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam-tap" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam22.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam-tap" title="Lesson">
-                                    <h2>22 - Flam Tap</h2>
-                                </a>
-                                <p>The flam tap, like the flam accent, practices your ability to play controlled multiple bounce strokes on each hand. The basis of the flam tap is the three stroke roll.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flamacue" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam23.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flamacue" title="Lesson">
-                                    <h2>23 - Flamacue</h2>
-                                </a>
-                                <p>This is the first rudiment that has something close to an 'inverted' sticking motion on the hands.  The secondary hand will need to be dexterous and quick to pull out the accent after the flam.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam24.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flam-paradiddle" title="Lesson">
-                                    <h2>24 - Flam Paradiddle</h2>
-                                </a>
-                                <p>Let's take the classic paradiddle and add flams! This is one of the more difficult flam rudiments as you will be playing four strokes in a row on each hand every time it switches.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-pataflafla" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam6.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-pataflafla" title="Lesson">
-                                    <h2>25 - Pataflafla</h2>
-                                </a>
-                                <p>This exotically named rudiment is another one that requires a quick inverted motion from the wrists.  This rudiment will lend itself well to Brazilian rhythms.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="panel panel-default newest-panel">
-                            <div class="newest-image">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flammed-mill" title="Lesson">
-                                    <img src="http://www.drumchannel.com/custom/adam3.png" class="img-responsive" />
-                                </a>
-                                <div class="play-div"><br>&nbsp;</div>
-                            </div>
-                            <div class="panel-body" style="height: 120px;">
-                                <a href="http://www.drumchannel.com/articles/rudiments-flammed-mill" title="Lesson">
-                                    <h2>26 - Flammed Mill</h2>
-                                </a>
-                                <p>The flammed mill is a take on the second inversion of the paradiddle.  This sticking is actually easier than the flam paradiddle as you only ever play two consecutive notes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End masterclass items -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
+    </body>
 
 </html>
