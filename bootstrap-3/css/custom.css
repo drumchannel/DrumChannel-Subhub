@@ -1030,7 +1030,7 @@ p {
 */
 /* SFTP layout
 ============================== */
-/* line 10, ../scss/_sftp.scss */
+/* line 10, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .sftp-item {
   margin-bottom: 20px;
   padding-top: 15px;
@@ -1038,12 +1038,12 @@ p {
 
 /* SFTP panels
 ============================== */
-/* line 19, ../scss/_sftp.scss */
+/* line 19, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-image {
   position: relative;
   z-index: 1000;
 }
-/* line 22, ../scss/_sftp.scss */
+/* line 22, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-image .sftp-number {
   position: absolute;
   padding: 10px 15px;
@@ -1058,36 +1058,36 @@ p {
   vertical-align: middle;
 }
 
-/* line 37, ../scss/_sftp.scss */
+/* line 37, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .sftp-panel {
   box-shadow: 0 5px 3px #ccc;
   margin-bottom: 15px;
 }
 
-/* line 42, ../scss/_sftp.scss */
+/* line 42, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .sftp-meta-tags {
   display: none;
 }
 
-/* line 48, ../scss/_sftp.scss */
+/* line 48, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta {
   background: #333;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 52, ../scss/_sftp.scss */
+/* line 52, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta > p {
   color: #fff;
   padding: 0;
   margin: 0;
 }
-/* line 57, ../scss/_sftp.scss */
+/* line 57, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta #lesson-difficulty {
   display: inline-block;
   float: left;
   color: #d8d8de;
 }
-/* line 62, ../scss/_sftp.scss */
+/* line 62, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta #lesson-length {
   display: inline-block;
   float: right;
@@ -1096,13 +1096,13 @@ p {
 
 /* Lesson categories
 ============================== */
-/* line 74, ../scss/_sftp.scss */
+/* line 74, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-category-container {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 79, ../scss/_sftp.scss */
+/* line 79, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-category {
   text-align: center;
   padding-top: 2px;
@@ -1111,13 +1111,13 @@ p {
 
 /* Tooltip
 ============================== */
-/* line 89, ../scss/_sftp.scss */
+/* line 89, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool {
   cursor: default;
   position: relative;
 }
 
-/* line 95, ../scss/_sftp.scss */
+/* line 95, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool::before,
 .tool::after {
   position: absolute;
@@ -1126,7 +1126,7 @@ p {
   z-index: -100;
 }
 
-/* line 105, ../scss/_sftp.scss */
+/* line 105, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool:hover::before,
 .tool:focus::before,
 .tool:hover::after,
@@ -1136,7 +1136,7 @@ p {
   transform: scale(1) translateY(0);
 }
 
-/* line 111, ../scss/_sftp.scss */
+/* line 111, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool::before {
   border: solid;
   border-width: 1em .7em 0 .75em;
@@ -1148,13 +1148,13 @@ p {
   transition: all 0.65s cubic-bezier(0.85, -0.18, 0.31, 1.26), opacity 0.65s 0.5s;
 }
 
-/* line 123, ../scss/_sftp.scss */
+/* line 123, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool:hover::before,
 .tool:focus::before {
   transition-delay: .2s;
 }
 
-/* line 127, ../scss/_sftp.scss */
+/* line 127, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool::after {
   background: #3e474f;
   border-radius: .25em;
@@ -1169,7 +1169,7 @@ p {
   transition: all 0.65s cubic-bezier(0.85, -0.18, 0.31, 1.26) 0.2s;
 }
 
-/* line 142, ../scss/_sftp.scss */
+/* line 142, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool:hover::after,
 .tool:focus::after {
   transition-delay: .2s;
@@ -1181,34 +1181,34 @@ p {
 */
 /* Typography
 ============================== */
-/* line 17, ../scss/_homepage.scss */
+/* line 17, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .home-section {
   text-align: center;
 }
-/* line 19, ../scss/_homepage.scss */
+/* line 19, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .home-section h1 {
   font-size: 48px;
   color: #c20000;
   margin: 0;
 }
-/* line 24, ../scss/_homepage.scss */
+/* line 24, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .home-section #lead {
   color: #474747;
 }
 
-/* line 29, ../scss/_homepage.scss */
+/* line 29, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .top-header {
   text-align: center;
   padding: 35px;
 }
-/* line 32, ../scss/_homepage.scss */
+/* line 32, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .top-header h1 {
   font-size: 36px;
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
 }
-/* line 38, ../scss/_homepage.scss */
+/* line 38, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .top-header h2 {
   color: #444;
   font-size: 30px;
@@ -1217,26 +1217,26 @@ p {
   padding: 0;
 }
 
-/* line 47, ../scss/_homepage.scss */
+/* line 47, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #lead {
   font-size: 21px;
   margin: 20px;
   padding: 0;
 }
 
-/* line 53, ../scss/_homepage.scss */
+/* line 53, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .overlay-bg {
   text-align: center;
   padding: 20px 0;
 }
 
-/* line 58, ../scss/_homepage.scss */
+/* line 58, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .cta-btn, #final-cta-btn {
   font-size: 24px;
   padding: 20px 70px;
 }
 
-/* line 63, ../scss/_homepage.scss */
+/* line 63, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #big-cta-header {
   font-size: 30px;
   margin: 0;
@@ -1246,10 +1246,10 @@ p {
 
 /* Layout
 ============================== */
-/* line 74, ../scss/_homepage.scss */
+/* line 74, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero {
   text-align: center;
-  background-image: url(http://www.drumchannel.com/custom/hero-image1.png);
+  background-image: url(http://www.drumchannel.com/custom/tour-studio.png);
   background-size: cover;
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
@@ -1258,26 +1258,26 @@ p {
   margin-bottom: 0px;
   padding: 110px 80px 0;
 }
-/* line 81, ../scss/_homepage.scss */
+/* line 81, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero .hero-cta {
   padding-bottom: 80px;
 }
-/* line 83, ../scss/_homepage.scss */
+/* line 83, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero .hero-cta h1 {
   margin-bottom: 20px;
   color: #fff;
   padding: 0;
   font-size: 81px;
 }
-/* line 89, ../scss/_homepage.scss */
+/* line 89, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero .hero-cta #lead {
   color: #fff;
 }
 
-/* line 95, ../scss/_homepage.scss */
+/* line 95, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero {
   text-align: center;
-  background-image: url(http://www.drumchannel.com/custom/hero-image1.png);
+  background-image: url(http://www.drumchannel.com/custom/tour-studio.png);
   background-size: cover;
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
@@ -1286,23 +1286,23 @@ p {
   margin-bottom: 0px;
   padding: 150px 80px 150px;
 }
-/* line 102, ../scss/_homepage.scss */
+/* line 102, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero .hero-cta {
   padding-bottom: 80px;
 }
-/* line 104, ../scss/_homepage.scss */
+/* line 104, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero .hero-cta h1 {
   margin-bottom: 20px;
   color: #fff;
   padding: 0;
   font-size: 81px;
 }
-/* line 110, ../scss/_homepage.scss */
+/* line 110, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero .hero-cta #lead {
   color: #fff;
 }
 
-/* line 115, ../scss/_homepage.scss */
+/* line 115, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .btn-hero {
   text-transform: uppercase;
   font-weight: bold;
@@ -1314,20 +1314,20 @@ p {
   border-radius: 0px;
 }
 
-/* line 123, ../scss/_homepage.scss */
+/* line 123, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features {
   text-align: center;
   padding: 40px 0 20px;
 }
-/* line 127, ../scss/_homepage.scss */
+/* line 127, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features .feature-item {
   padding: 0 40px;
 }
-/* line 129, ../scss/_homepage.scss */
+/* line 129, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features .feature-item p {
   font-size: 16px;
 }
-/* line 133, ../scss/_homepage.scss */
+/* line 133, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features span {
   font-size: 80px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1340,16 +1340,16 @@ p {
   transition: all 0.4s ease-in-out 0s;
   color: #c20000;
 }
-/* line 140, ../scss/_homepage.scss */
+/* line 140, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features span:hover {
   color: #a90000;
 }
 
-/* line 146, ../scss/_homepage.scss */
+/* line 146, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule {
   margin: 0 -80px;
 }
-/* line 148, ../scss/_homepage.scss */
+/* line 148, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-title {
   padding: 27px 0px 28px 20px;
   background: #fff;
@@ -1373,7 +1373,7 @@ p {
   }
   */
 }
-/* line 151, ../scss/_homepage.scss */
+/* line 151, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-title p {
   font-size: 20px !important;
   font-weight: bold;
@@ -1383,7 +1383,7 @@ p {
   margin: 0;
   padding: 0;
 }
-/* line 180, ../scss/_homepage.scss */
+/* line 180, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-content {
   border-top: 2px solid rgba(68, 68, 68, 0.6);
   border-right: 2px solid rgba(68, 68, 68, 0.6);
@@ -1392,7 +1392,7 @@ p {
   margin: 0;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 187, ../scss/_homepage.scss */
+/* line 187, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-content p {
   text-align: left;
   font-size: 20px !important;
@@ -1404,19 +1404,19 @@ p {
   text-transform: none;
 }
 
-/* line 200, ../scss/_homepage.scss */
+/* line 200, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #instructors {
   padding-bottom: 60px;
 }
 
-/* line 205, ../scss/_homepage.scss */
+/* line 205, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #learn-at-your-pace p {
   font-size: 20px;
   color: #c20000;
   line-height: 1.5;
   text-align: left;
 }
-/* line 211, ../scss/_homepage.scss */
+/* line 211, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #learn-at-your-pace h2 {
   text-align: center;
   font-size: 30px;
@@ -1433,7 +1433,7 @@ p {
 
 /* Effects
 ============================== */
-/* line 230, ../scss/_homepage.scss */
+/* line 230, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box {
   position: relative;
   background: #fff;
@@ -1441,7 +1441,7 @@ p {
   z-index: 1000;
 }
 
-/* line 238, ../scss/_homepage.scss */
+/* line 238, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box:after,
 .arrow_box:before {
   left: 100%;
@@ -1455,7 +1455,7 @@ p {
   z-index: 1000;
 }
 
-/* line 250, ../scss/_homepage.scss */
+/* line 250, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box:after {
   border-color: rgba(255, 255, 255, 0);
   border-left-color: #fff;
@@ -1463,7 +1463,7 @@ p {
   margin-top: -35px;
 }
 
-/* line 257, ../scss/_homepage.scss */
+/* line 257, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box:before {
   border-color: rgba(194, 0, 0, 0);
   border-left-color: #c20000;
@@ -1473,7 +1473,7 @@ p {
 
 /* Colors schemes
 ============================== */
-/* line 268, ../scss/_homepage.scss */
+/* line 268, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #inverse-btn {
   background: #fff;
   color: #c20000;
@@ -1488,32 +1488,32 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 277, ../scss/_homepage.scss */
+/* line 277, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #inverse-btn:hover {
   background: #c20000;
   color: #fff;
   box-shadow: none;
 }
 
-/* line 284, ../scss/_homepage.scss */
+/* line 284, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #final-cta-btn {
   padding: 20px 200px;
 }
 
-/* line 289, ../scss/_homepage.scss */
+/* line 289, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #day-icon {
   color: #444;
 }
 
 /* Price Tables
 ============================== */
-/* line 297, ../scss/_homepage.scss */
+/* line 297, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .price-tables {
   /*background-image: url('http://www.drumchannel.com/custom/price-bg.png');*/
   margin: 0;
 }
 
-/* line 302, ../scss/_homepage.scss */
+/* line 302, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price {
   text-align: center;
   border: 4px solid #444;
@@ -1525,12 +1525,12 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 308, ../scss/_homepage.scss */
+/* line 308, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-heading {
   background: #444;
   color: #fff;
 }
-/* line 311, ../scss/_homepage.scss */
+/* line 311, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-heading h2 {
   font-size: 24px;
   padding: 10px;
@@ -1538,23 +1538,23 @@ p {
   letter-spacing: 1.2px;
   color: #fff;
 }
-/* line 319, ../scss/_homepage.scss */
+/* line 319, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price table {
   font-size: 13px;
 }
-/* line 322, ../scss/_homepage.scss */
+/* line 322, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price table tr td {
   text-align: center;
   line-height: 2.5;
   color: #000;
   font-size: 120%;
 }
-/* line 327, ../scss/_homepage.scss */
+/* line 327, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price table tr td mark {
   background-color: yellow;
   padding: .35em;
 }
-/* line 334, ../scss/_homepage.scss */
+/* line 334, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -1562,14 +1562,14 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 336, ../scss/_homepage.scss */
+/* line 336, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag h3 {
   font-size: 24px;
   font-weight: normal;
   margin: 0;
   padding: 0 0 15px;
 }
-/* line 342, ../scss/_homepage.scss */
+/* line 342, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn {
   font-size: 20px;
   padding: 10px 30px;
@@ -1583,14 +1583,14 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 350, ../scss/_homepage.scss */
+/* line 350, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn:hover {
   box-shadow: 0px 8px 8px -8px black;
 }
 
 /* Navbar
 ============================== */
-/* line 360, ../scss/_homepage.scss */
+/* line 360, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .navbar {
   margin: 0;
   border-radius: none;
@@ -1598,7 +1598,7 @@ p {
 
 /* Dammit
 ============================== */
-/* line 368, ../scss/_homepage.scss */
+/* line 368, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #portlet-nav-1 #static_211 a, #portlet-nav-1 #static_236 a, #portlet-nav-1 #static_251 a, #portlet-nav-1 #static_251 a {
   background-image: none;
   border: none;
@@ -1618,13 +1618,13 @@ p {
 */
 /* Headings
 ============================== */
-/* line 10, ../scss/_featured.scss */
+/* line 10, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_featured.scss */
 .schedule-2-col h2, .schedule-2-col h3, .schedule-2-col h4 {
   margin: 10px;
   padding: 0;
 }
 
-/* line 16, ../scss/_featured.scss */
+/* line 16, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_featured.scss */
 .new {
   border-radius: 50%;
   width: 50px;
