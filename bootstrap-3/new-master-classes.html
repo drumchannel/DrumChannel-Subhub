@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Master Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Scripts -->
+        <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.quicksearch/2.0.5/jquery.quicksearch.min.js"></script>
+        <Script type="text/javascript" src="js/search.js"></Script>
+        <!-- End scripts -->
+
+        <!-- Search and filters -->
+        <div class="row">
+
+            <!-- Search bar -->
+            <div class="col-xs-6 col-xs-offset-3">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="search">Search:</label>
+                        <input id="quicksearch" type="search" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <!-- End search bar -->
+
+            <!-- Sorting -->
+            <div class="col-xs-12">
+                <div id="sort-order" class="button-group">
+                    <button class="button active" data-sort-value="original-order">Newest</button>
+                    <button class="button" data-sort-value="title"><span class="fa fa-sort-alpha-asc"></span>&nbsp;Title</button>
+                    <button class="button" data-sort-value="teacher"><span class="fa fa-user"></span>&nbsp;Instructor</button>
+                    <button class="button" data-sort-value="difficulty"><span class="fa fa-signal"></span>&nbsp;Difficulty</button>
+                </div>
+            </div>
+            <!-- End sorting -->
+
+            <!-- Filters -->
+            <div class="col-xs-12">
+                <div id="filters" class="button-group">
+                    <button class="button active" data-filter="*">Show All</button>
+                    <button class="button" data-filter=".rudiments"><span class="fa fa-cubes"></span>&nbsp;Rudiments</button>
+                    <button class="button" data-filter=".technique, .hands, .feet"><span class="fa fa-cogs"></span>&nbsp;Technique</button>
+                    <button class="button" data-filter=".vocabulary"><span class="fa fa-music"></span>&nbsp;Vocabulary</button>
+                    <button class="button" data-filter=".independence"><span class="fa fa-arrows-alt"></span>&nbsp;Independence</button>
+                    <button class="button" data-filter=".reading"><span class="fa fa-book"></span>&nbsp;Reading</button>
+                    <button class="button" data-filter=".styles"><span class="fa fa-globe"></span>&nbsp;Styles</button>
+                    <button class="button" data-filter=".clinic"><span class="fa fa-graduation-cap"></span>&nbsp;Clinics</button>
+                </div>
+            </div>
+            <!-- End filters -->
+
+        </div>
+        <!-- End search and filters -->
+
+        <!-- Master classes container -->
+        <div class="row" style="margin-top: 20px;">
+
+            <!-- Isotope container -->
+            <div class="master-classes" style="position: relative;">
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item rudiments">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/elitch-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title">
+                                <a href="">
+                                    Paradiddle-diddle Perfection
+                                </a>
+                            </h2>
+                            <p class="class-instructor"><strong>Dave Elitch</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Intermediate</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>6 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Paradiddle-diddle Perfection</h2>-->
+                                <span class="master-class-info">Dave Elitch has played with The Mars Volta, Miley Cyrus, and many others. He is known in the music industry as a highly versatile and musical drummer. In this series of lessons, he will show you how to maximize your use of the paradiddle-diddle rudiment. You will learn how to play it properly, and then how to use it in different scenarios.
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Rudiments
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item rudiments">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/adam-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Rudimental Crash Course</a></h2>
+                            <p class="class-instructor"><strong>Adam Kuns</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: All Levels</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>40 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Rudimental Crash Course</h2>-->
+                                <span class="master-class-info">In this course, we are going to learn our 40 standard rudiments. It doesn't matter what level you are at, it's important to have these all under your belt so that you can be well rounded and will have a wide variety of sticking choices and different ways of playing and approaching music.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Rudiments
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item vocabulary styles" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/rick-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Serious Shuffles</a></h2>
+                            <p class="class-instructor"><strong>Rick Latham</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Intermediate</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>6 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Serious Shuffles</h2>-->
+                                <span class="master-class-info">Rick Latham has played with some of the biggest names in the music industry. His credits range from Edgar Winter to Stevie Ray Vaughan. In this series of lessons, he will show you different stylistic interpretations of the shuffle, as well as exercises to improve your groove and coordination as it relates to the shuffle.
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Vocabulary
+                        </div>
+                        <div class="class-category">
+                            Styles
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item clinic" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/aaron-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Aaron Spears Clinic</a></h2>
+                            <p class="class-instructor"><strong>Aaron Spears</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: All Levels</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>4 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Aaron Spears Clinic</h2>-->
+                                <span class="master-class-info">Aaron Spears "hopes to inspire future drummers the way that he was inspired by all those greats that came before him". He is currently playing with Usher and has played for the American Idol Tour, Alicia Keys, James Brown, Gideon Band, and many others. He answers a lot of great questions in this Master Class series.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Clinic
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item vocabulary" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/gregg-mc.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Gregg Bissonette Drum School</a></h2>
+                            <p class="class-instructor"><strong>Gregg Bissonette</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: All Levels</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>58 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Gregg Bissonette Drum School</h2>-->
+                                <span class="master-class-info">Gregg Bissonette's Drum School is about adding to your drumming vocabulary and this series of classic drum beats and fills is a must. The idea is not only to learn Gregg's interpretation of these classics, but for you to put your "spin" on them so your vocabulary becomes part of your style.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Vocabulary
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item styles" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/val-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Beginner Drum Set Lessons</a></h2>
+                            <p class="class-instructor"><strong>Val Sepulveda</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Beginner</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>10 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Beginner Drum Set Lessons</h2>-->
+                                <span class="master-class-info">This lesson plan is designed to get you from square 1 to playing with a band on the drum set. This series focuses on some key grooves and will teach you essential musical elements needed to perform with confidence and accuracy on the drum set.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Styles
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item independence" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/ralph3-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Four-Way Time Coordination</a></h2>
+                            <p class="class-instructor"><strong>Ralph Humphrey</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Advanced</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>9 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Four-Way Time Coordination</h2>-->
+                                <span class="master-class-info">These 4-way coordination exercises will open the door to future advanced patterns and make them easy to play. Learning to lead with both hands will give you amazing freedom in playing patterns. As noted in the fundamental lessons, you can go through these exercises first with just your natural lead hand.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Independence
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item independence" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/ralph2-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Three-Way Time Coordination</a></h2>
+                            <p class="class-instructor"><strong>Ralph Humphrey</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Intermediate</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>10 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Three-Way Time Coordination</h2>-->
+                                <span class="master-class-info">While you may be learning to play Rock patterns and Jazz or Latin and other Master Classes or lessons it is important that you systematically study your time function coordination. These are systematic exercises and while they are preparing you for the future, they can also be used in patterns and fills as you progress.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Independence
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item independence" style="height: 325.06;">
+                    <div class="class-tags"></div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/ralph1-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Two-Way Time Coordination</a></h2>
+                            <p class="class-instructor"><strong>Ralph Humphrey</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Beginner</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>11 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Two-Way Time Coordination</h2>-->
+                                <span class="master-class-info">There are many great books available with exercises for the drum set using your hands and feet. This course will prepare you to easily play those books as we teach you how to play combinations of hands and feet in a way that will enhance your time function and coordination.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Independence
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item technique" style="height: 325.06;">
+                    <div class="class-tags">foot feet bass drum speed pedal pedals blast beat</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/mikepacker-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Bass Drum Foot Technique</a></h2>
+                            <p class="class-instructor"><strong>Mike Packer</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Beginner</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>10 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Bass Drum Foot Technique</h2>-->
+                                <span class="master-class-info">This class gives students the knowledge and ability to play many commonly used bass drum rhythms and patterns accurately. Through detailed explanation of motion, control and weight distribution, students will understand how the pedal functions and the options they have when playing notes or patterns.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Technique
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item technique" style="height: 325.06;">
+                    <div class="class-tags">speed bass bass drum metal fast feet foot</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/iannetta-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Bass Drum Speed</a></h2>
+                            <p class="class-instructor"><strong>Marco Iannetta</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Advanced</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>6 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Bass Drum Speed</h2>-->
+                                <span class="master-class-info">This is a series on Bass Drum Speed. Marco has some of the quickest feet in the world! He shares some of his tips on how he plays. Pay close attention and start out slow.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Technique
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item clinic" style="height: 325.06;">
+                    <div class="class-tags">sting the police composition clinic paradiddles rolls doubles</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/copeland-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Stewart Copeland Clinic</a></h2>
+                            <p class="class-instructor"><strong>Stewart Copeland</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: All Levels</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>6 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Stewart Copeland Clinic</h2>-->
+                                <span class="master-class-info">Stewart Copeland is a drumming legend who has influenced generations of players all around the world. Chosen by the readers of Modern Drummer magazine as one of the "50 Greatest Drummers Of All Time” and best known for his precise, energetic, signature drumming with The Police, he is also a highly-respected TV/Film soundtrack composer.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Clinic
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item styles" style="height: 325.06;">
+                    <div class="class-tags">cha cha samba songo samba perc percussion latin latino acuna</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/acuna-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Authentic Latin Rhythms on Drums</a></h2>
+                            <p class="class-instructor"><strong>Alex Acu&ntilde;a</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Intermediate</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>9 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Authentic Latin Rhythms</h2>-->
+                                <span class="master-class-info">Winner of Modern Drummer's Reader Poll for five consecutive years as "Best Latin/Brazilian Percussionist" Alex is both a master and historian of Latin rhythms. He covers Cha Cha Cha, Bolero, Salsa, Son Montuno, Caribbean Rhythms, African Rhythms, Samba, Rumba, Tango, Meringue and Mambo. View Class</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Styles
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item clinic" style="height: 325.06;">
+                    <div class="class-tags">cha cha samba songo samba perc percussion latin latino acuna</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/drummers-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Drummers that Compose</a></h2>
+                            <p class="class-instructor"><strong>Neil Peart, Jim Keltner, Doane Perry</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: All Levels</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>4 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Drummers that Compose</h2>-->
+                                <span class="master-class-info">50 students attended this class and they all agreed they would never approach the drum set the same again. It's not about writing the song, it's about how a drummer should compose his part to enhance the song. This is a passionate in-depth look at how these legends approach their instrument. This is a Master Class that could shape your entire career.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Clinic
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item vocabulary styles" style="height: 325.06;">
+                    <div class="class-tags">jazz fusion tony williams elvin jones licks grooves vocabulary</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/greggjazz-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Introduction to Jazz</a></h2>
+                            <p class="class-instructor"><strong>Gregg Bissonette</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Beginner</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>7 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Drummers that Compose</h2>-->
+                                <span class="master-class-info">If you’ve never played Jazz before, this series of drum lessons will teach you basic patterns and how to approach the drumset with a Jazz feel. The best drummers in the world have commented on Drum Channel about the importance of understanding a Jazz time feel to enhance any genre of music you might be playing.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Vocabulary
+                        </div>
+                        <div class="class-category">
+                            Styles
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+                <!-- Start master class -->
+                <div class="col-xs-4 master-class-item vocabulary styles" style="height: 325.06;">
+                    <div class="class-tags">jazz fusion tony williams elvin jones licks grooves vocabulary</div>
+                    <div class="panel panel-default master-class" style="position: relative;">
+                        <a href="">
+                            <img src="http://www.drumchannel.com/custom/greggjazz-grid.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="panel-body">
+                            <h2 class="class-title"><a href="">Neil Peart Master Class</a></h2>
+                            <p class="class-instructor"><strong>Gregg Bissonette</strong></p>
+                        </div>
+                        <div class="panel-body lesson-meta">
+                            <span id="lesson-difficulty">Difficulty: Beginner</span>
+                            <span id="lesson-length"><span class="fa fa-clock-o">&nbsp;</span>7 Lessons</span>
+                        </div>
+                        <a href="">
+                            <span class="master-class-overlay">
+                                <!--<h2>Drummers that Compose</h2>-->
+                                <span class="master-class-info">If you’ve never played Jazz before, this series of drum lessons will teach you basic patterns and how to approach the drumset with a Jazz feel. The best drummers in the world have commented on Drum Channel about the importance of understanding a Jazz time feel to enhance any genre of music you might be playing.</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="category-container">
+                        <div class="class-category">
+                            Vocabulary
+                        </div>
+                        <div class="class-category">
+                            Styles
+                        </div>
+                    </div>
+                </div>
+                <!-- End master class -->
+
+            </div>
+            <!-- End isotope container -->
+
+        </div>
+        <!-- End master classes container -->
+
+    </div>
+    <!-- End main container -->
+
+</body>
+
+</html>

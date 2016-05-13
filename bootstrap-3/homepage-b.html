@@ -18,151 +18,410 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Brand</a>
-            </div>
+    <!-- Scripts -->
+    <script>
+        $(document).ready(function() {
+            $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
+        });
+    </script>
+    <!-- End scripts -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Lessons</a></li>
-                    <li><a href="#">Free Shows</a></li>
-                    <li><a href="#">Schedule</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-    <!--<div class="container"> -->
-
-       <!-- Smooth scroll script -->
-        <script>
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 400);
-                            return false;
-                        }
-                    }
-                });
-            });
-        </script>
-        <!-- End smooth scroll script -->
-
-        <!-- Hero section -->
-        <div class="row">
-            <div class="jumbotron hero">
-                <div class="row hero-cta">
-                    <h1>Learn From the World's Best Drummers</h1>
-                    <a href="http://www.drumchannel.com/subscribe" class="btn btn-primary btn-lg btn-hero">Get Started</a>
-                </div>
-                <!--
-                <div class="row event-schedule">
-                    <div class="col-xs-3 event-title arrow_box">
-                        <p>Next live lesson</p>
-                    </div>
-                    <div class="col-xs-9 event-content">
-                        <p>
-                            <strong>Wed 1pm PST:</strong> Live lesson with Rick Latham</p>
-                    </div>
-                </div>
-                -->
-            </div>
-        </div>
-        <!-- End hero section -->
-
-        <!-- Brief features section -->
+    <!-- Jumbotron -->
+    <div class="jumbotron hero">
         <div class="container">
-            <div class="row features">
-                <div class="row feature-items">
-                    <div class="col-xs-4 feature-item">
-                        <p style="font-size: 26px;">
-                            <strong>Live Lessons &amp; Q&amp;A</strong>
-                        </p>
-                        <p style="font-size: 16px;">Learn and interact, LIVE</p>
-                    </div>
-                    <div class="col-xs-4 feature-item">
-                        <p style="font-size: 26px;">
-                            <strong>Unlimited Access</strong>
-                        </p>
-                        <p style="font-size: 16px;">Over 850 lessons and masterclasses </p>
-                    </div>
-                    <div class="col-xs-4 feature-item">
-                        <p style="font-size: 26px;">
-                            <strong>Learn on Your Time</strong>
-                        </p>
-                        <p style="font-size: 16px;">Learn at your own pace</p>
+            <h1 style="font-weight: 200; color: #fff;">Learn From the Best Drummers in the World</h1>
+            <span class="lead" style="display: block; color: #fff;">Take lessons from the drummers that have helped create the music that you know and love.</span>
+            <a href="http://www.drumchannel.com/subscribe" class="btn btn-primary btn-bold btn-lg">Join Today</a>
+        </div>
+    </div>
+    <!-- End jumbotron -->
+
+    <!-- Main content -->
+    <div class="container">
+
+        <!-- Artist header -->
+        <div class="row" style="margin-top: 20px; margin-bottom: 40px;">
+            <center>
+                <h2 style="font-size: 30px; line-height: 33px; font-weight: 500; color: #000000; margin-top: 20px; margin-bottom: 10px;">Learn from the masters who have played with artists such as:</h2>
+                <span class="lead" style="color: #000000;">Rush, The Red Hot Chili Peppers, Usher, Beyonc&eacute;, David Lee Roth, Mana, Jane's Addiction, Breaking Benjamin, Michael Jackson, Frank Zappa, James Taylor, Frank Sinatra, Chicago, Jason Aldean, The Police</span>
+            </center>
+        </div>
+        <!-- End artist header -->
+
+        <!-- Artist grid -->
+        <div class="row" style="margin-top: 20px; margin-bottom: 40px;">
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/terry-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Terry Bozzio</h2>
+                        <span class="artist-info-credits">Drum Channel’s Artist-in-Residence, Terry is here to answer your questions and give you advanced lessons that will prepare you to become a Pro.</span>
+                        <div class="tilt-logo"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 scroll-down"><a href="#instructors" ><span class="fa fa-angle-down"><br>&nbsp;
-                    </span></a></div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/chadsmith-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Chad Smith</h2>
+                        <span class="artist-info-credits">Chad has helped produce numerous platinum recordings with The Red Hot Chili Peppers and has gained the recognition he has currently by producing one hit groove after another.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/neil-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Neil Peart</h2>
+                        <span class="artist-info-credits">Neil is the drummer and lyricist for the Canadian rock band Rush who have played together for more than 30 years and sold over 24.5 million records in the United States.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/peter-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Peter Erskine</h2>
+                        <span class="artist-info-credits">With one of the most versatile careers in drumming history both live and in the studio, Peter shares invaluable information to improve your playing.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/jr-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>John JR Robinson</h2>
+                        <span class="artist-info-credits">First-call drummer for Quincy Jones and David Foster, JR’s career is legendary. In addition to teaching, JR is also a great host in DC Shows.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/alex-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Alex Acu&ntilde;a</h2>
+                        <span class="artist-info-credits">Modern Drummer readers acknowledge his talent as a drumset player and percussionist. Alex is a master of Afro-Cuban Fusion Jazz.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/chadwackerman-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Chad Wackerman</h2>
+                        <span class="artist-info-credits">One of the most versatile drummers of all time, Chad is at home in the studio on tour and at his home when he finds time to give lessons.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/danny-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Danny Seraphine</h2>
+                        <span class="artist-info-credits">Danny is the original drummer and founding member of the rock group Chicago. He created a style of drumming combining jazz and rock that has influenced generations of drummers.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/marco-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Marco Minnemann</h2>
+                        <span class="artist-info-credits">Marco is an author and has written three books including the award winning "Extreme Independence". He has also toured with death metalists Necrophagist and is a master of independence.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/rich-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Rich Redmond</h2>
+                        <span class="artist-info-credits">Rich is a producer, songwriter and first call Nashville drummer. In addition to being in Jason Aldean's band he has played with Bryan Adams, Kelly Clarkson, Jewel and many others.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/stewart-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Stewart Copeland</h2>
+                        <span class="artist-info-credits">Chosen by the readers of Modern Drummer magazine as one of the "50 Greatest Drummers Of All Time” and best known for his precise, energetic, signature drumming with The Police.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/gregg-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Gregg Bissonette</h2>
+                        <span class="artist-info-credits">One of the most in-demand drum teachers in the world, Gregg has done hundreds of recording sessions and movie soundtracks, along with touring and starring in Ringo's All-Starr Band.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/ralph-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Ralph Humphrey</h2>
+                        <span class="artist-info-credits">Along with DC instructor Joe Porcaro, Ralph teaches at LAMA and together they have written the DC Academy online lesson curriculum. Ralph is also the drummer on Dancing With The Stars.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/joe-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Joe Porcaro</h2>
+                        <span class="artist-info-credits">Joe has made albums with artists such as Frank Sinatra and Madonna and L.A. Philharmonic Orchestra. He is one of the most highly respected drum and percussion teachers in the world.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/bruce-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Bruce Becker</h2>
+                        <span class="artist-info-credits">Bruce's conceptual approach and unique ability yields great results. His equation is Balance + Motion = Emotion. He offers the most comprehensive insight into the teachings of Mr. Gruber.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+            <!-- Start artist -->
+            <a href="">
+                <div class="col-xs-3 artist marginless">
+                    <img src="http://www.drumchannel.com/custom/mike-grid.png" alt="" class="img-responsive">
+                    <div class="artist-info-overlay">
+                        <h2>Mike Clark</h2>
+                        <span class="artist-info-credits">Mike Clark's work with the Headhunters is legendary and he is one of the most sampled drummers in history. A master of Jazz and Funk.</span>
+                        <div class="tilt-logo"></div>
+                    </div>
+                </div>
+            </a>
+            <!-- End artist -->
+
+        </div>
+        <!-- End artist grid -->
+
+        <!-- Lesson section -->
+        <div class="row" style="margin-bottom: 40px;">
+            <center>
+                <h1>Three great ways to learn</h1>
+            </center>
+            <div class="col-xs-4 small-margins lesson-page-item">
+                <h2>Full Lessons</h2>
+                <!-- Hover effect -->
+                <div class="lesson-type-image" id="lesson" style="box-shadow: 0 8px 3px -3px rgba(0,0,0,.7);">
+                    <img class="img-responsive" src="http://www.drumchannel.com/custom/authenticlatinrhythmsmc.png" />
+                    <div id="overlay">
+                        <a style="font-size: 14px; width: 70%; height: 60%;" href="http://www.drumchannel.com/articles/full-lessons" id="overlay-text">Longer, more in-depth lessons on a specific topic or idea. Ranging from beginner to expert, full lessons have something for every level of player. (Typically 20-60 mins)</a>
+                    </div>
+                </div>
+                <!-- End hover effect -->
+            </div>
+            <div class="col-xs-4 small-margins lesson-page-item">
+                <h2>Secrets From the Pros</h2>
+                <!-- Hover effect -->
+                <div class="lesson-type-image" id="lesson" style="box-shadow: 0 8px 3px -3px rgba(0,0,0,.7);">
+                    <img class="img-responsive" src="http://www.drumchannel.com/custom/sftplessons.png" />
+                    <div id="overlay">
+                        <a style="font-size: 14px; width: 70%; height: 60%;" href="http://www.drumchannel.com/articles/drum-lessons-secrets-from-pros" id="overlay-text">Short on time? Secrets from the pros are short, “micro” lessons designed for maximum impact and information in as little amount of time as possible. (Typically 2-10 minutes) </a>
+                    </div>
+                </div>
+                <!-- End hover effect -->
+            </div>
+            <div class="col-xs-4 small-margins lesson-page-item">
+                <h2>Master Classes</h2>
+                <!-- Hover effect -->
+                <div class="lesson-type-image" id="lesson" style="box-shadow: 0 8px 3px -3px rgba(0,0,0,.7);">
+                    <img class="img-responsive" src="http://www.drumchannel.com/custom/neilpeartmc.png" />
+                    <div id="overlay">
+                        <a style="font-size: 14px; width: 70%; height: 60%;" href="http://www.drumchannel.com/articles/Online_Drum_Master_Classes" id="overlay-text">Looking to dive deeper? Masterclasses are a series of 5-15 min lessons on one specific topic or concept bundled together for a totally immersive experience. (Released periodically.)</a>
+                    </div>
+                </div>
+                <!-- End hover effect -->
+            </div>
+        </div>
+        <!-- End lesson section -->
+
+        <!-- Newest videos -->
+        <div class="row" style="margin-bottom: 40px;">
+            <center>
+                <h1>Newest Releases</h1>
+            </center>
+            <!-- Start new videos -->
+            <div class="col-xs-5ths">
+                <div class="panel panel-default">
+                    <div class="newest-image">
+                        <a href="http://www.drumchannel.com/articles/hit-like-a-girl-2016" title="Lesson">
+                            <img src="http://www.drumchannel.com/custom/hlag2016.jpg" class="img-responsive" />
+                        </a>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
+                    <div class="panel-body" style="height: 103px;">
+                        <h3>Show</h3>
+                        <a href="http://www.drumchannel.com/articles/hit-like-a-girl-2016" title="Lesson">
+                            <h2>Hit Like a Girl 2016</h2>
+                        </a>
+                        <p><strong>Rebroadcast</strong></p>
+                        <!--
+                        <p>Hosted by Jordan West and Mona Tavakoli, there are interviews and performances from past winners and judges such as Kimberly Thompson (Beyonce).</p>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-5ths">
+                <div class="panel panel-default">
+                    <div class="newest-image">
+                        <a href="http://www.drumchannel.com/articles/mike-clark-jazz-insights" title="Lesson">
+                            <img src="http://www.drumchannel.com/custom/mikeclark5.png" class="img-responsive" />
+                        </a>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
+                    <div class="panel-body" style="height: 103px;">
+                        <h3>Master Class</h3>
+                        <a href="http://www.drumchannel.com/articles/mike-clark-jazz-insights" title="Lesson">
+                            <h2>Jazz Insights</h2>
+                        </a>
+                        <p><strong>Instructor: Mike Clark</strong></p>
+                        <!--
+                        <p>The legendary mike Clark will share his insights on playing Jazz in an authentic way. You don't want to miss this opportunity to learn from a master!</p>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-5ths">
+                <div class="panel panel-default">
+                    <div class="newest-image">
+                        <a href="http://www.drumchannel.com/articles/elitch-paradiddlediddle-perfection" title="Dave Elitch Master Class">
+                            <img src="http://www.drumchannel.com/custom/elitch-pdd-1.png" class="img-responsive" />
+                        </a>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
+                    <div class="panel-body" style="height: 103px;">
+                        <h3>Master Class</h3>
+                        <a href="http://www.drumchannel.com/articles/elitch-paradiddlediddle-perfection" title="Rick Latham Master Class">
+                            <h2>Paradiddlediddle Perfection</h2>
+                        </a>
+                        <p><strong>Instructor: Dave Elitch</strong></p>
+                        <!--
+                        <p>In this series of lessons, you learn how to maximize your use of the paradiddlediddle rudiment.</p>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-5ths">
+                <div class="panel panel-default">
+                    <div class="newest-image">
+                        <a href="http://www.drumchannel.com/articles/rick-latham-serious-shuffles" title="Rick Latham Master Class">
+                            <img src="http://www.drumchannel.com/custom/LathamOutro.jpg" class="img-responsive" />
+                        </a>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
+                    <div class="panel-body" style="height: 103px;">
+                        <h3>Master Class</h3>
+                        <a href="http://www.drumchannel.com/articles/rick-latham-serious-shuffles" title="Rick Latham Master Class">
+                            <h2>Serious Shuffles</h2>
+                        </a>
+                        <p><strong>Instructor: Rick Latham</strong></p>
+                        <!--
+                        <p>In this series of lessons, Rick shows you different stylistic interpretations of the shuffle, as well as exercises to improve your groove and coordination as it relates to the shuffle.</p>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-5ths">
+                <div class="panel panel-default">
+                    <div class="newest-image">
+                        <a href="http://www.drumchannel.com/articles/rudimental-crash-course" title="Lesson">
+                            <img src="http://www.drumchannel.com/custom/adam3.png" class="img-responsive" />
+                        </a>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
+                    <div class="panel-body" style="height: 103px;">
+                        <h3>Master Class</h3>
+                        <a href="http://www.drumchannel.com/articles/rudimental-crash-course" title="Lesson">
+                            <h2>Rudimental Crash Course</h2>
+                        </a>
+                        <p><strong>Instructor: Adam Kuns</strong></p>
+                        <!--
+                        <p>In this series of lessons, we will be learning our 40 standard rudiments! Beginning with the single stroke roll.</p>
+                        -->
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- End brief features section -->
+        <!-- End newest items -->
 
-        <!-- Instructors section -->
-        <div class="row home-section" id="instructors">
-            <h1>Our instructors are legendary.</h1>
-            <p id="lead" style="font-size: 21px; margin: 20px;">Collectively they’ve earned dozens of Grammy’s, recorded hundreds of records, toured millions of miles and shaped some of the most iconic music in the world. </p>
-            <img src="http://www.drumchannel.com/custom/instructors1.png" alt="DC instructors are legendary" class="img-responsive" />
-        </div>
-        <!-- End instructors section -->
-
-        <!-- Learn at your pace section -->
-        <div class="row home-section" id="learn-at-your-pace">
-            <h1>Lessons that fit your needs.</h1>
-            <div class="row" style="padding: 40px;">
-                <div class="col-xs-6">
-                    <H2>Live Lessons</H2>
-                    <p>Learn from, interact with and get your questions answered by the biggest names in the business. </p>
-                </div>
-                <div class="col-xs-6">
-                    <div style="display: block; position: relative; max-width: 100%;"><div style="padding-top: 56.25%;"><iframe style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4728600368001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" frameborder="no"></iframe></div></div>
-                </div>
-            </div>
-            <div class="row" style="padding: 40px;">
-                <div class="col-xs-6">
-                    <div style="display: block; position: relative; max-width: 100%;"><div style="padding-top: 56.25%;"><iframe style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4722398268001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" frameborder="no"></iframe></div></div>
-                </div>
-                <div class="col-xs-6">
-                    <H2>Secrets From the Pros</H2>
-                    <p>Short, “micro” lessons designed for maximum impact and information in as little amount of time as possible. </p>
-                </div>
-            </div>
-            <div class="row" style="padding: 40px;">
-                <div class="col-xs-6">
-                    <H2>Master Classes</H2>
-                    <p>A series of lessons on one specific topic or concept for a completely immersive experience. </p>
-                </div>
-                <div class="col-xs-6">
-                    <div style="display: block; position: relative; max-width: 100%;"><div style="padding-top: 56.25%;"><iframe style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" src="//players.brightcove.net/2534274852001/default_default/index.html?videoId=4725139951001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" frameborder="no"></iframe></div></div>
-                </div>
-            </div>
-        </div>
-        <!-- End learn at your pace section -->
-
-
+        <!-- Pricing section -->
         <div class="row home-section" id="price">
             <h1>Let's get started.</h1>
             <!-- Price tables -->
@@ -190,15 +449,11 @@
                                 <tr>
                                     <td><span class="fa fa-check">&nbsp;</span>Exclusive special events</td>
                                 </tr>
-                                <tr>
-                                    <td><strike>Year subscription to DRUM! Magazine</strike></td>
-                                </tr>
                             </tbody>
                         </table>
                         <div class="panel-body panel-price-tag">
                             <h3>$14/month</h3>
                             <a id="price-btn" href="http://www.drumchannel.com/subscribe" class="btn btn-xl btn-primary">Join</a>
-                            <p>($14 billed once every month)</p>
                         </div>
                     </div>
                 </div>
@@ -224,17 +479,11 @@
                                 <tr>
                                     <td><span class="fa fa-check">&nbsp;</span>Exclusive special events</td>
                                 </tr>
-                                <tr>
-                                    <td><span class="fa fa-check">&nbsp;</span>
-                                        <mark>Year subscription to DRUM! Magazine</mark>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                         <div class="panel-body panel-price-tag">
-                            <h3>$8/month</h3>
+                            <h3>$96/year</h3>
                             <a id="price-btn" href="http://www.drumchannel.com/subscribe" class="btn btn-xl btn-primary">Join</a>
-                            <p>($96 billed once every year)</p>
                         </div>
                     </div>
                 </div>
@@ -243,8 +492,11 @@
                 <div class="col-xs-1"></div>
             </div>
         </div>
+        <!-- End pricing section -->
 
-    <!--</div>-->
+    </div>
+    <!-- End main content -->
+
 </body>
 
 </html>

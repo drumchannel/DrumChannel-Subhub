@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rick Latham</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" style="padding: 0;">
+                <!-- Start of Brightcove Player -->
+
+                <div style="display:none">
+
+                </div>
+
+                <!--
+                By use of this code snippet, I agree to the Brightcove Publisher T and C
+                found at https://accounts.brightcove.com/en/terms-and-conditions/.
+                -->
+
+                <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+                <object id="myExperience" class="BrightcoveExperience">
+                    <param name="bgcolor" value="#FFFFFF" />
+                    <param name="width" value="100%" />
+                    <param name="height" value="445" />
+                    <param name="playerID" value="4877599835001" />
+                    <param name="playerKey" value="AQ~~,AAACTg6NZKE~,BrT08NmbM4KIzYDyBv9Xdjg8tW49yM0p" />
+                    <param name="isVid" value="true" />
+                    <param name="isUI" value="true" />
+                    <param name="dynamicStreaming" value="true" />
+
+                </object>
+
+                <!--
+                This script tag will cause the Brightcove Players defined above it to be created as soon as the line is read by the browser. If you wish to have the player instantiated only after the rest of the HTML is processed and the page load is complete, remove the line.
+                -->
+                <script type="text/javascript">
+                    brightcove.createExperiences();
+                </script>
+
+                <!-- End of Brightcove Player -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="row" style="margin-bottom: 40px; border-bottom: 1px solid #f3f3f3;">
+                    <h1>2016 Hit Like a Girl Grand Finals</h1>
+                    <p id="class-description" style="font-size: 14px; line-height: 1.3; padding-bottom: 10px;">Welcome to the 2016 Hit Like a Girl Grand Finals! Hosted by Jordan West and Mona Tavakoli, you'll get interviews and performances from past winners and judges as well as get a glimpse at all this year's finalists and the winners.  We hear from two past winners as well as a solo from Mona and a fantastic performance from Kimberly Thompson (Beyonc&eacute;).
+                </div>
+                <!-- DC call to action -->
+                <div class="row">
+                    <div class="col-xs-6 marginless" style="text-align: center;">
+                        <center>
+                            <a href="http://www.drumchannel.com/subscribe">
+                                <img class="img-responsive" src="http://www.drumchannel.com/custom/weekly-lesson.png" alt="Drum lessons and shows">
+                            </a>
+                        </center>
+                    </div>
+                    <div class="col-xs-6" style="padding-right: 0;">
+                        <div class="well">
+                            <h3 style="margin-top: 0; color: #c20000; text-align: center;">Subscribe to Drum Channel</h3>
+                            <p id="class-description" style="font-size: 14px; line-height: 1.3; padding-bottom: 10px; text-align: center;">Get access to over 850 lessons and 250 shows and start taking the steps to take your drumming to the next level!</p>
+                            <center>
+                                <a href="http://www.drumchannel.com/subscribe" class="btn btn-primary btn-lg">Join Today</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4" style="height: 300px; border-left: 1px solid #f3f3f3;">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Shows ads -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5278546586734016"
+                     data-ad-slot="4988368662"
+                     data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        <!-- End call to action -->
+
+    </div>
+</body>
+
+</html>
