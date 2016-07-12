@@ -18,33 +18,40 @@
 
 <body>
 
-    <!-- Scripts -->
-    <script>
-        $(document).ready(function() {
-            $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
-        });
-    </script>
-    <!-- End scripts -->
-
     <!-- Main content -->
     <div class="container">
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                $(".play-div").prepend("<span class='fa fa-play-circle-o' id='play-button'></span>");
+            });
+        </script>
+        <!-- End scripts -->
 
         <!-- Jumbotron -->
         <div class="jumbotron hero">
             <h1 style="font-weight: 500; color: #fff; text-align: left;">Learn From the Best Drummers in the World</h1>
             <span class="lead" style="display: block; color: #fff; text-align: left; font-size: 36px;">Take lessons from the drummers that have helped create the music that you know and love.</span>
-            <a href="http://www.drumchannel.com/subscribe" class="btn btn-primary btn-bold btn-lg btn-hero" style="background: transparent; border: 3px solid #c20000;">Join Today</a>
+            <div class="col-xs-6" style="padding-left: 0;">
+                <a href="http://www.drumchannel.com/subscribe" class="btn btn-primary btn-bold btn-lg btn-hero" style="background: transparent; border: 3px solid #c20000; width: 100%;">Join Today</a>
+            </div>
+            <div class="col-xs-6" style="padding-right: 0;">
+                <a href="http://www.drumchannel.com/subscribe" class="btn btn-primary btn-bold btn-lg btn-hero" style="background: transparent; border: 3px solid #c20000; width: 100%;">Watch Video</a>
+            </div>
         </div>
         <!-- End jumbotron -->
 
         <!-- Callout -->
         <div class="row event-schedule" style="border-bottom: 1px solid #404040;">
             <div class="col-xs-3 event-title arrow_box" style="padding-bottom: 25px;">
-                <p style="text-align: center; color: #fff;">Coming Soon <span class="fa fa-play-circle-o"></span></p>
+                <p style="text-align: center; color: #fff;">Spotlight <span class="fa fa-play-circle-o"></span></p>
             </div>
             <div class="col-xs-9 event-content">
                 <p>
-                    <span style="font-weight: bold; color: #fff; text-decoration: none; font-size: 20px; line-height: 20px;">Exclusive interview with Mick Fleetwood (Early June)</span>
+                    <a href="http://www.drumchannel.com/articles/drum-show-Chad-Smith-Interview-Pt1">
+                        <span style="font-weight: bold; color: #fff; text-decoration: none; font-size: 20px; line-height: 20px;">Join Chad Smith of the Red Hot Chili Peppers backstage!</span>
+                    </a>
                 </p>
             </div>
         </div>
