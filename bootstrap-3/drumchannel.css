@@ -9,11 +9,10 @@ h3 {
 }
 
 .player-container {
-    background-color: #1a1a1a;
     width: 596px;
     height: 490px;
     position: relative;
-    color: #a8a8a8;
+    color: #2b2b2b;
     font-family: helvetica;
     font-weight: 400
 }
@@ -21,7 +20,7 @@ h3 {
 .orange-block {
     height: 4px;
     width: 4px;
-    background-color: #f0662c;
+    background-color: #c20000;
     position: absolute;
     left: 13px;
     top: 13px
@@ -45,7 +44,6 @@ h3 {
 body {
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a
 }
 
 .k-medialist-header {
@@ -59,39 +57,36 @@ body {
 
 #playListHolder {
     width: 100%;
-    height: 20%
+    height: 20%;
+    text-align: center;
 }
 
 #playListHolder .entry-thumb-container {
+    transition: all .2s ease-in-out;
     padding: 6px;
-    margin: 10px 2px;
-    max-width: 18%;
+    margin: 5px 6px;
+    max-width: 16%;
     font-size: 12px;
-    float: left;
     text-align: center;
-    cursor: pointer
-}
-
-#playListHolder .entry-thumb-container.active,
-#playListHolder .entry-thumb-container:hover {
-    padding: 5px;
-    border: 1px solid #00bfff
+    cursor: pointer;
+    display: inline-block;
 }
 
 #playListHolder .entry-thumb-container.active .k-title-container,
 #playListHolder .entry-thumb-container:hover .k-title-container {
-    color: #fff;
-    font-weight: 700
+    transition: all .4s ease-in-out;
+    color: #c20000;
 }
 
 #playListHolder .k-thumb {
-    width: 100px;
-    height: 60px;
+    width: 95px;
+    height: 55px;
     background-size: 10000px 100%;
     background-position: 0 0
 }
 
 #playListHolder .k-title-container {
     line-height: 24px;
-    text-align: center
+    text-align: center;
+    font-weight: 700
 }

@@ -74,7 +74,7 @@
     background-size: cover;
     @include border-radius(6px 6px 0px 0px);
     margin: 0 -15px 0;
-    padding: 80px 80px 120px;
+    padding: 100px 80px 180px;
     border-radius: 0;‹
     .hero-cta {
         padding-bottom: 80px;
@@ -113,6 +113,29 @@
     }
 }
 
+.jumbotron.hero-show {
+    text-align: center;
+    background-image: url(http://www.drumchannel.com/custom/john-ramsay-hero.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .2);
+    @include border-radius(6px 6px 0px 0px);
+    margin-bottom: 0px;
+    height: 498px;
+    padding: 180px 80px 50px;
+    border-radius: 0px;
+    .hero-cta {
+        padding-bottom: 80px;
+        h1 {
+            margin-bottom: 20px;
+            color: #c20000;
+            padding: 0;
+            font-size: 81px;
+        }
+        #lead {
+            color: #fff;
+        }
+    }
+}
 .btn-hero {
     text-transform: uppercase;
     font-weight: bold;
@@ -555,3 +578,7 @@
 
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+a.left.carousel-control {
+    height: 600px;
+}

@@ -1031,7 +1031,7 @@ p {
 */
 /* SFTP layout
 ============================== */
-/* line 10, ../scss/_sftp.scss */
+/* line 10, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .sftp-item {
   margin-bottom: 20px;
   padding-top: 15px;
@@ -1039,12 +1039,12 @@ p {
 
 /* SFTP panels
 ============================== */
-/* line 19, ../scss/_sftp.scss */
+/* line 19, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-image {
   position: relative;
   z-index: 1000;
 }
-/* line 22, ../scss/_sftp.scss */
+/* line 22, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-image .sftp-number {
   position: absolute;
   padding: 10px 15px;
@@ -1059,36 +1059,36 @@ p {
   vertical-align: middle;
 }
 
-/* line 37, ../scss/_sftp.scss */
+/* line 37, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .sftp-panel {
   box-shadow: 0 5px 3px #ccc;
   margin-bottom: 15px;
 }
 
-/* line 42, ../scss/_sftp.scss */
+/* line 42, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .sftp-meta-tags {
   display: none;
 }
 
-/* line 48, ../scss/_sftp.scss */
+/* line 48, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta {
   background: #333;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 52, ../scss/_sftp.scss */
+/* line 52, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta > p {
   color: #fff;
   padding: 0;
   margin: 0;
 }
-/* line 57, ../scss/_sftp.scss */
+/* line 57, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta #lesson-difficulty {
   display: inline-block;
   float: left;
   color: #d8d8de;
 }
-/* line 62, ../scss/_sftp.scss */
+/* line 62, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .panel-default .lesson-meta #lesson-length {
   display: inline-block;
   float: right;
@@ -1097,13 +1097,13 @@ p {
 
 /* Lesson categories
 ============================== */
-/* line 74, ../scss/_sftp.scss */
+/* line 74, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-category-container {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 79, ../scss/_sftp.scss */
+/* line 79, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .lesson-category {
   text-align: center;
   padding-top: 2px;
@@ -1112,13 +1112,13 @@ p {
 
 /* Tooltip
 ============================== */
-/* line 89, ../scss/_sftp.scss */
+/* line 89, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool {
   cursor: default;
   position: relative;
 }
 
-/* line 95, ../scss/_sftp.scss */
+/* line 95, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool::before,
 .tool::after {
   position: absolute;
@@ -1127,7 +1127,7 @@ p {
   z-index: -100;
 }
 
-/* line 105, ../scss/_sftp.scss */
+/* line 105, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool:hover::before,
 .tool:focus::before,
 .tool:hover::after,
@@ -1137,7 +1137,7 @@ p {
   transform: scale(1) translateY(0);
 }
 
-/* line 111, ../scss/_sftp.scss */
+/* line 111, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool::before {
   border: solid;
   border-width: 1em .7em 0 .75em;
@@ -1149,13 +1149,13 @@ p {
   transition: all 0.65s cubic-bezier(0.85, -0.18, 0.31, 1.26), opacity 0.65s 0.5s;
 }
 
-/* line 123, ../scss/_sftp.scss */
+/* line 123, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool:hover::before,
 .tool:focus::before {
   transition-delay: .2s;
 }
 
-/* line 127, ../scss/_sftp.scss */
+/* line 127, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool::after {
   background: #3e474f;
   border-radius: .25em;
@@ -1170,7 +1170,7 @@ p {
   transition: all 0.65s cubic-bezier(0.85, -0.18, 0.31, 1.26) 0.2s;
 }
 
-/* line 142, ../scss/_sftp.scss */
+/* line 142, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_sftp.scss */
 .tool:hover::after,
 .tool:focus::after {
   transition-delay: .2s;
@@ -1182,34 +1182,34 @@ p {
 */
 /* Typography
 ============================== */
-/* line 15, ../scss/_homepage.scss */
+/* line 15, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .home-section {
   text-align: center;
 }
-/* line 17, ../scss/_homepage.scss */
+/* line 17, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .home-section h1 {
   font-size: 48px;
   color: #c20000;
   margin: 0;
 }
-/* line 22, ../scss/_homepage.scss */
+/* line 22, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .home-section #lead {
   color: #474747;
 }
 
-/* line 27, ../scss/_homepage.scss */
+/* line 27, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .top-header {
   text-align: center;
   padding: 35px;
 }
-/* line 30, ../scss/_homepage.scss */
+/* line 30, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .top-header h1 {
   font-size: 36px;
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
 }
-/* line 36, ../scss/_homepage.scss */
+/* line 36, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .top-header h2 {
   color: #444;
   font-size: 30px;
@@ -1218,26 +1218,26 @@ p {
   padding: 0;
 }
 
-/* line 45, ../scss/_homepage.scss */
+/* line 45, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #lead {
   font-size: 21px;
   margin: 20px;
   padding: 0;
 }
 
-/* line 51, ../scss/_homepage.scss */
+/* line 51, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .overlay-bg {
   text-align: center;
   padding: 20px 0;
 }
 
-/* line 56, ../scss/_homepage.scss */
+/* line 56, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .cta-btn, #final-cta-btn {
   font-size: 24px;
   padding: 20px 70px;
 }
 
-/* line 61, ../scss/_homepage.scss */
+/* line 61, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #big-cta-header {
   font-size: 30px;
   margin: 0;
@@ -1247,7 +1247,7 @@ p {
 
 /* Layout
 ============================== */
-/* line 70, ../scss/_homepage.scss */
+/* line 70, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero {
   text-align: left;
   background-image: url(http://www.drumchannel.com/custom/hero-bg-studio.png);
@@ -1258,15 +1258,15 @@ p {
   -ms-border-radius: 6px 6px 0px 0px;
   border-radius: 6px 6px 0px 0px;
   margin: 0 -15px 0;
-  padding: 80px 80px 120px;
+  padding: 100px 80px 180px;
   border-radius: 0;
 }
-/* line 79, ../scss/_homepage.scss */
+/* line 79, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero ‹
 .hero-cta {
   padding-bottom: 80px;
 }
-/* line 81, ../scss/_homepage.scss */
+/* line 81, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero ‹
 .hero-cta h1 {
   margin-bottom: 20px;
@@ -1274,14 +1274,14 @@ p {
   padding: 0;
   font-size: 81px;
 }
-/* line 87, ../scss/_homepage.scss */
+/* line 87, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .container .hero ‹
 .hero-cta #lead {
   color: #fff;
   background: #fff;
 }
 
-/* line 94, ../scss/_homepage.scss */
+/* line 94, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero {
   text-align: center;
   background-image: url(http://www.drumchannel.com/custom/hero-bg-studio.png);
@@ -1294,23 +1294,54 @@ p {
   margin-bottom: 0px;
   padding: 150px 80px 150px;
 }
-/* line 102, ../scss/_homepage.scss */
+/* line 102, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero .hero-cta {
   padding-bottom: 80px;
 }
-/* line 104, ../scss/_homepage.scss */
+/* line 104, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero .hero-cta h1 {
   margin-bottom: 20px;
   color: #fff;
   padding: 0;
   font-size: 81px;
 }
-/* line 110, ../scss/_homepage.scss */
+/* line 110, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .hero .hero-cta #lead {
   color: #fff;
 }
 
-/* line 116, ../scss/_homepage.scss */
+/* line 116, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
+.jumbotron.hero-show {
+  text-align: center;
+  background-image: url(http://www.drumchannel.com/custom/john-ramsay-hero.png);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  -ms-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  margin-bottom: 0px;
+  height: 498px;
+  padding: 180px 80px 50px;
+  border-radius: 0px;
+}
+/* line 126, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
+.jumbotron.hero-show .hero-cta {
+  padding-bottom: 80px;
+}
+/* line 128, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
+.jumbotron.hero-show .hero-cta h1 {
+  margin-bottom: 20px;
+  color: #c20000;
+  padding: 0;
+  font-size: 81px;
+}
+/* line 134, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
+.jumbotron.hero-show .hero-cta #lead {
+  color: #fff;
+}
+
+/* line 139, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .btn-hero {
   text-transform: uppercase;
   font-weight: bold;
@@ -1321,20 +1352,20 @@ p {
   border-radius: 0px;
 }
 
-/* line 123, ../scss/_homepage.scss */
+/* line 146, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features {
   text-align: center;
   padding: 40px 0 20px;
 }
-/* line 127, ../scss/_homepage.scss */
+/* line 150, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features .feature-item {
   padding: 0 40px;
 }
-/* line 129, ../scss/_homepage.scss */
+/* line 152, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features .feature-item p {
   font-size: 16px;
 }
-/* line 133, ../scss/_homepage.scss */
+/* line 156, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features span {
   font-size: 80px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1347,21 +1378,21 @@ p {
   transition: all 0.4s ease-in-out 0s;
   color: #c20000;
 }
-/* line 140, ../scss/_homepage.scss */
+/* line 163, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .features span:hover {
   color: #a90000;
 }
 
-/* line 146, ../scss/_homepage.scss */
+/* line 169, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule {
   margin: 0 -15px;
 }
-/* line 148, ../scss/_homepage.scss */
+/* line 171, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-title {
   padding: 27px 0px 28px 20px;
   background: #c20000;
 }
-/* line 151, ../scss/_homepage.scss */
+/* line 174, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-title p {
   font-size: 20px !important;
   font-weight: bold;
@@ -1371,7 +1402,7 @@ p {
   margin: 0;
   padding: 0;
 }
-/* line 161, ../scss/_homepage.scss */
+/* line 184, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-content {
   border-top: 2px solid #272727;
   border-right: 2px solid #272727;
@@ -1380,7 +1411,7 @@ p {
   margin: 0;
   background: #272727;
 }
-/* line 168, ../scss/_homepage.scss */
+/* line 191, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-content p {
   text-align: left;
   font-size: 20px !important;
@@ -1391,24 +1422,24 @@ p {
   padding: 0;
   text-transform: none;
 }
-/* line 169, ../scss/_homepage.scss */
+/* line 192, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .event-schedule .event-content p > a {
   color: #fff;
 }
 
-/* line 184, ../scss/_homepage.scss */
+/* line 207, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #instructors {
   padding-bottom: 60px;
 }
 
-/* line 189, ../scss/_homepage.scss */
+/* line 212, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #learn-at-your-pace p {
   font-size: 20px;
   color: #c20000;
   line-height: 1.5;
   text-align: left;
 }
-/* line 195, ../scss/_homepage.scss */
+/* line 218, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #learn-at-your-pace h2 {
   text-align: center;
   font-size: 30px;
@@ -1425,7 +1456,7 @@ p {
 
 /* Effects
 ============================== */
-/* line 212, ../scss/_homepage.scss */
+/* line 235, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box {
   position: relative;
   background: #c20000;
@@ -1433,7 +1464,7 @@ p {
   z-index: 1000;
 }
 
-/* line 220, ../scss/_homepage.scss */
+/* line 243, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box:after,
 .arrow_box:before {
   left: 100%;
@@ -1447,7 +1478,7 @@ p {
   z-index: 1000;
 }
 
-/* line 232, ../scss/_homepage.scss */
+/* line 255, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box:after {
   border-color: rgba(255, 255, 255, 0);
   border-left-color: #c20000;
@@ -1455,7 +1486,7 @@ p {
   margin-top: -35px;
 }
 
-/* line 239, ../scss/_homepage.scss */
+/* line 262, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .arrow_box:before {
   border-color: rgba(194, 0, 0, 0);
   border-left-color: #c20000;
@@ -1465,7 +1496,7 @@ p {
 
 /* Colors schemes
 ============================== */
-/* line 248, ../scss/_homepage.scss */
+/* line 271, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #inverse-btn {
   background: #fff;
   color: #c20000;
@@ -1480,32 +1511,32 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 257, ../scss/_homepage.scss */
+/* line 280, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #inverse-btn:hover {
   background: #c20000;
   color: #fff;
   box-shadow: none;
 }
 
-/* line 264, ../scss/_homepage.scss */
+/* line 287, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #final-cta-btn {
   padding: 20px 200px;
 }
 
-/* line 269, ../scss/_homepage.scss */
+/* line 292, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #day-icon {
   color: #444;
 }
 
 /* Price Tables
 ============================== */
-/* line 275, ../scss/_homepage.scss */
+/* line 298, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .price-tables {
   /*background-image: url('http://www.drumchannel.com/custom/price-bg.png');*/
   margin: 0;
 }
 
-/* line 280, ../scss/_homepage.scss */
+/* line 303, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price {
   text-align: center;
   border: 4px solid #444;
@@ -1517,12 +1548,12 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 286, ../scss/_homepage.scss */
+/* line 309, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-heading {
   background: #444;
   color: #fff;
 }
-/* line 289, ../scss/_homepage.scss */
+/* line 312, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-heading h2 {
   font-size: 24px;
   padding: 10px;
@@ -1530,23 +1561,23 @@ p {
   letter-spacing: 1.2px;
   color: #fff;
 }
-/* line 297, ../scss/_homepage.scss */
+/* line 320, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price table {
   font-size: 13px;
 }
-/* line 300, ../scss/_homepage.scss */
+/* line 323, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price table tr td {
   text-align: center;
   line-height: 2.5;
   color: #000;
   font-size: 120%;
 }
-/* line 305, ../scss/_homepage.scss */
+/* line 328, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price table tr td mark {
   background-color: yellow;
   padding: .35em;
 }
-/* line 312, ../scss/_homepage.scss */
+/* line 335, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -1554,14 +1585,14 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 314, ../scss/_homepage.scss */
+/* line 337, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag h3 {
   font-size: 24px;
   font-weight: normal;
   margin: 0;
   padding: 0 0 15px;
 }
-/* line 320, ../scss/_homepage.scss */
+/* line 343, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn {
   font-size: 20px;
   padding: 10px 30px;
@@ -1575,14 +1606,14 @@ box-shadow: 5px -5px #444;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 328, ../scss/_homepage.scss */
+/* line 351, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .panel-price .panel-price-tag #price-btn:hover {
   box-shadow: 0px 8px 8px -8px black;
 }
 
 /* Navbar
 ============================== */
-/* line 337, ../scss/_homepage.scss */
+/* line 360, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .navbar {
   margin: 0;
   border-radius: none;
@@ -1590,7 +1621,7 @@ box-shadow: 5px -5px #444;
 
 /* Dammit
 ============================== */
-/* line 347, ../scss/_homepage.scss */
+/* line 370, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 #portlet-nav-1 #static_211 a,
 #portlet-nav-1 #static_236 a,
 #portlet-nav-1 #static_251 a,
@@ -1609,7 +1640,7 @@ box-shadow: 5px -5px #444;
 
 /* Artist images
 ============================== */
-/* line 362, ../scss/_homepage.scss */
+/* line 385, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1617,7 +1648,7 @@ box-shadow: 5px -5px #444;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 364, ../scss/_homepage.scss */
+/* line 387, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist .artist-info-overlay {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1634,14 +1665,14 @@ box-shadow: 5px -5px #444;
   /*margin: 3.5%;*/
   padding: 15px;
 }
-/* line 375, ../scss/_homepage.scss */
+/* line 398, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist .artist-info-overlay h2 {
   font-size: 16px;
   font-weight: 200;
   color: #ffffff;
   margin-top: 0;
 }
-/* line 381, ../scss/_homepage.scss */
+/* line 404, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist .artist-info-overlay .artist-info-credits {
   color: #dddddd;
   font-size: 12px;
@@ -1649,37 +1680,37 @@ box-shadow: 5px -5px #444;
   line-height: 1.2;
   font-weight: 200;
 }
-/* line 388, ../scss/_homepage.scss */
+/* line 411, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist .artist-info-overlay .tilt-logo {
   top: 15px;
   right: 15px;
   height: 20px;
   width: 20px;
 }
-/* line 395, ../scss/_homepage.scss */
+/* line 418, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist:hover {
   transform: scale(1.3);
   z-index: 1000;
   /*outline: 4px solid #ccc;*/
 }
-/* line 399, ../scss/_homepage.scss */
+/* line 422, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .artist:hover .artist-info-overlay {
   opacity: 1;
 }
 
-/* line 407, ../scss/_homepage.scss */
+/* line 430, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .panel-body h2 > a {
   font-size: 16px;
   line-height: 18px;
   color: #c20000;
   text-decoration: none;
 }
-/* line 412, ../scss/_homepage.scss */
+/* line 435, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .panel-body h2 > a:hover {
   color: #a90000;
   text-decoration: none;
 }
-/* line 418, ../scss/_homepage.scss */
+/* line 441, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .lesson-meta {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1689,7 +1720,7 @@ box-shadow: 5px -5px #444;
   background-color: #e8e8e8;
   border-radius: 0 0 4px 4px;
 }
-/* line 422, ../scss/_homepage.scss */
+/* line 445, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .lesson-meta #lesson-difficulty {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1698,7 +1729,7 @@ box-shadow: 5px -5px #444;
   transition: all 0.2s ease-in-out;
   color: #000000;
 }
-/* line 426, ../scss/_homepage.scss */
+/* line 449, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .lesson-meta #lesson-length {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1707,7 +1738,7 @@ box-shadow: 5px -5px #444;
   transition: all 0.2s ease-in-out;
   color: #000000;
 }
-/* line 431, ../scss/_homepage.scss */
+/* line 454, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .master-class-overlay {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1725,14 +1756,14 @@ box-shadow: 5px -5px #444;
   padding: 15px;
   text-align: left;
 }
-/* line 443, ../scss/_homepage.scss */
+/* line 466, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .master-class-overlay h2 {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
   margin-top: 0;
 }
-/* line 449, ../scss/_homepage.scss */
+/* line 472, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .master-class-overlay .master-class-info {
   color: #dddddd;
   font-size: 13px;
@@ -1741,7 +1772,7 @@ box-shadow: 5px -5px #444;
   font-weight: 200;
   z-index: 1005;
 }
-/* line 457, ../scss/_homepage.scss */
+/* line 480, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class .master-class-overlay .tilt-logo {
   top: 0;
   right: 0;
@@ -1753,7 +1784,7 @@ box-shadow: 5px -5px #444;
   z-index: 0;
   opacity: .25;
 }
-/* line 469, ../scss/_homepage.scss */
+/* line 492, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class:hover {
   z-index: 1000;
   /*.lesson-meta {
@@ -1767,17 +1798,17 @@ box-shadow: 5px -5px #444;
       }
   } */
 }
-/* line 471, ../scss/_homepage.scss */
+/* line 494, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class:hover .master-class-overlay {
   opacity: 1;
 }
 
-/* line 487, ../scss/_homepage.scss */
+/* line 510, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class-item {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 490, ../scss/_homepage.scss */
+/* line 513, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .master-class-item .class-category {
   display: inline-block;
   font-size: 14px;
@@ -1787,13 +1818,13 @@ box-shadow: 5px -5px #444;
   color: #575757;
 }
 
-/* line 500, ../scss/_homepage.scss */
+/* line 523, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .class-tags {
   display: none;
 }
 
 /* ---- button ---- */
-/* line 506, ../scss/_homepage.scss */
+/* line 529, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button {
   display: inline-block;
   padding: 0.5em 1.0em;
@@ -1809,39 +1840,39 @@ box-shadow: 5px -5px #444;
   cursor: pointer;
 }
 
-/* line 521, ../scss/_homepage.scss */
+/* line 544, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button:hover {
   background-color: #8CF;
   text-shadow: 0 1px rgba(255, 255, 255, 0.5);
   color: #222;
 }
 
-/* line 528, ../scss/_homepage.scss */
+/* line 551, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button:active,
 .button.is-checked {
   background-color: #28F;
 }
 
-/* line 532, ../scss/_homepage.scss */
+/* line 555, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button.is-checked {
   color: white;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
 }
 
-/* line 537, ../scss/_homepage.scss */
+/* line 560, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button:active {
   box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
 }
 
 /* ---- button-group ---- */
-/* line 543, ../scss/_homepage.scss */
+/* line 566, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button-group:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* line 549, ../scss/_homepage.scss */
+/* line 572, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button-group .button {
   float: left;
   border-radius: 0;
@@ -1849,14 +1880,19 @@ box-shadow: 5px -5px #444;
   margin-right: 1px;
 }
 
-/* line 556, ../scss/_homepage.scss */
+/* line 579, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button-group .button:first-child {
   border-radius: 0.5em 0 0 0.5em;
 }
 
-/* line 557, ../scss/_homepage.scss */
+/* line 580, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
 .button-group .button:last-child {
   border-radius: 0 0.5em 0.5em 0;
+}
+
+/* line 582, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_homepage.scss */
+a.left.carousel-control {
+  height: 600px;
 }
 
 /* Featured
@@ -1865,13 +1901,13 @@ box-shadow: 5px -5px #444;
 */
 /* Headings
 ============================== */
-/* line 10, ../scss/_featured.scss */
+/* line 10, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_featured.scss */
 .schedule-2-col h2, .schedule-2-col h3, .schedule-2-col h4 {
   margin: 10px;
   padding: 0;
 }
 
-/* line 16, ../scss/_featured.scss */
+/* line 16, /Users/donlombardi/Documents/DC-Bootstrap/bootstrap-3/scss/_featured.scss */
 .new {
   border-radius: 50%;
   width: 50px;

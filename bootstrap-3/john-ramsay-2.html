@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Drum Channel Free Lesson</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+        <!-- Custom -->
+        <link href="css/custom.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <script>
+                $(document).ready(function() {
+                    $('#theater-mode').hide();
+                    $('#videoColumn').hover(
+                        function() {
+                            $('#theater-mode').fadeIn();
+                        },
+                        function() {
+                            $('#theater-mode').fadeOut();
+                        }
+                    );
+                    $('#playlist-mode').hide();
+                    $('#theater-mode').click(function() {
+                        $('#playlistColumn').slideUp("fast", function() {
+                            $('#videoColumn').removeClass('col-xs-8');
+                            $('#videoColumn').css("padding-right", "15px");
+                            $('#videoColumn').addClass('col-xs-12');
+                            $('#theater-mode').hide();
+                        });
+                        $('#videoColumn').hover(
+                            function() {
+                                $('#playlist-mode').fadeIn();
+                            },
+                            function() {
+                                $('#playlist-mode').fadeOut();
+                            }
+                        );
+                    });
+                    $('#playlist-mode').click(function() {
+                        $('#videoColumn').removeClass('col-xs-12');
+                        $('#videoColumn').css("padding-right", "0px");
+                        $('#videoColumn').addClass('col-xs-8', function() {
+                            $('#playlistColumn').delay("400").show("fast");
+                            $('#theater-mode').show();
+                            $('#playlist-mode').hide();
+                        });
+                    });
+                });
+            </script>
+            <!-- Lesson video and description -->
+            <div class="row">
+                <div class="col-xs-8" id="videoColumn" style="margin: 0px 0 0 0; padding-right: 0;">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="videoWrapper">
+                                <!-- Start of video -->
+                                <iframe src="//drumchannel.vidmover.com/api/embed?id=0_xr82mwcx&uiconf_id=11610891&type=entry&iid=56a7641d181f46553f8b456b" width="100%" height="370" allowfullscreen webkitallowfullscreen frameborder="0"></iframe>
+                                <!-- End of video -->
+                                <a href="#" id="theater-mode" style="position: absolute; top: 5px; right: 10px; width: auto; height: auto">
+                                    <span class="fa fa-television" style="color: #fff; font-size: 2em;"></span>
+                                </a>
+                                <a href="#" id="playlist-mode" style="position: absolute; top: 5px; right: 10px; width: auto; height: auto">
+                                    <span class="fa fa-television" style="color: #fff; font-size: 2em;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" id="playlistColumn" style="height: 370px; padding-left: 0;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-weight: bold;">Interview with John Ramsay of Berklee College of music</h3>
+                        </div>
+                        <!-- Video container -->
+                        <div class="panel-body" style="background: #fff; height: 314px; overflow: scroll; overflow-x: auto; padding-top: 0;">
+
+                            <!-- Related video 1 -->
+                            <div class="row playlist-item" id="playlist-item">
+                                <div class="col-xs-4">
+                                    <a href="http://www.drumchannel.com/articles/john-ramsay-interview-1" title="John Ramsay">
+                                        <img src="http://www.drumchannel.com/custom/ramsaythumb.jpg" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="col-xs-8 marginless description-box" id="description-box">
+                                    <a id="item-description" href="http://www.drumchannel.com/articles/john-ramsay-interview-1" title="John Ramsay"><strong>Part 1 - Everything You Need to Know About Berklee College of Music </strong></a>
+                                    <p><span class="fa fa-clock-o">&nbsp;</span>18:31</p>
+                                </div>
+                            </div>
+                            <!-- End related video -->
+
+                            <!-- Related video 2 -->
+                            <div class="row playlist-item-active" id="playlist-item-active">
+                                <div class="col-xs-4">
+                                    <a href="http://www.drumchannel.com/articles/john-ramsay-interview-2" title="Zigaboo">
+                                        <img src="http://www.drumchannel.com/custom/ramsaythumb.jpg" class="img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="col-xs-8 marginless description-box" id="description-box">
+                                    <a id="item-description" href="http://www.drumchannel.com/articles/john-ramsay-interview-2" title="Zigaboo"><strong>Part 2 - Requirements for the Berklee Drum Set Audition</strong></a>
+                                    <p><span class="fa fa-clock-o">&nbsp;</span>31:55</p>
+                                </div>
+                            </div>
+                            <!-- End related video -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End lesson video and description -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Part 2 - Everything you Need to Know About the Berklee Audition</h1>
+                    <!--<h3 style="margin-top: 0; font-size: 150%;">Instructor: Zigaboo Modeliste</h3>-->
+                    <p id="class-description" style="font-size: 14px; line-height: 1.3; padding-bottom: 10px;">John discusses the 5 areas for the admissions auditions, as well as the placement audition. He breaks down what you should do and what they are looking for. He also discusses Alan Dawson’s Rudimental Ritual and his book, The Drummer’s Complete Vocabulary As Taught by Alan Dawson.</p>
+                    <div class="alert alert-info">
+                        <p id="class-description" style="font-size: 14px; line-height: 1.3;"><strong>Coming in December</strong> John Ramsay's complete course will teach you everything you need to know to pass your Drum set audition.  He covers Reading, Rudiments, Song Form, Time Feel and your Prepared Piece.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Related Videos:</h3>
+                </div>
+                <!-- Start item -->
+                <div class="col-xs-4">
+                    <div class="panel panel-default newest-panel">
+                        <div class="newest-image">
+                            <a href="http://www.drumchannel.com/articles/PeterErskineMasterClass" title="Lesson">
+                                <img src="http://www.drumchannel.com/custom/peter-erskine-mc.png" class="img-responsive" />
+                            </a>
+                            <div class="play-div"><br>&nbsp;</div></div>
+                        <div class="panel-body" style="height: auto; background: white;">
+                            <h3>Master Class</h3>
+                            <a href="http://www.drumchannel.com/articles/PeterErskineMasterClass" title="Lesson">
+                                <h2>Peter Erskine - Everything I Know a Work in Progress</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End item -->
+
+                <!-- Start item -->
+                <div class="col-xs-4">
+                    <div class="panel panel-default newest-panel">
+                        <div class="newest-image">
+                            <a href="http://www.drumchannel.com/articles/drum-lessons-SFTP-Jazz-4-way-coordination-Gregg-Bissonette" title="Lesson">
+                                <img src="http://www.drumchannel.com/custom/gregg-jazz.png" class="img-responsive" />
+                            </a>
+                            <div class="play-div"><br>&nbsp;</div></div>
+                        <div class="panel-body" style="height: auto; background: white;">
+                            <h3>Secrets From the Pros</h3>
+                            <a href="http://www.drumchannel.com/articles/drum-lessons-SFTP-Jazz-4-way-coordination-Gregg-Bissonette" title="Lesson">
+                                <h2>Gregg Bissonette - 4-Way Jazz Coordination</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End item -->
+
+                <!-- Start item -->
+                <div class="col-xs-4">
+                    <div class="panel panel-default newest-panel">
+                        <div class="newest-image">
+                            <a href="http://www.drumchannel.com/articles/MarcoMinnemannMC" title="Lesson">
+                                <img src="http://www.drumchannel.com/custom/minneman-mc.png" class="img-responsive" />
+                            </a>
+                            <div class="play-div"><br>&nbsp;</div></div>
+                        <div class="panel-body" style="height: auto; background: white;">
+                            <h3>Master Class</h3>
+                            <a href="http://www.drumchannel.com/articles/MarcoMinnemannMC" title="Lesson">
+                                <h2>Marco Minneman - 6-Way Independence</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End item -->
+            </div>
+            <!-- DC call to action -->
+            <div class="row">
+                <div class="col-xs-12" style="text-align: center;">
+                    <center>
+                        <a href="http://www.drumchannel.com/subscribe">
+                            <img class="img-responsive" src="http://www.drumchannel.com/custom/weekly-lesson.png" alt="Drum lessons and shows">
+                        </a>
+                    </center>
+                </div>
+            </div>
+            <!-- End call to action -->
+        </div>
+    </body>
+
+</html>

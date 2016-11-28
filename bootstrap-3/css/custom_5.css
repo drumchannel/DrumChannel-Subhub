@@ -1,33 +1,33 @@
 /* Layout
 ============================== */
-/* line 5, ../scss/custom.scss */
+/* line 5, ../scss/custom_5.scss */
 .well h1 {
   margin: 20px 0;
   padding: 0;
 }
 
-/* line 11, ../scss/custom.scss */
+/* line 11, ../scss/custom_5.scss */
 .schedule-page-heading {
   background-color: #fff;
   background-image: url(http://www.drumchannel.com/custom/carbon.png);
   background-size: cover;
 }
 
-/* line 17, ../scss/custom.scss */
+/* line 17, ../scss/custom_5.scss */
 .dc-live-banner {
   background-image: url(http://www.drumchannel.com/custom/DCLivePageBanner.png);
 }
-/* line 19, ../scss/custom.scss */
+/* line 19, ../scss/custom_5.scss */
 .dc-live-banner h1, .dc-live-banner h2, .dc-live-banner h3, .dc-live-banner h4, .dc-live-banner h5, .dc-live-banner h6 {
   color: #fff;
 }
-/* line 22, ../scss/custom.scss */
+/* line 22, ../scss/custom_5.scss */
 .dc-live-banner h2 {
   margin-top: -20px;
   font-size: 30px;
 }
 
-/* line 31, ../scss/custom.scss */
+/* line 31, ../scss/custom_5.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -38,65 +38,65 @@
   padding-left: 5px;
 }
 
-/* line 38, ../scss/custom.scss */
+/* line 38, ../scss/custom_5.scss */
 .col-xs-5ths {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  /* line 44, ../scss/custom.scss */
+  /* line 44, ../scss/custom_5.scss */
   .col-sm-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 51, ../scss/custom.scss */
+  /* line 51, ../scss/custom_5.scss */
   .col-md-5ths {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 58, ../scss/custom.scss */
+  /* line 58, ../scss/custom_5.scss */
   .col-lg-5ths {
     width: 20%;
     float: left;
   }
 }
-/* line 64, ../scss/custom.scss */
+/* line 64, ../scss/custom_5.scss */
 .marginless {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 69, ../scss/custom.scss */
+/* line 69, ../scss/custom_5.scss */
 .small-margins {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 74, ../scss/custom.scss */
+/* line 74, ../scss/custom_5.scss */
 .container {
   width: 980px;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 80, ../scss/custom.scss */
+/* line 80, ../scss/custom_5.scss */
 .is_member #header_login input.searchtext {
   width: 170px;
 }
 
-/* line 84, ../scss/custom.scss */
+/* line 84, ../scss/custom_5.scss */
 .btn-newest-bottom {
   position: absolute;
   bottom: 15px;
   left: 15px;
 }
 
-/* line 91, ../scss/custom.scss */
+/* line 91, ../scss/custom_5.scss */
 .lesson-page-item h2 {
   text-align: center;
   color: #000;
@@ -106,7 +106,7 @@
 
 /* SubHub fixes
 ============================== */
-/* line 105, ../scss/custom.scss */
+/* line 105, ../scss/custom_5.scss */
 .documentContent p a,
 .listingBar a,
 .documentContent td a {
@@ -115,7 +115,7 @@
   line-height: 1.1;
 }
 
-/* line 112, ../scss/custom.scss */
+/* line 112, ../scss/custom_5.scss */
 #documentContentInner p,
 #documentContentInner font {
   color: #000;
@@ -123,24 +123,24 @@
   line-height: 1.1;
 }
 
-/* line 118, ../scss/custom.scss */
+/* line 118, ../scss/custom_5.scss */
 #header_loginblock {
   width: 378px;
 }
 
-/* line 122, ../scss/custom.scss */
+/* line 122, ../scss/custom_5.scss */
 #header_login input.searchtext {
   height: 35px;
 }
 
-/* line 126, ../scss/custom.scss */
+/* line 126, ../scss/custom_5.scss */
 #header_loginblock input.login_textbox {
   height: 30px !important;
   width: 130px !important;
   line-height: 30px !important;
 }
 
-/* line 132, ../scss/custom.scss */
+/* line 132, ../scss/custom_5.scss */
 #header_loginblock input.login {
   height: 30px;
   width: 80px;
@@ -148,12 +148,12 @@
   line-height: 30px;
 }
 
-/* line 139, ../scss/custom.scss */
+/* line 139, ../scss/custom_5.scss */
 #region-content #documentContentInner {
   background-color: #ffffff;
 }
 
-/* line 143, ../scss/custom.scss */
+/* line 143, ../scss/custom_5.scss */
 .searchsubmit {
   right: 140px;
   display: none;
@@ -161,20 +161,20 @@
 
 /* Typography
 ============================== */
-/* line 152, ../scss/custom.scss */
+/* line 152, ../scss/custom_5.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   color: #000;
 }
 
-/* line 157, ../scss/custom.scss */
+/* line 157, ../scss/custom_5.scss */
 .chapter-marks {
   list-style: none;
   margin-left: 0 !important;
   padding: 0;
   color: #000;
 }
-/* line 162, ../scss/custom.scss */
+/* line 162, ../scss/custom_5.scss */
 .chapter-marks .list-group-item {
   color: #000;
   position: relative;
@@ -185,27 +185,27 @@ body {
   border: 1px solid #dddddd;
 }
 
-/* line 174, ../scss/custom.scss */
+/* line 174, ../scss/custom_5.scss */
 .lesson-info #class-description {
   font-size: 14px;
   line-height: 1.3;
   padding-bottom: 10px;
 }
-/* line 179, ../scss/custom.scss */
+/* line 179, ../scss/custom_5.scss */
 .lesson-info > h2 {
   color: #c20000;
 }
 
-/* line 184, ../scss/custom.scss */
+/* line 184, ../scss/custom_5.scss */
 #live-alert {
   font-size: 20px;
   text-align: center;
 }
-/* line 187, ../scss/custom.scss */
+/* line 187, ../scss/custom_5.scss */
 #live-alert button.close {
   position: static;
 }
-/* line 193, ../scss/custom.scss */
+/* line 193, ../scss/custom_5.scss */
 #live-alert a,
 #live-alert a:hover,
 #live-alert a:focus,
@@ -214,13 +214,13 @@ body {
   color: #c20000;
 }
 
-/* line 200, ../scss/custom.scss */
+/* line 200, ../scss/custom_5.scss */
 a:hover,
 a:focus {
   text-decoration: none;
 }
 
-/* line 209, ../scss/custom.scss */
+/* line 209, ../scss/custom_5.scss */
 h1,
 h2,
 h3,
@@ -232,26 +232,26 @@ h6 {
   padding: 0;
 }
 
-/* line 216, ../scss/custom.scss */
+/* line 216, ../scss/custom_5.scss */
 .container > h1 {
   color: #000000;
 }
 
-/* line 222, ../scss/custom.scss */
+/* line 222, ../scss/custom_5.scss */
 .panel .panel-body h2 {
   margin-top: 0px;
   font-weight: bold;
 }
-/* line 226, ../scss/custom.scss */
+/* line 226, ../scss/custom_5.scss */
 .panel .panel-body > p {
   margin-bottom: 0px;
 }
 
-/* line 231, ../scss/custom.scss */
+/* line 231, ../scss/custom_5.scss */
 .panel .panel-footer {
   text-align: center;
 }
-/* line 233, ../scss/custom.scss */
+/* line 233, ../scss/custom_5.scss */
 .panel .panel-footer > h2 {
   margin: 0px;
   font-size: 14px;
@@ -259,34 +259,34 @@ h6 {
   color: #000;
 }
 
-/* line 241, ../scss/custom.scss */
+/* line 241, ../scss/custom_5.scss */
 .panel {
   border: none;
 }
-/* line 243, ../scss/custom.scss */
+/* line 243, ../scss/custom_5.scss */
 .panel .full-lesson-footer {
   text-align: left;
 }
 
-/* line 249, ../scss/custom.scss */
+/* line 249, ../scss/custom_5.scss */
 .jumbotron .timer {
   /*background: rgba(101, 101, 101, 0.27);*/
   text-align: center;
   border-radius: 5px;
 }
-/* line 253, ../scss/custom.scss */
+/* line 253, ../scss/custom_5.scss */
 .jumbotron .timer h1, .jumbotron .timer h2, .jumbotron .timer h3, .jumbotron .timer h4, .jumbotron .timer h5, .jumbotron .timer h6, .jumbotron .timer p {
   color: #d8d8de;
   margin-top: 0;
 }
-/* line 257, ../scss/custom.scss */
+/* line 257, ../scss/custom_5.scss */
 .jumbotron .timer h3 {
   margin: 12px 0 10px 0;
   font-size: 20px;
   line-height: 20px;
   color: #d8d8de;
 }
-/* line 264, ../scss/custom.scss */
+/* line 264, ../scss/custom_5.scss */
 .jumbotron .timer p,
 .jumbotron .timer #event-text {
   padding: 10px 0;
@@ -294,26 +294,26 @@ h6 {
   text-align: center;
   color: #d8d8de;
 }
-/* line 271, ../scss/custom.scss */
+/* line 271, ../scss/custom_5.scss */
 .jumbotron #welcome-username {
   font-weight: 100;
   font-size: 36px;
   margin-top: 0;
   color: #d8d8de;
 }
-/* line 277, ../scss/custom.scss */
+/* line 277, ../scss/custom_5.scss */
 .jumbotron #dayofweek {
   font-size: 32px;
   font-weight: 100;
   margin-bottom: 0;
   color: #d8d8de;
 }
-/* line 283, ../scss/custom.scss */
+/* line 283, ../scss/custom_5.scss */
 .jumbotron #date-today {
   font-weight: 100;
   color: #d8d8de;
 }
-/* line 287, ../scss/custom.scss */
+/* line 287, ../scss/custom_5.scss */
 .jumbotron #dashboard-icon {
   bottom: 20px;
   color: #c20000;
@@ -321,7 +321,7 @@ h6 {
   left: 100px;
   position: absolute;
 }
-/* line 294, ../scss/custom.scss */
+/* line 294, ../scss/custom_5.scss */
 .jumbotron #dashboard-tagline {
   position: absolute;
   bottom: 0px;
@@ -330,11 +330,11 @@ h6 {
   color: #656565;
   font-size: 14px;
 }
-/* line 302, ../scss/custom.scss */
+/* line 302, ../scss/custom_5.scss */
 .jumbotron .dashboard {
   text-align: center;
 }
-/* line 310, ../scss/custom.scss */
+/* line 310, ../scss/custom_5.scss */
 .jumbotron h1,
 .jumbotron h2,
 .jumbotron h3,
@@ -343,7 +343,7 @@ h6 {
 .jumbotron h6 {
   color: #000;
 }
-/* line 313, ../scss/custom.scss */
+/* line 313, ../scss/custom_5.scss */
 .jumbotron .lead {
   margin-bottom: 20px;
   font-size: 16px;
@@ -352,13 +352,13 @@ h6 {
   color: #000;
 }
 @media (min-width: 768px) {
-  /* line 321, ../scss/custom.scss */
+  /* line 321, ../scss/custom_5.scss */
   .jumbotron .lead {
     font-size: 21px !important;
   }
 }
 
-/* line 329, ../scss/custom.scss */
+/* line 329, ../scss/custom_5.scss */
 .dashboard-footer .footer-item h2 {
   text-align: center;
   background-color: #000;
@@ -367,32 +367,32 @@ h6 {
   margin: 20px 0 10px;
   font-size: 30px;
 }
-/* line 337, ../scss/custom.scss */
+/* line 337, ../scss/custom_5.scss */
 .dashboard-footer .footer-item h4 {
   font-weight: bold;
   color: #c20000;
   margin-top: 0;
 }
-/* line 344, ../scss/custom.scss */
+/* line 344, ../scss/custom_5.scss */
 .dashboard-footer .dc-faculty h4 {
   text-align: center;
 }
 
-/* line 350, ../scss/custom.scss */
+/* line 350, ../scss/custom_5.scss */
 p {
   line-height: 1.1;
 }
 
 /* Show Blocks
 ============================== */
-/* line 359, ../scss/custom.scss */
+/* line 359, ../scss/custom_5.scss */
 .show-block img {
   width: 100%;
 }
 
 /* Effects
 ============================== */
-/* line 376, ../scss/custom.scss */
+/* line 376, ../scss/custom_5.scss */
 .newest-image {
   position: relative;
   text-align: center;
@@ -403,7 +403,7 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 381, ../scss/custom.scss */
+/* line 381, ../scss/custom_5.scss */
 .newest-image:hover {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -411,7 +411,7 @@ p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 383, ../scss/custom.scss */
+/* line 383, ../scss/custom_5.scss */
 .newest-image:hover > div {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -422,7 +422,7 @@ p {
   color: #ffffff;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.65);
 }
-/* line 390, ../scss/custom.scss */
+/* line 390, ../scss/custom_5.scss */
 .newest-image .play-div {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -441,14 +441,14 @@ p {
   z-index: 1000;
   color: rgba(255, 255, 255, 0);
 }
-/* line 404, ../scss/custom.scss */
+/* line 404, ../scss/custom_5.scss */
 .newest-image #play-button {
   cursor: pointer;
   vertical-align: top;
   line-height: 30px;
 }
 
-/* line 411, ../scss/custom.scss */
+/* line 411, ../scss/custom_5.scss */
 #overlay {
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
@@ -466,7 +466,7 @@ p {
   transition: opacity 0.25s ease;
 }
 
-/* line 424, ../scss/custom.scss */
+/* line 424, ../scss/custom_5.scss */
 #overlay-text {
   position: absolute;
   display: inline-block;
@@ -489,13 +489,13 @@ p {
   transition: opacity 0.25s ease;
 }
 
-/* line 442, ../scss/custom.scss */
+/* line 442, ../scss/custom_5.scss */
 .lesson-type-image, #lesson {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-/* line 446, ../scss/custom.scss */
+/* line 446, ../scss/custom_5.scss */
 .lesson-type-image img, #lesson img {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -504,18 +504,18 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 454, ../scss/custom.scss */
+/* line 454, ../scss/custom_5.scss */
 #lesson:hover img {
   transform: scale(1.5);
   filter: blur(3px);
 }
-/* line 459, ../scss/custom.scss */
+/* line 459, ../scss/custom_5.scss */
 #lesson:hover #overlay,
 #lesson:hover #overlay-text {
   opacity: 1;
 }
 
-/* line 465, ../scss/custom.scss */
+/* line 465, ../scss/custom_5.scss */
 .hover-card {
   padding: 0px;
   position: relative;
@@ -523,7 +523,7 @@ p {
   height: 275.625px;
 }
 
-/* line 472, ../scss/custom.scss */
+/* line 472, ../scss/custom_5.scss */
 .hover-card:hover .caption {
   opacity: 1;
   transform: translateY(-227px);
@@ -533,12 +533,12 @@ p {
   -o-transform: translateY(-227px);
 }
 
-/* line 481, ../scss/custom.scss */
+/* line 481, ../scss/custom_5.scss */
 .hover-card img {
   z-index: 4;
 }
 
-/* line 485, ../scss/custom.scss */
+/* line 485, ../scss/custom_5.scss */
 .hover-card .caption {
   position: absolute;
   top: 225px;
@@ -550,7 +550,7 @@ p {
   width: 100%;
 }
 
-/* line 492, ../scss/custom.scss */
+/* line 492, ../scss/custom_5.scss */
 .hover-card .blur {
   background-color: rgba(0, 0, 0, 0.7);
   height: 300px;
@@ -559,7 +559,7 @@ p {
   width: 100%;
 }
 
-/* line 500, ../scss/custom.scss */
+/* line 500, ../scss/custom_5.scss */
 .hover-card .caption-text {
   z-index: 10;
   color: #fff;
@@ -570,7 +570,7 @@ p {
   width: 100%;
   padding: 0px 20px 0px 20px;
 }
-/* line 509, ../scss/custom.scss */
+/* line 509, ../scss/custom_5.scss */
 .hover-card .caption-text > h1 {
   color: #fff;
   font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
@@ -582,7 +582,7 @@ p {
   padding: 0px;
 }
 
-/* line 521, ../scss/custom.scss */
+/* line 521, ../scss/custom_5.scss */
 .panel {
   -webkit-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
   -moz-transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
@@ -591,7 +591,7 @@ p {
   transition: all 0.45s cubic-bezier(0.85, -0.18, 0.31, 1.26);
 }
 
-/* line 525, ../scss/custom.scss */
+/* line 525, ../scss/custom_5.scss */
 .tilt-logo {
   position: absolute;
   bottom: 10px;
@@ -603,7 +603,7 @@ p {
   z-index: 0;
 }
 
-/* line 537, ../scss/custom.scss */
+/* line 537, ../scss/custom_5.scss */
 .video-playlist-well,
 .lesson-info {
   position: relative;
@@ -611,7 +611,7 @@ p {
 
 /* Colors
 ============================== */
-/* line 545, ../scss/custom.scss */
+/* line 545, ../scss/custom_5.scss */
 .btn-primary {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -624,16 +624,16 @@ p {
   text-decoration: none;
   color: #fff;
 }
-/* line 550, ../scss/custom.scss */
+/* line 550, ../scss/custom_5.scss */
 .btn-primary:hover {
   background-color: #a90000;
 }
-/* line 553, ../scss/custom.scss */
+/* line 553, ../scss/custom_5.scss */
 .btn-primary:visited {
   background-color: #c20000;
 }
 
-/* line 560, ../scss/custom.scss */
+/* line 560, ../scss/custom_5.scss */
 .btn-success {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -643,7 +643,7 @@ p {
   text-decoration: none;
 }
 
-/* line 565, ../scss/custom.scss */
+/* line 565, ../scss/custom_5.scss */
 .btn-info {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -653,33 +653,33 @@ p {
   text-decoration: none;
 }
 
-/* line 571, ../scss/custom.scss */
+/* line 571, ../scss/custom_5.scss */
 #back-to-top > a {
   color: #c20000;
   text-decoration: none;
 }
 
-/* line 579, ../scss/custom.scss */
+/* line 579, ../scss/custom_5.scss */
 .this-week .schedule-day .schedule-panel,
 .next-week .schedule-day .schedule-panel {
   box-shadow: 0px 6px 5px -5px #585858;
 }
-/* line 582, ../scss/custom.scss */
+/* line 582, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary,
 .next-week .schedule-day .panel-primary {
   border-color: #000000;
 }
-/* line 584, ../scss/custom.scss */
+/* line 584, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-heading,
 .next-week .schedule-day .panel-primary .panel-heading {
   background-color: #c20000;
 }
-/* line 587, ../scss/custom.scss */
+/* line 587, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-heading,
 .next-week .schedule-day .panel-primary .panel-heading {
   border-color: #000000;
 }
-/* line 589, ../scss/custom.scss */
+/* line 589, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-heading > h1,
 .next-week .schedule-day .panel-primary .panel-heading > h1 {
   color: #fff;
@@ -689,27 +689,27 @@ p {
   margin: 0;
   padding: 0;
 }
-/* line 598, ../scss/custom.scss */
+/* line 598, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-body,
 .next-week .schedule-day .panel-primary .panel-body {
   background: #e8e6e6;
   background: #333;
   height: 180px;
 }
-/* line 602, ../scss/custom.scss */
+/* line 602, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-body a,
 .next-week .schedule-day .panel-primary .panel-body a {
   color: #fff;
   text-decoration: none;
 }
-/* line 606, ../scss/custom.scss */
+/* line 606, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-body > p,
 .next-week .schedule-day .panel-primary .panel-body > p {
   line-height: 1.1;
   color: #fff !important;
   margin: 5px 0 5px 0;
 }
-/* line 611, ../scss/custom.scss */
+/* line 611, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-body h2,
 .next-week .schedule-day .panel-primary .panel-body h2 {
   color: #fff;
@@ -719,14 +719,14 @@ p {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 620, ../scss/custom.scss */
+/* line 620, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-footer,
 .next-week .schedule-day .panel-primary .panel-footer {
   background: #c4c4c4;
   background: #000;
   border-top: none;
 }
-/* line 623, ../scss/custom.scss */
+/* line 623, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-primary .panel-footer > h2,
 .next-week .schedule-day .panel-primary .panel-footer > h2 {
   color: #fff;
@@ -734,13 +734,13 @@ p {
   padding: 0;
   font-weight: bold;
 }
-/* line 633, ../scss/custom.scss */
+/* line 633, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-heading,
 .next-week .schedule-day .panel-default .panel-heading {
   background: #ddd;
   color: #333;
 }
-/* line 636, ../scss/custom.scss */
+/* line 636, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-heading > h1,
 .next-week .schedule-day .panel-default .panel-heading > h1 {
   color: #333;
@@ -750,30 +750,30 @@ p {
   margin: 0;
   padding: 0;
 }
-/* line 645, ../scss/custom.scss */
+/* line 645, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-body,
 .next-week .schedule-day .panel-default .panel-body {
   background: #f8f8f8;
   height: 180px;
 }
-/* line 648, ../scss/custom.scss */
+/* line 648, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-body a,
 .next-week .schedule-day .panel-default .panel-body a {
   text-decoration: none;
 }
-/* line 651, ../scss/custom.scss */
+/* line 651, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-body h2,
 .next-week .schedule-day .panel-default .panel-body h2 {
   color: #000;
   line-height: 18px;
   font-weight: bold;
 }
-/* line 657, ../scss/custom.scss */
+/* line 657, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-footer,
 .next-week .schedule-day .panel-default .panel-footer {
   background: #eee;
 }
-/* line 659, ../scss/custom.scss */
+/* line 659, ../scss/custom_5.scss */
 .this-week .schedule-day .panel-default .panel-footer > h2,
 .next-week .schedule-day .panel-default .panel-footer > h2 {
   color: #000;
@@ -782,15 +782,15 @@ p {
   font-weight: bold;
 }
 
-/* line 670, ../scss/custom.scss */
+/* line 670, ../scss/custom_5.scss */
 .panel-default .panel-body {
   background: #f8f8f8;
 }
-/* line 672, ../scss/custom.scss */
+/* line 672, ../scss/custom_5.scss */
 .panel-default .panel-body a {
   text-decoration: none;
 }
-/* line 675, ../scss/custom.scss */
+/* line 675, ../scss/custom_5.scss */
 .panel-default .panel-body h2 {
   color: #000;
   line-height: 18px;
@@ -798,7 +798,7 @@ p {
   margin: 0;
   font-size: 16px;
 }
-/* line 682, ../scss/custom.scss */
+/* line 682, ../scss/custom_5.scss */
 .panel-default .panel-body h3 {
   margin: 0 0 0 0;
   padding: 0;
@@ -806,84 +806,84 @@ p {
   color: #c20000;
   font-weight: bold;
 }
-/* line 689, ../scss/custom.scss */
+/* line 689, ../scss/custom_5.scss */
 .panel-default .panel-body p {
   line-height: 1.1;
   color: #000;
   margin: 5px 0 5px 0;
 }
-/* line 695, ../scss/custom.scss */
+/* line 695, ../scss/custom_5.scss */
 .panel-default .panel-footer {
   background: #eee;
 }
 
-/* line 700, ../scss/custom.scss */
+/* line 700, ../scss/custom_5.scss */
 .newest-panel, .lesson-panel {
   box-shadow: 0px 3px 3px #ccc;
 }
-/* line 702, ../scss/custom.scss */
+/* line 702, ../scss/custom_5.scss */
 .newest-panel .panel-body, .lesson-panel .panel-body {
   height: 170px;
 }
 
-/* line 707, ../scss/custom.scss */
+/* line 707, ../scss/custom_5.scss */
 .lesson-panel {
   margin-bottom: 10px;
 }
-/* line 710, ../scss/custom.scss */
+/* line 710, ../scss/custom_5.scss */
 .lesson-panel .panel-body {
   height: 130px;
 }
 
 /* Special Elements
 ============================== */
-/* line 719, ../scss/custom.scss */
+/* line 719, ../scss/custom_5.scss */
 #myCarousel {
   background-color: #fff;
   height: auto;
   margin: 0;
   padding: 0;
 }
-/* line 724, ../scss/custom.scss */
+/* line 724, ../scss/custom_5.scss */
 #myCarousel .carousel-indicators li {
   border-color: #c20000;
 }
-/* line 727, ../scss/custom.scss */
+/* line 727, ../scss/custom_5.scss */
 #myCarousel .carousel-indicators .active {
   background-color: #c20000;
 }
-/* line 732, ../scss/custom.scss */
+/* line 732, ../scss/custom_5.scss */
 #myCarousel .schedule-page-heading {
   background-color: #fff;
   background-image: url(http://www.drumchannel.com/custom/price-bg.png);
 }
-/* line 736, ../scss/custom.scss */
+/* line 736, ../scss/custom_5.scss */
 #myCarousel .dc-live-banner {
   background-image: url(http://www.drumchannel.com/custom/DCLivePageBanner.png);
 }
-/* line 738, ../scss/custom.scss */
+/* line 738, ../scss/custom_5.scss */
 #myCarousel .dc-live-banner h1, #myCarousel .dc-live-banner h2, #myCarousel .dc-live-banner h3, #myCarousel .dc-live-banner h4, #myCarousel .dc-live-banner h5, #myCarousel .dc-live-banner h6 {
   color: #fff;
 }
-/* line 741, ../scss/custom.scss */
+/* line 741, ../scss/custom_5.scss */
 #myCarousel .dc-live-banner h2 {
   margin-top: -20px;
   font-size: 30px;
 }
-/* line 746, ../scss/custom.scss */
+/* line 746, ../scss/custom_5.scss */
 #myCarousel .carousel-control.right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-/* line 749, ../scss/custom.scss */
+/* line 749, ../scss/custom_5.scss */
 #myCarousel .carousel-control.left {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 753, ../scss/custom.scss */
+/* line 753, ../scss/custom_5.scss */
 #myCarousel .carousel-control.right,
 #myCarousel .carousel-control.left {
   width: 50px;
 }
-/* line 756, ../scss/custom.scss */
+/* line 756, ../scss/custom_5.scss */
 #myCarousel .carousel-control {
   background: transparent;
   border: none;
@@ -898,14 +898,14 @@ p {
   background-color: #c20000;
 }
 
-/* line 767, ../scss/custom.scss */
+/* line 767, ../scss/custom_5.scss */
 .dashboard-schedule-header {
   background-image: url("http://www.drumchannel.com/custom/schedule_header1.png");
   background-size: cover;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 772, ../scss/custom.scss */
+/* line 772, ../scss/custom_5.scss */
 .dashboard-schedule-header h1 {
   text-align: center;
   font-size: 46px;
@@ -913,7 +913,7 @@ p {
   margin-top: 80px;
 }
 
-/* line 780, ../scss/custom.scss */
+/* line 780, ../scss/custom_5.scss */
 #clockdiv {
   font-family: sans-serif;
   color: #fff;
@@ -925,7 +925,7 @@ p {
   border-radius: 5px;
 }
 
-/* line 791, ../scss/custom.scss */
+/* line 791, ../scss/custom_5.scss */
 #clockdiv > div {
   padding: 10px;
   border-radius: 3px;
@@ -934,7 +934,7 @@ p {
   text-align: center;
 }
 
-/* line 799, ../scss/custom.scss */
+/* line 799, ../scss/custom_5.scss */
 #clockdiv div > span {
   padding: 0 10px;
   font-size: 20px;
@@ -945,20 +945,20 @@ p {
   width: 40px;
 }
 
-/* line 809, ../scss/custom.scss */
+/* line 809, ../scss/custom_5.scss */
 .smalltext {
   padding-top: 5px;
   font-size: 12px;
 }
 
-/* line 814, ../scss/custom.scss */
+/* line 814, ../scss/custom_5.scss */
 .countdown-timer {
   text-align: center;
 }
 
 /* Lists
 ============================= */
-/* line 822, ../scss/custom.scss */
+/* line 822, ../scss/custom_5.scss */
 .sponsor {
   width: 32%;
   display: inline-block;
@@ -972,12 +972,12 @@ p {
   vertical-align: middle;
 }
 
-/* line 835, ../scss/custom.scss */
+/* line 835, ../scss/custom_5.scss */
 .sponsors {
   margin: 0px;
 }
 
-/* line 839, ../scss/custom.scss */
+/* line 839, ../scss/custom_5.scss */
 .lesson-categories {
   background-color: transparent;
   border: none;
@@ -986,7 +986,7 @@ p {
 
 /* Buttons
 ============================== */
-/* line 849, ../scss/custom.scss */
+/* line 849, ../scss/custom_5.scss */
 .btn-circle {
   width: 40px;
   height: 40px;
@@ -997,7 +997,7 @@ p {
   border-radius: 50%;
 }
 
-/* line 859, ../scss/custom.scss */
+/* line 859, ../scss/custom_5.scss */
 .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
@@ -1007,7 +1007,7 @@ p {
   border-radius: 25px;
 }
 
-/* line 868, ../scss/custom.scss */
+/* line 868, ../scss/custom_5.scss */
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
@@ -1017,7 +1017,7 @@ p {
   border-radius: 35px;
 }
 
-/* line 877, ../scss/custom.scss */
+/* line 877, ../scss/custom_5.scss */
 .btn {
   background-image: none !important;
   text-decoration: none !important;
@@ -1025,47 +1025,47 @@ p {
 
 /* Playlists
 ============================== */
-/* line 886, ../scss/custom.scss */
-#playlist-item-active {
+/* line 886, ../scss/custom_5.scss */
+.playlist-item-active {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #f5f5f5;
   background-color: #c20000;
 }
-/* line 892, ../scss/custom.scss */
-#playlist-item-active #description-box a#item-description {
+/* line 892, ../scss/custom_5.scss */
+.playlist-item-active .description-box a.item-description {
   color: #fff;
 }
-/* line 895, ../scss/custom.scss */
-#playlist-item-active #description-box p {
+/* line 895, ../scss/custom_5.scss */
+.playlist-item-active .description-box p {
   color: #ddd;
 }
 
-/* line 901, ../scss/custom.scss */
-#playlist-item {
+/* line 901, ../scss/custom_5.scss */
+.playlist-item {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 906, ../scss/custom.scss */
-#playlist-item > #description-box > a#item-description {
+/* line 906, ../scss/custom_5.scss */
+.playlist-item .description-box a.item-description {
   color: #000;
 }
-/* line 909, ../scss/custom.scss */
-#playlist-item > #description-box p {
+/* line 909, ../scss/custom_5.scss */
+.playlist-item .description-box p {
   color: #000;
 }
 
-/* line 915, ../scss/custom.scss */
+/* line 915, ../scss/custom_5.scss */
 .videoWrapper {
   position: relative;
-  padding-bottom: 52.4%;
+  padding-bottom: 52.25%;
   /* 16:9 */
   padding-top: 25px;
   height: 0;
 }
 
-/* line 921, ../scss/custom.scss */
+/* line 921, ../scss/custom_5.scss */
 .videoWrapper iframe {
   position: absolute;
   top: 0;

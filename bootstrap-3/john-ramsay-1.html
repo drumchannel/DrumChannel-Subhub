@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Drum Channel Free Lesson</title>
+    <title>Aaron Spears</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
@@ -16,25 +16,71 @@
 
 <body>
     <div class="container">
-
+        <script>
+            $(document).ready(function() {
+                $('#theater-mode').hide();
+                $('#videoColumn').hover(
+                    function() {
+                        $('#theater-mode').fadeIn();
+                    },
+                    function() {
+                        $('#theater-mode').fadeOut();
+                    }
+                );
+                $('#playlist-mode').hide();
+                $('#theater-mode').click(function() {
+                    $('#playlistColumn').slideUp("fast", function() {
+                        $('#videoColumn').removeClass('col-xs-8');
+                        $('#videoColumn').css("padding-right", "15px");
+                        $('#videoColumn').addClass('col-xs-12');
+                        $('#theater-mode').hide();
+                    });
+                    $('#videoColumn').hover(
+                        function() {
+                            $('#playlist-mode').fadeIn();
+                        },
+                        function() {
+                            $('#playlist-mode').fadeOut();
+                        }
+                    );
+                });
+                $('#playlist-mode').click(function() {
+                    $('#videoColumn').removeClass('col-xs-12');
+                    $('#videoColumn').css("padding-right", "0px");
+                    $('#videoColumn').addClass('col-xs-8', function() {
+                        $('#playlistColumn').delay("400").show("fast");
+                        $('#theater-mode').show();
+                        $('#playlist-mode').hide();
+                    });
+                });
+            });
+        </script>
         <!-- Lesson video and description -->
         <div class="row">
-            <div class="col-xs-8" style="margin: 0px 0 0 0; padding-right: 0;">
+            <div id="videoColumn" class="col-xs-8" style="margin: 0px 0 0 0; padding-right: 0; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- Start of video -->
-                        <iframe src="//drumchannel.vidmover.com/api/embed?id=0_wxvbfo7w&uiconf_id=11610891&type=entry&iid=56a7641d181f46553f8b456b" width="100%" height="370" allowfullscreen webkitallowfullscreen frameborder="0"></iframe>
-                        <!-- End of video -->
+                        <div class="videoWrapper">
+                            <!-- Start of video -->
+                            <iframe src="//drumchannel.vidmover.com/api/embed?id=0_wxvbfo7w&uiconf_id=11610891&type=entry&iid=56a7641d181f46553f8b456b" width="100%" height="370" allowfullscreen webkitallowfullscreen frameborder="0"></iframe>
+                            <!-- End of video -->
+                            <a href="#" id="theater-mode" style="position: absolute; top: 5px; right: 10px; width: auto; height: auto">
+                                <span class="fa fa-television" style="color: #fff; font-size: 2em;"></span>
+                            </a>
+                            <a href="#" id="playlist-mode" style="position: absolute; top: 5px; right: 10px; width: auto; height: auto">
+                                <span class="fa fa-television" style="color: #fff; font-size: 2em;"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-4" style="height: 370px; padding-left: 0;">
+            <div class="col-xs-4" id="playlistColumn" style="height: 370px; padding-left: 0; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="font-weight: bold;">Interview with John Ramsay of Berklee College of music</h3>
                     </div>
                     <!-- Video container -->
-                    <div class="panel-body" style="background: #fff; height: 314px; overflow: scroll; overflow-x: auto; padding-top: 0;">
+                    <div class="panel-body" style="background: #fff; height: 315px; overflow: scroll; overflow-x: auto; padding-top: 0;">
 
                         <!-- Related video 1 -->
                         <div class="row playlist-item-active" id="playlist-item-active">
@@ -75,14 +121,14 @@
                 <!--<h3 style="margin-top: 0; font-size: 150%;">Instructor: Zigaboo Modeliste</h3>-->
                 <p id="class-description" style="font-size: 14px; line-height: 1.3; padding-bottom: 10px;">John describes his duties as Chair of the percussion department at Berklee College of Music and the audition requirements. He also describes his upcoming Drum Channel course that will prepare you to pass your audition. He discusses picking your major and the 6 percussion instruments you can choose from: drum set, vibraphone, marimba, hand percussion (Afro-Cuban, Brazilian, West African, Middle Eastern), orchestral percussion, and steel pan.</p>
                 <div class="alert alert-info">
-                    <p id="class-description" style="font-size: 14px; line-height: 1.3;"><strong>Coming in December</strong> John Ramsay's complete course will teach you everything you need to know to pass your Drum set audition.  He covers Reading, Rudiments, Song Form, Time Feel and your Prepared Piece.</p>
+                    <p id="class-description" style="font-size: 14px; line-height: 1.3;"><strong>Coming in December</strong> John Ramsay's complete course will teach you everything you need to know to pass your Drum set audition. He covers Reading, Rudiments, Song Form, Time Feel and your Prepared Piece.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-           <div class="col-xs-12">
-               <h3>Related Videos:</h3>
-           </div>
+            <div class="col-xs-12">
+                <h3>Related Videos:</h3>
+            </div>
             <!-- Start item -->
             <div class="col-xs-4">
                 <div class="panel panel-default newest-panel">
@@ -90,7 +136,9 @@
                         <a href="http://www.drumchannel.com/articles/PeterErskineMasterClass" title="Lesson">
                             <img src="http://www.drumchannel.com/custom/peter-erskine-mc.png" class="img-responsive" />
                         </a>
-                        <div class="play-div"><br>&nbsp;</div></div>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
                     <div class="panel-body" style="height: auto; background: white;">
                         <h3>Master Class</h3>
                         <a href="http://www.drumchannel.com/articles/PeterErskineMasterClass" title="Lesson">
@@ -108,7 +156,9 @@
                         <a href="http://www.drumchannel.com/articles/drum-lessons-SFTP-Jazz-4-way-coordination-Gregg-Bissonette" title="Lesson">
                             <img src="http://www.drumchannel.com/custom/gregg-jazz.png" class="img-responsive" />
                         </a>
-                        <div class="play-div"><br>&nbsp;</div></div>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
                     <div class="panel-body" style="height: auto; background: white;">
                         <h3>Secrets From the Pros</h3>
                         <a href="http://www.drumchannel.com/articles/drum-lessons-SFTP-Jazz-4-way-coordination-Gregg-Bissonette" title="Lesson">
@@ -126,7 +176,9 @@
                         <a href="http://www.drumchannel.com/articles/MarcoMinnemannMC" title="Lesson">
                             <img src="http://www.drumchannel.com/custom/minneman-mc.png" class="img-responsive" />
                         </a>
-                        <div class="play-div"><br>&nbsp;</div></div>
+                        <div class="play-div">
+                            <br>&nbsp;</div>
+                    </div>
                     <div class="panel-body" style="height: auto; background: white;">
                         <h3>Master Class</h3>
                         <a href="http://www.drumchannel.com/articles/MarcoMinnemannMC" title="Lesson">
