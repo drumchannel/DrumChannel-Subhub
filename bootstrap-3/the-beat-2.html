@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <!-- Custom -->
+  <link href="css/custom.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8" style="padding-right: 0;">
+        <div class="videoWrapper">
+          <!-- Start of video -->
+          <iframe src="//drumchannel.vidmover.com/api/embed?id=0_kb3eijyr&uiconf_id=11610891&type=entry&iid=56a7641d181f46553f8b456b" width="500" height="320" allowfullscreen webkitallowfullscreen frameborder="0"></iframe>
+          <!-- End of video -->
+        </div>
+      </div>
+      <!-- Video Playlist -->
+      <div class="col-xs-4" id="playlistColumn" style="height: 370px; padding-left: 0; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="display: flex; align-items: center;">
+            <div>
+              <h3 class="panel-title" style="font-weight: bold;">The Beat</h3>
+              <!-- <p style="padding-top: .6em; color: #c20000; font-weight: bold; margin-bottom: 0;">John Ramsay</p> -->
+            </div>
+          </div>
+          <!-- Video container -->
+          <div class="panel-body" style="background: #fff; height: 332px; overflow: scroll; overflow-x: auto; padding-top: 0;">
+
+            <!-- Related video 1 -->
+            <div class="row playlist-item" id="playlist-item" style="display: flex; align-items: center;">
+              <div class="col-xs-1">
+                <span style="color: #555555; font-size: 14px; font-weight: bold;">1</span>
+              </div>
+              <div class="col-xs-11 description-box" id="description-box">
+                <a id="item-description" href="http://www.drumchannel.com/articles/thebeat" alt="The Beat"><strong>The Beat - Trailer</strong></a>
+                <p><span class="fa fa-clock-o">&nbsp;</span>1:48</p>
+              </div>
+            </div>
+            <!-- End related video -->
+
+            <!-- Related video 2 -->
+            <div class="row playlist-item" id="playlist-item" style="display: flex; align-items: center;">
+              <div class="col-xs-1">
+                <span style="color: #555555; font-size: 14px; font-weight: bold;">2</span>
+              </div>
+              <div class="col-xs-11 description-box" id="description-box">
+                <a id="item-description" href="http://www.drumchannel.com/articles/the-beat-1" title="The Beat"><strong>Episode 1 - Helen de la Rosa</strong></a>
+                <p><span class="fa fa-clock-o">&nbsp;</span>57:03</p>
+              </div>
+            </div>
+            <!-- End related video -->
+
+            <!-- Related video 3 -->
+            <div class="row playlist-item-active" id="playlist-item-active" style="display: flex; align-items: center;">
+              <div class="col-xs-1">
+                <span class="fa fa-play-circle-o" style="color: #ffffff; font-size: 14px;">&nbsp;</span>
+              </div>
+              <div class="col-xs-11 description-box" id="description-box">
+                <a id="item-description" href="http://www.drumchannel.com/articles/the-beat-2" title="The Beat"><strong>Episode 2 - Jordan West</strong></a>
+                <p><span class="fa fa-clock-o">&nbsp;</span>38:06</p>
+              </div>
+            </div>
+            <!-- End related video -->
+
+          </div>
+        </div>
+      </div>
+      <!-- End video playlist -->
+    </div>
+
+    <!-- Lesson details -->
+    <div class="row" style="border: 1px solid #eaeaea; margin: 15px 0; box-shadow: 0px 3px 3px rgba(0,0,0,.3); padding: 2.5%; background: #f8f8f8">
+      <div class="col-xs-12">
+        <h3>The Beat - Episode 2</h3>
+        <h5>Featured guest: Jordan West (LA Session Drummer and Roland Product Specialist)</h5>
+        <p id="class-description" style="font-size: 14px; line-height: 1.3; padding-bottom: 10px;">The Beat is a show featuring videos from female drummers all over the world where our guest panel of performers and educators will evaluate and offer insight on your playing. Each episode features a special guest as well as gear giveaways and live performances.  Episodes will air on the 3rd, 5th, 10th and 12th of January at 6pm PST.</p>
+      </div>
+    </div>
+    <!-- End lesson details -->
+
+    <!-- Related Videos -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Related Videos:</h3>
+      </div>
+      <!-- Start item -->
+      <div class="col-xs-4">
+        <div class="panel panel-default newest-panel">
+          <div class="newest-image">
+            <a href="http://www.drumchannel.com/categories/Gannin-Arnold-Project" title="Lesson">
+              <img src="http://www.drumchannel.com/custom/gannin-arnold-grid.png" class="img-responsive" />
+            </a>
+            <div class="play-div"><br>&nbsp;</div></div>
+          <div class="panel-body" style="height: auto;">
+            <h3>DVD</h3>
+            <a href="http://www.drumchannel.com/categories/Gannin-Arnold-Project" title="Lesson">
+              <h2>Gannin Arnold Project: 5 World Class Drummers</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End item -->
+
+      <!-- Start item -->
+      <div class="col-xs-4">
+        <div class="panel panel-default newest-panel">
+          <div class="newest-image">
+            <a href="http://www.drumchannel.com/articles/drum-lessons-SFTP-Swagger-Eric-Moore" title="Lesson">
+              <img src="http://www.drumchannel.com/custom/eric-grid.png" class="img-responsive" />
+            </a>
+            <div class="play-div"><br>&nbsp;</div></div>
+          <div class="panel-body" style="height: auto;">
+            <h3>Secrets From the Pros</h3>
+            <a href="http://www.drumchannel.com/articles/drum-lessons-SFTP-Swagger-Eric-Moore" title="Lesson">
+              <h2>Swag: Your Swagger</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End item -->
+
+      <!-- Start item -->
+      <div class="col-xs-4">
+        <div class="panel panel-default newest-panel">
+          <div class="newest-image">
+            <a href="http://www.drumchannel.com/articles/drum-lessons-Technique-Hands-Lesson-1-Holding-the-Sticks" title="Lesson">
+              <img src="http://www.drumchannel.com/custom/ralph3-grid.png" class="img-responsive" />
+            </a>
+            <div class="play-div"><br>&nbsp;</div></div>
+          <div class="panel-body" style="height: auto;">
+            <h3>Master Class</h3>
+            <a href="http://www.drumchannel.com/articles/drum-lessons-Technique-Hands-Lesson-1-Holding-the-Sticks" title="Lesson">
+              <h2>Hand Technique - Holding the Sticks</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End item -->
+
+    </div>
+    <!-- End related videos -->
+
+  </div>
+</body>
+
+</html>

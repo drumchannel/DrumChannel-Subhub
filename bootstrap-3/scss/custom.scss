@@ -599,7 +599,7 @@ p {
       border-color: #000000;
       > h1 {
         color: #fff;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         line-height: 16px;
         margin: 0;
@@ -646,7 +646,7 @@ p {
       color: #333;
       > h1 {
         color: #333;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         line-height: 16px;
         margin: 0;
@@ -931,7 +931,6 @@ p {
 .videoWrapper {
   position: relative;
   padding-bottom: 52.4%;
-  /* 16:9 */
   padding-top: 25px;
   height: 0;
 }
