@@ -1,13 +1,13 @@
 {
     "name": "dc-high-def",
-    "description": "General purpose upload profile for all Drum channel videos".
+    "description": "General purpose upload profile for all Drum channel videos",
     "account_id": "2534274852001",
     "brightcove_standardf": true,
     "keep_renditions": true,
     "digital_master": {
         "rendition": "passthrough",
         "distribute": false
-    ),
+    },
     "renditions": [
     {
         "media_type": "video",
