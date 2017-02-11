@@ -1,92 +1,141 @@
 h3 {
-    display: block;
-    font-size: 1.17em;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: 700
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: 700
 }
 
 .player-container {
-    width: 596px;
-    height: 490px;
-    position: relative;
-    color: #2b2b2b;
-    font-family: helvetica;
-    font-weight: 400
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: #2b2b2b;
+  font-family: helvetica;
+  font-weight: 400
+}
+
+.player-container .kWidgetIframeContainer {
+  width: 100%;
+  height: 100%
+}
+
+.player-container .kWidgetIframeContainer.player-with-drawer {
+  height: 75%
 }
 
 .orange-block {
-    height: 4px;
-    width: 4px;
-    background-color: #c20000;
-    position: absolute;
-    left: 13px;
-    top: 13px
+  height: 4px;
+  width: 4px;
+  background-color: #c20000;
+  position: absolute;
+  left: 13px;
+  top: 13px
 }
 
 .player-title {
-    height: 30px;
-    position: relative
+  display: none;
+  height: 30px;
+  position: relative
 }
 
 .player-title h3 {
-    line-height: 30px;
-    padding-left: 24px;
-    font-size: 14px
+  line-height: 30px;
+  padding-left: 24px;
+  font-size: 14px
 }
 
 #playListHolder .chapterBoxInner {
-    min-height: 70px
+  min-height: 70px
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0
 }
 
 .k-medialist-header {
-    display: none
+  display: none
 }
 
-#bamboo_player_1 {
-    width: 596px;
-    height: 335px
+#bamboo_player_1, #bamboo_player_2 {
+  position: relative;
+  padding-bottom: 52.76%;
+  padding-top: 2.5rem;
+  height: 0;
+}
+
+#bamboo_player_1 iframe, #bamboo_player_2 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
 }
 
 #playListHolder {
-    width: 100%;
-    height: 20%;
-    text-align: center;
+  width: 100%;
+  height: 20%;
+  text-align: center
 }
 
 #playListHolder .entry-thumb-container {
-    transition: all .2s ease-in-out;
-    padding: 6px;
-    margin: 5px 6px;
-    max-width: 16%;
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
+  transition: all .2s ease-in-out;
+  padding: 6px;
+  margin: 5px 6px;
+  max-width: 16%;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block
 }
 
 #playListHolder .entry-thumb-container.active .k-title-container,
 #playListHolder .entry-thumb-container:hover .k-title-container {
-    transition: all .4s ease-in-out;
-    color: #c20000;
+  transition: all .4s ease-in-out;
+  color: #c20000;
+  display: none;
 }
 
 #playListHolder .k-thumb {
-    width: 95px;
-    height: 55px;
-    background-size: 10000px 100%;
-    background-position: 0 0
+  width: 95px;
+  height: 55px;
+  background-size: 10000px 100%;
+  background-position: 0 0
 }
 
 #playListHolder .k-title-container {
-    line-height: 24px;
-    text-align: center;
-    font-weight: 700
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+  display: none;
+}
+
+#notationDrawer {
+  max-height: 25%;
+  height: 25%;
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  opacity: .75;
+  background: #fff
+}
+
+#notationDrawer>img {
+  display: none;
+  width: 100%;
+  max-width: 100%
+}
+
+#notationDrawer>object {
+  display: none;
+  width: 100%;
+  max-width: 100%
+}
+
+#notationDrawer.below-player {
+  position: relative;
+  opacity: 1
 }
