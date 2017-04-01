@@ -60,57 +60,21 @@ body {
   display: none
 }
 
-#bamboo_player_1, #bamboo_player_2 {
+#bamboo_player_1,
+#bamboo_player_2 {
   position: relative;
   padding-bottom: 52.76%;
   padding-top: 2.5rem;
   height: 0;
 }
 
-#bamboo_player_1 iframe, #bamboo_player_2 iframe {
+#bamboo_player_1 iframe,
+#bamboo_player_2 iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%
-}
-
-#playListHolder {
-  width: 100%;
-  height: 20%;
-  text-align: center
-}
-
-#playListHolder .entry-thumb-container {
-  transition: all .2s ease-in-out;
-  padding: 6px;
-  margin: 5px 6px;
-  max-width: 16%;
-  font-size: 12px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block
-}
-
-#playListHolder .entry-thumb-container.active .k-title-container,
-#playListHolder .entry-thumb-container:hover .k-title-container {
-  transition: all .4s ease-in-out;
-  color: #c20000;
-  display: none;
-}
-
-#playListHolder .k-thumb {
-  width: 95px;
-  height: 55px;
-  background-size: 10000px 100%;
-  background-position: 0 0
-}
-
-#playListHolder .k-title-container {
-  line-height: 24px;
-  text-align: center;
-  font-weight: 700;
-  display: none;
 }
 
 #notationDrawer {
@@ -138,4 +102,54 @@ body {
 #notationDrawer.below-player {
   position: relative;
   opacity: 1
+}
+
+#playListHolder .chapterBoxInner {
+  min-height: 70px
+}
+
+.k-medialist-header {
+  display: none
+}
+
+#playListHolder {
+  width: 100%;
+  height: 30px;
+  display: table;
+  text-align: center;
+  table-layout: fixed;
+  background-color: #2b2b2b
+}
+
+#playListHolder .entry-thumb-container {
+  transition: all .2s ease-in-out;
+  display: table-cell;
+  border: 1px solid #95989a;
+  color: #fff;
+  padding: 6px;
+  margin: 5px 6px;
+  max-width: 16%;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer
+}
+
+#playListHolder .entry-thumb-container.active,
+#playListHolder .entry-thumb-container:hover {
+  transition: all .4s ease-in-out;
+  background-color: #c20000
+}
+
+#playListHolder .k-thumb {
+  width: 95px;
+  height: 55px;
+  background-size: 10000px 100%;
+  background-position: 0 0
+}
+
+#playListHolder .k-title-container {
+  line-height: 24px;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 700
 }
